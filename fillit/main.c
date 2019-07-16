@@ -14,7 +14,7 @@ void	ft_mkerr()
 int main()
 {
 	char *line;
-	//char *filename = "/Users/mdeanne/fill/tests/nvtest3";
+	char *filename = "/Users/mdeanne/fill/tests/nvtest3";
 
 	ft_readfile(filename, &line);
 	free(line);
