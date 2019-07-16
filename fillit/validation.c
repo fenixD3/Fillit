@@ -35,13 +35,7 @@ void	ft_check(char line[BUFF_SIZE])
 		while(i != 21)
 		{
 			if ((i % 5 == 0 && *line != '\n') || (i % 5 != 0 && *line != '#' &&
-			*line != '.'))
-				ft_mkerr();
-
-
-
-
-			if (*line == '#' && ++sharp > 4)
+			*line != '.') || (*line == '#' && ++sharp > 4))
 				ft_mkerr();
 			if (*line == '#')
 				connections += ft_connections_counter(line, i);
@@ -50,7 +44,9 @@ void	ft_check(char line[BUFF_SIZE])
 		}
 		if (connections != 6 && connections != 8)
 			ft_mkerr();
-		(*line != '\n' && *line != '\0') ? ft_mkerr() : line++;
+		if (*line == '\0')
+			break;
+		(*line == '\n') ? line++ : ft_mkerr();
 	}
 }
 
