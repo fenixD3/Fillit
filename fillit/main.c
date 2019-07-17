@@ -1,4 +1,14 @@
-// make a header
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
+/*   Updated: 2019/07/17 04:59:27 by mdeanne          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "fillit.h"
 
@@ -13,9 +23,12 @@ void	ft_mkerr()
 
 int main()
 {
-	char *line;
-	char *filename = "/Users/mdeanne/fill/tests/nvtest3";
+	char	*line;
+	int		numfig;
 
-	ft_readfile(filename, &line);
+	char	*filename = "/Users/mdeanne/fill/tests/nvtest3";
+
+	numfig = ft_readfile(filename, &line);
+	printf("%d\n", numfig);
 	free(line);
 }

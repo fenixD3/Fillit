@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/Users/mdeanne/fill/fillit/figtype.c
+
 /Users/mdeanne/fill/fillit/fillit.h
 libft/libft.h
 /Users/mdeanne/fill/fillit/libft/libft.h
@@ -16,6 +18,14 @@ string.h
 stdlib.h
 -
 unistd.h
+-
+
+/Users/mdeanne/fill/fillit/main.c
+fillit.h
+/Users/mdeanne/fill/fillit/fillit.h
+stdio.h
+-
+stdio.h
 -
 
 /Users/mdeanne/fill/fillit/validation.c

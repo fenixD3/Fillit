@@ -1,6 +1,14 @@
-//
-// Created by Mort Deanne on 2019-07-16.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   validation.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/07/17 04:59:02 by mdeanne           #+#    #+#             */
+/*   Updated: 2019/07/17 04:59:10 by mdeanne          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "fillit.h"
 #include <fcntl.h>
@@ -50,7 +58,7 @@ void	ft_check(char line[BUFF_SIZE])
 	}
 }
 
-void	ft_readfile(char *filename, char **line)
+int		ft_readfile(char *filename, char **line)
 {
 	int		fd;
 	int		ret;
@@ -63,5 +71,6 @@ void	ft_readfile(char *filename, char **line)
 	buf[ret] = '\0';
 	ft_check(buf);
 	*line = ft_strdup(buf);
+	return ((ret + 1) / 21);
 }
 

@@ -8,6 +8,6 @@
 #include "libft/libft.h"
 
 void	ft_mkerr();
-void	ft_readfile(char *filename, char **line);
+int ft_readfile(char *filename, char **line);
 
 #endif //FILLIT_H
