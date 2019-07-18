@@ -35,12 +35,12 @@ void	ft_check(char line[BUFF_SIZE])
 	int sharp;
 	int connections;
 
-	while(*line)
+	while (*line)
 	{
 		i = 1;
 		sharp = 0;
 		connections = 0;
-		while(i != 21)
+		while (i != 21)
 		{
 			if ((i % 5 == 0 && *line != '\n') || (i % 5 != 0 && *line != '#' &&
 			*line != '.') || (*line == '#' && ++sharp > 4))
@@ -73,4 +73,3 @@ int		ft_readfile(char *filename, char **line)
 	*line = ft_strdup(buf);
 	return ((ret + 1) / 21);
 }
-
