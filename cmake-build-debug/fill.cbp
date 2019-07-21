@@ -281,6 +281,9 @@
 		<Unit filename="/Users/mdeanne/fill/fillit/main.c">
 			<Option target="fill"/>
 		</Unit>
+		<Unit filename="/Users/mdeanne/fill/fillit/mkfig_arr.c">
+			<Option target="fill"/>
+		</Unit>
 		<Unit filename="/Users/mdeanne/fill/fillit/validation.c">
 			<Option target="fill"/>
 		</Unit>

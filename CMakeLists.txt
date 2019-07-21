@@ -6,4 +6,4 @@ file (GLOB SRC fillit/libft/*.c)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(fill ${SRC} fillit/main.c fillit/validation.c
-        fillit/fillit.h)
+        fillit/fillit.h fillit/mkfig_arr.c)
