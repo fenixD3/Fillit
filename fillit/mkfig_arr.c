@@ -75,18 +75,39 @@ int		*mkfig(const char *line)
 	return (figure - 4);
 }
 
+void	clean_arrfigs(int **figures, int n)
+{
+	int i;
+
+	i = 0;
+	while (i < n)
+	{
+		free(*figures);
+		(*figures)++;
+		i++;
+	}
+	free(figures);
+	figures = NULL;
+}
+
 int		**mkfig_arr(const char *line, int numfig)
 {
 	int		**figures;
-	int		**head;
+	int		i;
 
-	figures = (int**)malloc(sizeof(int*) * numfig);
-	head = figures;
-	while (--numfig)
+	if (!(figures = (int**)malloc(sizeof(int*) * numfig)))
+		ft_mkerr();
+	i = 0;
+	while (i < numfig)
 	{
-		*(figures++) = mkfig(line);
+		if (!((figures[i]) = mkfig(line)))
+		{
+			clean_arrfigs(figures, i);
+			ft_mkerr();
+		}
 		line += 21;
+		i++;
 	}
 	*figures = mkfig(line);
-	return (head);
+	return (figures);
 }
