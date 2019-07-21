@@ -6,11 +6,12 @@
 /*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/21 16:56:15 by ylila             #+#    #+#             */
-/*   Updated: 2019/07/21 17:03:32 by ylila            ###   ########.fr       */
+/*   Updated: 2019/07/21 17:38:05 by ylila            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
+#include "dance.h"
 #include <stdlib.h>
 
 t_dance	*create(const char *n_name, const int n_coord)

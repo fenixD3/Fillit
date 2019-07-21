@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/07/20 18:59:04 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/07/21 17:36:02 by ylila            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int main()
 	int		numfig;
 	int 	**figures;
 
-	char	*filename = "/Users/mdeanne/fill/tests/mkfigtest";
+	char	*filename = "/Users/ylila/Fillit_hub/tests/mkfigtest";
 
 	numfig = ft_readfile(filename, &line);
 	figures = mkfig_arr(line, numfig);
