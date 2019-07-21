@@ -66,6 +66,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fill.dir/fillit/main.c.o"
   "CMakeFiles/fill.dir/fillit/validation.c.o"
   "CMakeFiles/fill.dir/fillit/mkfig_arr.c.o"
+  "CMakeFiles/fill.dir/fillit/filling_list.c.o"
   "fill.pdb"
   "fill"
 )
