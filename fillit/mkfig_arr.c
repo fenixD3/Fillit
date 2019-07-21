@@ -82,8 +82,8 @@ void	clean_arrfigs(int **figures, int n)
 	i = 0;
 	while (i < n)
 	{
-		free(*figures);
-		(*figures)++;
+		free(figures[i]);
+//		figures[i] = NULL;
 		i++;
 	}
 	free(figures);

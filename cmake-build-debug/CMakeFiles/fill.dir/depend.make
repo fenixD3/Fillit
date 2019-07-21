@@ -168,9 +168,9 @@ CMakeFiles/fill.dir/fillit/main.c.o: ../fillit/fillit.h
 CMakeFiles/fill.dir/fillit/main.c.o: ../fillit/libft/libft.h
 CMakeFiles/fill.dir/fillit/main.c.o: ../fillit/main.c
 
-CMakeFiles/fill.dir/fillit/set_fig_arr.c.o: ../fillit/fillit.h
-CMakeFiles/fill.dir/fillit/set_fig_arr.c.o: ../fillit/libft/libft.h
-CMakeFiles/fill.dir/fillit/set_fig_arr.c.o: ../fillit/set_fig_arr.c
+CMakeFiles/fill.dir/fillit/mkfig_arr.c.o: ../fillit/fillit.h
+CMakeFiles/fill.dir/fillit/mkfig_arr.c.o: ../fillit/libft/libft.h
+CMakeFiles/fill.dir/fillit/mkfig_arr.c.o: ../fillit/mkfig_arr.c
 
 CMakeFiles/fill.dir/fillit/validation.c.o: ../fillit/fillit.h
 CMakeFiles/fill.dir/fillit/validation.c.o: ../fillit/libft/libft.h

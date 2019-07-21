@@ -34,5 +34,5 @@ int main()
 
 	printf("%d\n", numfig);
 	free(line);
-	clean_arrfigs(figures, numfig);
+//	clean_arrfigs(figures, numfig);
 }

@@ -11,30 +11,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e87ec5ad-e55c-4773-8137-f7453846fdab" name="Default Changelist" comment="Making array of figures&#10;It's array of arrays with coordinates of figures moved to first cell of matrix of solution">
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/set_fig_arr.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fillit/mkfig_arr.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/mkfigtest" afterDir="false" />
+    <list default="true" id="e87ec5ad-e55c-4773-8137-f7453846fdab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/figtype.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/validation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/validation.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/fill" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/fill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/fill.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/fill.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/fillit.h" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/fillit.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fillit/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fillit/mkfig_arr.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/mkfig_arr.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/mkfigtest">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -64,8 +49,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fillit/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+            <state relative-caret-position="540">
+              <caret line="36" column="2" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fillit/mkfig_arr.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fillit/fillit.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -73,26 +76,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fillit/validation.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="69" selection-start-line="69" selection-end-line="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fillit/mkfig_arr.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+            <state relative-caret-position="-6">
+              <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fillit/fillit.h">
+        <entry file="file://$PROJECT_DIR$/fillit/libft/ft_memdel.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -132,19 +126,20 @@
         <option value="$PROJECT_DIR$/fillit/validation.c" />
         <option value="$PROJECT_DIR$/fillit/figtype.c" />
         <option value="$PROJECT_DIR$/.gitidnore" />
-        <option value="$PROJECT_DIR$/fillit/main.c" />
-        <option value="$PROJECT_DIR$/fillit/fillit.h" />
         <option value="$PROJECT_DIR$/fillit/set_fig_arr.c" />
-        <option value="$PROJECT_DIR$/tests/mkfigtest" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/fillit/libft/.gitignore" />
+        <option value="$PROJECT_DIR$/tests/mkfigtest" />
+        <option value="$PROJECT_DIR$/fillit/fillit.h" />
+        <option value="$PROJECT_DIR$/fillit/mkfig_arr.c" />
+        <option value="$PROJECT_DIR$/fillit/main.c" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="663" />
-    <option name="y" value="36" />
+    <option name="x" value="1049" />
+    <option name="y" value="110" />
     <option name="width" value="1490" />
     <option name="height" value="1221" />
   </component>
@@ -165,11 +160,6 @@
               <item name="fill" type="b2602c69:ProjectViewProjectNode" />
               <item name="fill" type="462c0819:PsiDirectoryNode" />
               <item name="fillit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fill" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -231,7 +221,7 @@
       <workItem from="1563305025341" duration="40000" />
       <workItem from="1563305100698" duration="16756000" />
       <workItem from="1563627036033" duration="4872000" />
-      <workItem from="1563706140616" duration="4057000" />
+      <workItem from="1563706140616" duration="11099000" />
     </task>
     <task id="LOCAL-00001" summary="validation v 0.1&#10;errors not tested enough">
       <created>1563315205455</created>
@@ -261,11 +251,25 @@
       <option name="project" value="LOCAL" />
       <updated>1563338344920</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Making array of figures (some fix)">
+      <created>1563710278434</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1563710278434</updated>
+    </task>
+    <task id="LOCAL-00006" summary="11">
+      <created>1563717932770</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1563717932770</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25880000" />
+    <option name="totallyTimeSpent" value="32922000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -277,21 +281,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="663" y="36" width="1490" height="1221" extended-state="0" />
+    <frame x="1049" y="110" width="1490" height="1221" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" visible="true" weight="0.21616022" />
-      <window_info id="Structure" order="1" sideWeight="0.5013193" side_tool="true" visible="true" weight="0.21616022" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49873737" visible="true" weight="0.21616022" />
+      <window_info id="Structure" order="1" sideWeight="0.5012626" side_tool="true" visible="true" weight="0.21616022" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32941988" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32949513" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29849425" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29849425" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.33923826" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32929516" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32860938" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32860938" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32860938" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.17094775" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32860938" />
@@ -310,7 +315,9 @@
     <MESSAGE value="validation v 1.0&#10;some comments" />
     <MESSAGE value="count number of figures&#10;added into check" />
     <MESSAGE value="Making array of figures&#10;It's array of arrays with coordinates of figures moved to first cell of matrix of solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Making array of figures&#10;It's array of arrays with coordinates of figures moved to first cell of matrix of solution" />
+    <MESSAGE value="Making array of figures (some fix)" />
+    <MESSAGE value="11" />
+    <option name="LAST_COMMIT_MESSAGE" value="11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -324,72 +331,72 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
-        <watch expression="head[0][0]" language="ObjectiveC" />
-        <watch expression="head[0][1]" language="ObjectiveC" />
-        <watch expression="head[0][2]" language="ObjectiveC" />
-        <watch expression="head[0][3]" language="ObjectiveC" />
-        <watch expression="i % 5" language="ObjectiveC" />
-        <watch expression="head[1][0]" language="ObjectiveC" />
-        <watch expression="head[1][1]" language="ObjectiveC" />
-        <watch expression="head[1][2]" language="ObjectiveC" />
-        <watch expression="head[1][3]" language="ObjectiveC" />
-        <watch expression="figure[imin]" language="ObjectiveC" />
-        <watch expression="figure[0]" language="ObjectiveC" />
-        <watch expression="figure[1]" language="ObjectiveC" />
-        <watch expression="figure[2]" language="ObjectiveC" />
-        <watch expression="figure[3]" language="ObjectiveC" />
+        <watch expression="figures[0][0]" language="ObjectiveC" />
+        <watch expression="figures[0][1]" language="ObjectiveC" />
+        <watch expression="figures[0][2]" language="ObjectiveC" />
+        <watch expression="figures[0][3]" language="ObjectiveC" />
+        <watch expression="-------------------------" language="ObjectiveC" />
+        <watch expression="figures[1][0]" language="ObjectiveC" />
+        <watch expression="figures[1][1]" language="ObjectiveC" />
+        <watch expression="figures[1][2]" language="ObjectiveC" />
+        <watch expression="figures[1][3]" language="ObjectiveC" />
+        <watch expression="---------------------" language="ObjectiveC" />
+        <watch expression="figures[2][0]" language="ObjectiveC" />
+        <watch expression="figures[2][1]" language="ObjectiveC" />
+        <watch expression="figures[2][2]" language="ObjectiveC" />
+        <watch expression="figures[2][3]" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>figure[3]</expression-string>
+        <expression-string>---------------------</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>f[3]</expression-string>
+        <expression-string>-------------------------</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>figure[2]</expression-string>
+        <expression-string>figures[2][3]</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>figure[1]</expression-string>
+        <expression-string>figures[2][2]</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>figure[0]</expression-string>
+        <expression-string>figures[2][1]</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>figure[0-3]</expression-string>
+        <expression-string>figures[2][0]</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>figure[]</expression-string>
+        <expression-string>figures[2][]</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>figure[imin]</expression-string>
+        <expression-string>figures[1][3]</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>head[1][3]</expression-string>
+        <expression-string>figures[1][2]</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>head[1][2]</expression-string>
+        <expression-string>figures[1][1]</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -539,38 +546,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fillit/fillit.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fillit/validation.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/mkfigtest">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="10" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fillit/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -581,10 +560,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fillit/dance.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/mkfigtest">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fillit/libft/ft_strsplit.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fillit/validation.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fillit/libft/ft_memdel.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fillit/mkfig_arr.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        <state relative-caret-position="219">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fillit/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="2" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fillit/fillit.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
