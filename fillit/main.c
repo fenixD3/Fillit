@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "fillit.h"
+#include "dance.h"
+#include <stdio.h>
 
 void	ft_mkerr()
 {
@@ -18,8 +20,22 @@ void	ft_mkerr()
 	exit(1);
 }
 
-
-#include <stdio.h>
+void print_cage(t_dance *head)
+{
+	printf("Print\n");
+	t_dance *printing = head->right;
+	while (printing != head)
+	{
+		printf("%s : %d\n", printing->name, printing->coord);
+		printing = printing->right;
+	}
+	printing = head->down;
+	while (printing != head)
+	{
+		printf("%s : %d\n", printing->name, printing->coord);
+		printing = printing->down;
+	}
+}
 
 int main()
 {
@@ -27,12 +43,16 @@ int main()
 	int		numfig;
 	int 	**figures;
 
-	char	*filename = "/Users/ylila/Fillit_hub/tests/mkfigtest";
+/*	char	*filename = "/Users/ylila/Fillit_hub/tests/mkfigtest";
 
 	numfig = ft_readfile(filename, &line);
 	figures = mkfig_arr(line, numfig);
 
 	printf("%d\n", numfig);
-	free(line);
+	free(line);*/
 //	clean_arrfigs(figures, numfig);
+
+	t_dance *head = make_cage(3);
+	print_cage(head);
+	free_cage(&head, 0);
 }

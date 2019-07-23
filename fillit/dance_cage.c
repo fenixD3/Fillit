@@ -21,31 +21,38 @@ static int	add_cage(t_dance **curr, t_dance **head, t_dance *new)
 	(*curr)->right = new;
 	new->left = *curr;
 	new->right = *head;
-	*(head)->left = new;
+	(*head)->left = new;
 	return (1);
 }
 
-int			add_spacer(t_dance **curr, t_dance **head, t_dance *new)
+int			add_spacer(t_dance **head, t_dance *new, _Bool edge, t_dance **curr)
 {
 	if (!new)
 		return (0);
-	(*curr)->right = new;
-	new->left = *curr;
 	new->up = (*head)->up;
+	(*head)->up->down = new;
 	new->down = *head;
-	*(head)->up = new;
+	(*head)->up = new;
+	new->right = NULL;
+	new->left = NULL;
+	if (!edge)
+	{
+		(*curr)->right = new;
+		new->left = *curr;
+	}
 	return (1);
 }
 
-void		free_cage(t_dance **head)
+void		free_cage(t_dance **head, _Bool error)
+	// _Bool need for define exit with error or not
 {
 	t_dance *prev;
-//	t_dance *upper;
+	t_dance *upper;
 
 	prev = *head;
-//	upper = (*head)->down;
+	upper = (*head)->down;
 	prev->left->right = NULL;
-//	upper->up->up->down = NULL;
+	upper->up->up->down = NULL;
 	while (*head)
 	{
 		*head = (*head)->right;
@@ -53,15 +60,16 @@ void		free_cage(t_dance **head)
 		free(prev);
 		prev = *head;
 	}
-/*	*head = upper;
+	*head = upper;
 	while (*head)
 	{
 		*head = (*head)->down;
 		free(upper->name);
 		free(upper);
 		upper = *head;
-	}*/
-	ft_mkerr();
+	}
+	error ? ft_mkerr() : error;
+	*head = NULL;
 }
 
 t_dance		*make_cage(int side)
@@ -82,11 +90,11 @@ t_dance		*make_cage(int side)
 		{
 			if (!add_cage(&curr, &head,
 			create("Cl", high_bit * LEAD_DIGT + low_bit)))
-				free_cage(&head);
+				free_cage(&head, 1);
 			curr = curr->right;
 		}
 	}
-/*	if (!(add_spacer(&curr, &head, create("Sp", 1))))
-		free_cage(&head);*/
+	if (!(add_spacer(&head, create("Sp", 1), 1, &curr)))
+		free_cage(&head, 1);
 	return (head);
 }

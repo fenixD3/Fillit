@@ -8,6 +8,8 @@
 # define LEAD_DIGT 100
 # include "libft/libft.h" // wrong (should be only libft.h!!!)
 
+# include <stdio.h>
+
 void				ft_mkerr();
 int					ft_readfile(char *filename, char **line);
 int					**mkfig_arr(const char *line, int numfig);

@@ -54,5 +54,3 @@ int		add_ver(t_dance **dance, t_dance *up, t_dance *down, t_dance *new)
 	(*dance)->down = new;
 	return (1);
 }
-
-
