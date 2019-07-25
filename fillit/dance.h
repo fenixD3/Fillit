@@ -36,6 +36,6 @@ void				free_cage(t_dance **head, _Bool error);
 t_dance				*make_cage(int side);
 
 t_dance		*create_connct(t_dance *left, t_dance *right, t_dance *up, t_dance *down);
-int node_set_params(t_dance *curr, const char *n_name, const int n_coord, const int jump);
+int			node_set_params(t_dance *curr, const char *n_name, const int n_coord, const int jump);
 
 #endif

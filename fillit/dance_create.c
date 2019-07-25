@@ -79,7 +79,8 @@ t_dance		*create_connct(t_dance *left, t_dance *right, t_dance *up, t_dance *dow
 	return (new);
 }
 
-int node_set_params(t_dance *curr, const char *n_name, const int n_coord, const int jump)
+int node_set_params(t_dance *curr, const char *n_name,
+		const int n_coord, const int jump)
 {
 	if (!(curr->name = ft_strdup(n_name)))
 		return (0);

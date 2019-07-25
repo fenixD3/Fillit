@@ -4,7 +4,7 @@
 
 #include "fillit.h"
 
-int		find_indx_of_min_low_order(int *figure)
+int		find_indx_of_min_low_order(const int *figure)
 {
 	int i;
 	int minloworder;
@@ -105,9 +105,9 @@ int		**mkfig_arr(const char *line, int numfig)
 			clean_arrfigs(figures, i);
 			ft_mkerr();
 		}
+		move2zero(figures[i]);
 		line += 21;
 		i++;
 	}
-	*figures = mkfig(line);
 	return (figures);
 }

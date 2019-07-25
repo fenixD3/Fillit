@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/mdeanne/fill/fillit/fillit.h
-libft/libft.h
-/Users/mdeanne/fill/fillit/libft/libft.h
+/Users/mdeanne/Fillit/fillit/dance.h
 
-/Users/mdeanne/fill/fillit/libft/libft.h
+/Users/mdeanne/Fillit/fillit/fillit.h
+libft/libft.h
+/Users/mdeanne/Fillit/fillit/libft/libft.h
+dance.h
+/Users/mdeanne/Fillit/fillit/dance.h
+
+/Users/mdeanne/Fillit/fillit/libft/libft.h
 string.h
 -
 stdlib.h
@@ -18,7 +22,15 @@ stdlib.h
 unistd.h
 -
 
-/Users/mdeanne/fill/fillit/mkfig_arr.c
-fillit.h
-/Users/mdeanne/fill/fillit/fillit.h
+/Users/mdeanne/Fillit/tests/func_for_tests.h
+stdio.h
+-
+../fillit/dance.h
+/Users/mdeanne/Fillit/fillit/dance.h
+../fillit/fillit.h
+/Users/mdeanne/Fillit/fillit/fillit.h
+
+/Users/mdeanne/Fillit/tests/funcs_for_tests.c
+func_for_tests.h
+/Users/mdeanne/Fillit/tests/func_for_tests.h
 

@@ -67,6 +67,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/fill.dir/fillit/validation.c.o"
   "CMakeFiles/fill.dir/fillit/mkfig_arr.c.o"
   "CMakeFiles/fill.dir/fillit/filling_list.c.o"
+  "CMakeFiles/fill.dir/fillit/dance_cage.c.o"
+  "CMakeFiles/fill.dir/fillit/dance_create.c.o"
+  "CMakeFiles/fill.dir/tests/funcs_for_tests.c.o"
   "fill.pdb"
   "fill"
 )

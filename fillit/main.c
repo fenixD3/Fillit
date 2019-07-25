@@ -6,13 +6,15 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/07/21 18:47:29 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/07/25 16:31:26 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 #include "dance.h"
-#include <stdio.h>
+
+/// DELETE THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#include "../tests/func_for_tests.h"
 
 void	ft_mkerr()
 {
@@ -20,22 +22,10 @@ void	ft_mkerr()
 	exit(1);
 }
 
-void print_cage(t_dance *head)
-{
-	printf("Print\n");
-	t_dance *printing = head->right;
-	while (printing != head)
-	{
-		printf("%s : %d\n", printing->name, printing->coord);
-		printing = printing->right;
-	}
-	printing = head->down;
-	while (printing != head)
-	{
-		printf("%s : %d\n", printing->name, printing->coord);
-		printing = printing->down;
-	}
-}
+
+
+
+
 
 int main()
 {
@@ -43,16 +33,31 @@ int main()
 	int		numfig;
 	int 	**figures;
 
-/*	char	*filename = "/Users/ylila/Fillit_hub/tests/mkfigtest";
+	char	*filename = "/Users/mdeanne/Fillit/tests/mkfigtest";
 
 	numfig = ft_readfile(filename, &line);
 	figures = mkfig_arr(line, numfig);
 
 	printf("%d\n", numfig);
-	free(line);*/
+	print_arr(figures, numfig);
+//	printf("%d %d %d\n", find_max_low_dgtnum(figures[0]), find_max_low_dgtnum(figures[1]), find_max_low_dgtnum(figures[2]));
+
+
+	t_dance *head = make_cage(4);
+	filling_list(figures, numfig, head, 4);
+	print_list(head);
+
+	free(line);
 //	clean_arrfigs(figures, numfig);
 
-	t_dance *head = make_cage(3);
+/*	t_dance *head = make_cage(3);
 	print_cage(head);
-	free_cage(&head, 0);
+	printf("_____________\n");
+	add_spacer2(head, create("Sp", 1), 1, head->up);
+
+	ft_strcpy(head->down->name, "AA");
+	ft_strcpy(head->up->name, "BB");
+
+	print_cage(head);
+	free_cage(&head, 0);*/
 }

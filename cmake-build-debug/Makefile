@@ -48,10 +48,10 @@ RM = /Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mdeanne/fill
+CMAKE_SOURCE_DIR = /Users/mdeanne/Fillit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mdeanne/fill/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/mdeanne/Fillit/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/fill/cmake-build-debug/CMakeFiles /Users/mdeanne/fill/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/Fillit/cmake-build-debug/CMakeFiles /Users/mdeanne/Fillit/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/fill/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/Fillit/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,60 @@ fill: cmake_check_build_system
 fill/fast:
 	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/build
 .PHONY : fill/fast
+
+fillit/dance_cage.o: fillit/dance_cage.c.o
+
+.PHONY : fillit/dance_cage.o
+
+# target to build an object file
+fillit/dance_cage.c.o:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/dance_cage.c.o
+.PHONY : fillit/dance_cage.c.o
+
+fillit/dance_cage.i: fillit/dance_cage.c.i
+
+.PHONY : fillit/dance_cage.i
+
+# target to preprocess a source file
+fillit/dance_cage.c.i:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/dance_cage.c.i
+.PHONY : fillit/dance_cage.c.i
+
+fillit/dance_cage.s: fillit/dance_cage.c.s
+
+.PHONY : fillit/dance_cage.s
+
+# target to generate assembly for a file
+fillit/dance_cage.c.s:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/dance_cage.c.s
+.PHONY : fillit/dance_cage.c.s
+
+fillit/dance_create.o: fillit/dance_create.c.o
+
+.PHONY : fillit/dance_create.o
+
+# target to build an object file
+fillit/dance_create.c.o:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/dance_create.c.o
+.PHONY : fillit/dance_create.c.o
+
+fillit/dance_create.i: fillit/dance_create.c.i
+
+.PHONY : fillit/dance_create.i
+
+# target to preprocess a source file
+fillit/dance_create.c.i:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/dance_create.c.i
+.PHONY : fillit/dance_create.c.i
+
+fillit/dance_create.s: fillit/dance_create.c.s
+
+.PHONY : fillit/dance_create.s
+
+# target to generate assembly for a file
+fillit/dance_create.c.s:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/dance_create.c.s
+.PHONY : fillit/dance_create.c.s
 
 fillit/filling_list.o: fillit/filling_list.c.o
 
@@ -1959,6 +2013,33 @@ fillit/validation.c.s:
 	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/validation.c.s
 .PHONY : fillit/validation.c.s
 
+tests/funcs_for_tests.o: tests/funcs_for_tests.c.o
+
+.PHONY : tests/funcs_for_tests.o
+
+# target to build an object file
+tests/funcs_for_tests.c.o:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/tests/funcs_for_tests.c.o
+.PHONY : tests/funcs_for_tests.c.o
+
+tests/funcs_for_tests.i: tests/funcs_for_tests.c.i
+
+.PHONY : tests/funcs_for_tests.i
+
+# target to preprocess a source file
+tests/funcs_for_tests.c.i:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/tests/funcs_for_tests.c.i
+.PHONY : tests/funcs_for_tests.c.i
+
+tests/funcs_for_tests.s: tests/funcs_for_tests.c.s
+
+.PHONY : tests/funcs_for_tests.s
+
+# target to generate assembly for a file
+tests/funcs_for_tests.c.s:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/tests/funcs_for_tests.c.s
+.PHONY : tests/funcs_for_tests.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1968,6 +2049,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... fill"
+	@echo "... fillit/dance_cage.o"
+	@echo "... fillit/dance_cage.i"
+	@echo "... fillit/dance_cage.s"
+	@echo "... fillit/dance_create.o"
+	@echo "... fillit/dance_create.i"
+	@echo "... fillit/dance_create.s"
 	@echo "... fillit/filling_list.o"
 	@echo "... fillit/filling_list.i"
 	@echo "... fillit/filling_list.s"
@@ -2172,6 +2259,9 @@ help:
 	@echo "... fillit/validation.o"
 	@echo "... fillit/validation.i"
 	@echo "... fillit/validation.s"
+	@echo "... tests/funcs_for_tests.o"
+	@echo "... tests/funcs_for_tests.i"
+	@echo "... tests/funcs_for_tests.s"
 .PHONY : help
 
 
