@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/07/25 16:31:26 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/07/26 17:32:17 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ int main()
 
 
 	t_dance *head = make_cage(4);
+	increase_cage(head, 4);
 	filling_list(figures, numfig, head, 4);
 	print_list(head);
 

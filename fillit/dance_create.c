@@ -6,7 +6,7 @@
 /*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/21 16:56:15 by ylila             #+#    #+#             */
-/*   Updated: 2019/07/24 02:00:00 by yas              ###   ########.fr       */
+/*   Updated: 2019/07/26 19:02:57 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,9 @@ t_dance	*create(const char *n_name, const int n_coord)
 	if (!(new->name = ft_strdup(n_name)))
 		return (NULL);
 	new->coord = n_coord;
-	new->jump = 0;
+	new->row = 0;
+	new->spacer = new;
+	new->home = new;
 	new->up = new;
 	new->down = new;
 	new->left = new;
@@ -63,7 +65,9 @@ t_dance		*create_connct(t_dance *left, t_dance *right, t_dance *up, t_dance *dow
 		return (NULL);
 	new->name = NULL;
 	new->coord = 0;
-	new->jump = 0;
+	new->row = 0;
+	new->spacer = new;
+	new->home = new;
 	new->left = left;
 	new->right = right;
 	new->up = up;
@@ -80,11 +84,11 @@ t_dance		*create_connct(t_dance *left, t_dance *right, t_dance *up, t_dance *dow
 }
 
 int node_set_params(t_dance *curr, const char *n_name,
-		const int n_coord, const int jump)
+		const int n_coord, t_dance *spacer)
 {
 	if (!(curr->name = ft_strdup(n_name)))
 		return (0);
 	curr->coord = n_coord;
-	curr->jump = jump;
+	curr->spacer = spacer;
 	return (1);
 }

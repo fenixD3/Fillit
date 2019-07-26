@@ -20,12 +20,13 @@ int 	fill_row(int *figure, int step, const char n_name, t_dance *head)
 		while (curr->coord != figure[i] + step)
 			curr = curr->right;
 		if (!(new = create_connct(prev, NULL, curr->up, curr)) ||
-		!node_set_params(new, &n_name, figure[i] + step, head->up->jump + 1))
+		!node_set_params(new, &n_name, figure[i] + step, head->up))
 			return (0);
+		new->home = curr;
 		prev = prev->right;
 		i++;
 	}
-	if (!(add_spacer(&head, create("Sp", 1), 0, &new)))
+	if (!(add_spacer(head, create("Sp", 1), 0, new)))
 		return (0);
 	new->right->left = new;
 	return (1);
@@ -56,9 +57,9 @@ void 	filling_list(int **figures, int numfig, t_dance *head, int side)
 	int step;
 
 	i = 0;
-	step = 0;
 	while (i < numfig)
 	{
+		step = 0;
 		lowdn = find_max_low_dgtnum(figures[i]);
 		highdn = figures[i][3] / LEAD_DIGT;
 		while (highdn <= side)

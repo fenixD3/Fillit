@@ -6,7 +6,7 @@
 /*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/21 16:59:04 by ylila             #+#    #+#             */
-/*   Updated: 2019/07/21 18:47:29 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/07/26 19:26:06 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,31 +14,32 @@
 #include "dance.h"
 #include <stdlib.h>
 
-static int	add_cage(t_dance **curr, t_dance **head, t_dance *new)
+int			add_cage(t_dance *right, t_dance *left, t_dance *new)
 {
 	if (!new)
 		return (0);
-	(*curr)->right = new;
-	new->left = *curr;
-	new->right = *head;
-	(*head)->left = new;
+	right->right = new;
+	new->left = right;
+	new->right = left;
+	left->left = new;
 	return (1);
 }
 
-int			add_spacer(t_dance **head, t_dance *new, _Bool edge, t_dance **curr)
+int			add_spacer(t_dance *head, t_dance *new, _Bool edge, t_dance *curr)
 {
 	if (!new)
 		return (0);
-	new->up = (*head)->up;
-	(*head)->up->down = new;
-	new->down = *head;
-	(*head)->up = new;
+	new->up = head->up;
+	head->up->down = new;
+	new->down = head;
+	head->up = new;
 	new->right = NULL;
 	new->left = NULL;
+	new->row = head->up->up->row + 1;
 	if (!edge)
 	{
-		(*curr)->right = new;
-		new->left = *curr;
+		curr->right = new;
+		new->left = curr;
 	}
 	return (1);
 }
@@ -88,13 +89,13 @@ t_dance		*make_cage(int side)
 		low_bit = 0;
 		while (++low_bit <= side)
 		{
-			if (!add_cage(&curr, &head,
+			if (!add_cage(curr, head,
 			create("Cl", high_bit * LEAD_DIGT + low_bit)))
 				free_cage(&head, 1);
 			curr = curr->right;
 		}
 	}
-	if (!(add_spacer(&head, create("Sp", 1), 1, &curr)))
+	if (!(add_spacer(head, create("Sp", 1), 1, curr)))
 		free_cage(&head, 1);
 	return (head);
 }

@@ -7,4 +7,4 @@ set(CMAKE_C_STANDARD 99)
 
 add_executable(fill ${SRC} fillit/main.c fillit/validation.c
         fillit/fillit.h fillit/mkfig_arr.c fillit/filling_list.c
-        fillit/dance_cage.c fillit/dance_create.c tests/funcs_for_tests.c tests/func_for_tests.h)
+        fillit/dance_cage.c fillit/dance_create.c tests/funcs_for_tests.c tests/func_for_tests.h fillit/increase_list.c)
