@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/07/26 17:32:17 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/07/28 00:00:09 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,13 @@ int main()
 //	printf("%d %d %d\n", find_max_low_dgtnum(figures[0]), find_max_low_dgtnum(figures[1]), find_max_low_dgtnum(figures[2]));
 
 
-	t_dance *head = make_cage(4);
-	increase_cage(head, 4);
-	filling_list(figures, numfig, head, 4);
+	t_dance *head = make_cage(3);
+	filling_list(figures, numfig, head, 3);
+	print_list(head);
+	increase_cage(head, 3);
+
+	add_increase_middle_rows(head, 3, numfig);
+
 	print_list(head);
 
 	free(line);

@@ -6,7 +6,7 @@
 /*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/21 17:01:18 by ylila             #+#    #+#             */
-/*   Updated: 2019/07/26 19:35:10 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/07/27 22:10:32 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ t_dance		*create_connct(t_dance *left, t_dance *right, t_dance *up, t_dance *dow
 int			node_set_params(t_dance *curr, const char *n_name, const int n_coord, t_dance *spacer);
 
 /// delite this
-int			increase_cage(t_dance *head, int side);
+int			increase_cage(t_dance *head, int old_side);
+int 		add_increase_row(t_dance *left_sp);
+int add_increase_middle_rows(t_dance *head, int old_side, int numfig);
 
 #endif
