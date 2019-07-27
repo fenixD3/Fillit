@@ -84,7 +84,7 @@ void print_list(t_dance *head)
 	t_dance *printing = head->right;
 	t_dance *head_check = printing;
 
-	printf("%d\t", head->row);
+	printf("%d\t", head->coord);
 	while (printing != head)
 	{
 		printf("%d\t", printing->coord);
@@ -95,7 +95,7 @@ void print_list(t_dance *head)
 	printing = head->down->right;
 	while (printing != NULL)
 	{
-		ft_putnbr(printing->left->row);
+		ft_putnbr(printing->left->coord);
 		ft_putstr("\t");
 		while (ft_strcmp(printing->name, "Sp") != 0)
 		{

@@ -35,7 +35,7 @@ int			add_spacer(t_dance *head, t_dance *new, _Bool edge, t_dance *curr)
 	head->up = new;
 	new->right = NULL;
 	new->left = NULL;
-	new->row = head->up->up->row + 1;
+	new->coord = head->up->up->coord + 1;
 	if (!edge)
 	{
 		curr->right = new;

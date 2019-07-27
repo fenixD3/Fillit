@@ -17,7 +17,6 @@ typedef struct		s_dance
 {
 	char			*name;
 	int				coord;
-	int 			row;
 	struct s_dance	*spacer;
 	struct s_dance	*home;
 	struct s_dance	*up;

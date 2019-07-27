@@ -31,12 +31,15 @@ int		increase_cage(t_dance *head, int side)
 	return (1);
 }
 
-int 	increase_row(t_dance *lspacer)
+/*int 	increase_row(t_dance *lspacer)
 {
 	t_dance *rspacer;
 
+	if (!(rspacer = create_connct(lspacer->down->left, lspacer->down, lspacer,
+			lspacer->down)) || !node_set_params(rspacer, "Sp", ))
+		return (0);
 
-}
+}*/
 
 /*
 int 	increase_middle_rows(t_dance *head, int side)

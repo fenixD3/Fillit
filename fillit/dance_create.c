@@ -6,7 +6,7 @@
 /*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/21 16:56:15 by ylila             #+#    #+#             */
-/*   Updated: 2019/07/26 19:02:57 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/07/27 20:28:59 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ t_dance	*create(const char *n_name, const int n_coord)
 	if (!(new->name = ft_strdup(n_name)))
 		return (NULL);
 	new->coord = n_coord;
-	new->row = 0;
 	new->spacer = new;
 	new->home = new;
 	new->up = new;
@@ -65,7 +64,6 @@ t_dance		*create_connct(t_dance *left, t_dance *right, t_dance *up, t_dance *dow
 		return (NULL);
 	new->name = NULL;
 	new->coord = 0;
-	new->row = 0;
 	new->spacer = new;
 	new->home = new;
 	new->left = left;
