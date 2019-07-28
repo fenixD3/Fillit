@@ -22,6 +22,11 @@ CMakeFiles/fill.dir/fillit/increase_list.c.o: ../fillit/increase_list.c
 CMakeFiles/fill.dir/fillit/increase_list.c.o: ../fillit/libft/libft.h
 CMakeFiles/fill.dir/fillit/increase_list.c.o: ../tests/func_for_tests.h
 
+CMakeFiles/fill.dir/fillit/increase_rows.c.o: ../fillit/dance.h
+CMakeFiles/fill.dir/fillit/increase_rows.c.o: ../fillit/fillit.h
+CMakeFiles/fill.dir/fillit/increase_rows.c.o: ../fillit/increase_rows.c
+CMakeFiles/fill.dir/fillit/increase_rows.c.o: ../fillit/libft/libft.h
+
 CMakeFiles/fill.dir/fillit/libft/ft_atoi.c.o: ../fillit/libft/ft_atoi.c
 
 CMakeFiles/fill.dir/fillit/libft/ft_bzero.c.o: ../fillit/libft/ft_bzero.c

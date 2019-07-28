@@ -7,23 +7,23 @@
 
 #include "../tests/func_for_tests.h" ///delete this
 
-int		increase_cage(t_dance *head, int old_side)
+int		increase_cage(t_dance *head, int side)
 {
 	t_dance *curr;
 
 	curr = head->right;
 	while (curr != head)
 	{
-		if (curr->coord % LEAD_DIGT == old_side)
+		if (curr->coord % LEAD_DIGT == side - 1)
 			if (!add_cage(curr, (curr->right), create("Cl", curr->coord + 1)))
 				return (0);
 		curr = curr->right;
 	}
 	if (!add_cage(head->left, head,
-			create("Cl", (old_side + 1) * LEAD_DIGT + 1)))
+			create("Cl", side * LEAD_DIGT + 1)))
 		return (0);
 	curr = head->left;
-	while (old_side--)
+	while (side-- - 1)
 	{
 		if (!add_cage(head->left, head, create("Cl", curr->coord + 1)))
 			return (0);
@@ -32,74 +32,56 @@ int		increase_cage(t_dance *head, int old_side)
 	return (1);
 }
 
-void	increment_down_rownum(t_dance *curr)
-{
-	while (curr->coord != 0)
-	{
-		curr->coord++;
-		curr = curr->down;
-	}
-}
-
-int 	add_increase_row(t_dance *left_sp)
+int 	add_first_last_row(int *figure, t_dance *head, t_dance *sp_next)
 {
 	t_dance *n_sp;
 	t_dance *curr;
 	t_dance *prev;
+	int		i;
 
-	if (!(n_sp = create_connct(left_sp->down->left, left_sp->down, left_sp,
-	left_sp->down)) || !node_set_params(n_sp, "Sp", left_sp->coord + 1, n_sp))
+	if (!(n_sp = create_connct(sp_next->left, sp_next, sp_next->up, sp_next)) ||
+		!node_set_params(n_sp, sp_next->name, sp_next->coord, n_sp))
 		return (0);
+	i = 0;
 	prev = n_sp;
-	while (left_sp->right != n_sp)
+	while (n_sp->right != sp_next)
 	{
-		left_sp = left_sp->right;
-		curr = left_sp->home->right->down;
-		while (curr->spacer->coord < n_sp->coord - 1)
+		while (head->coord != figure[i])
+			head = head->right;
+		curr = head->down;
+		while (curr->spacer->coord < sp_next->coord - 1)
 			curr = curr->down;
-		if (!(curr = create_connct(prev, n_sp->down, curr->up, curr)) ||
-			!node_set_params(curr, left_sp->name, curr->up->coord, n_sp))
+		if (!(curr = create_connct(prev, sp_next, curr->up, curr)) ||
+			!node_set_params(curr, curr->up->name, figure[i++], sp_next->up))
 			return (0);
-		curr->home = left_sp->home->right;
-		curr->spacer = n_sp;
+		curr->home = head;
+		curr->spacer = sp_next->up;
 		prev = prev->right;
+		n_sp = n_sp->right;
 	}
 	increment_down_rownum(n_sp->down);
 	return (1);
 }
-
-int 	incr_row_n_lines(t_dance *left_sp, int *lines)
+//curr, left_sp->name, curr->up->coord, n_sp
+int 	add_increase_last_rows(int **figures, t_dance *head,
+							  int numfig, int side)
 {
-	if (!add_increase_row(left_sp))
-		return (0);
-	lines[(left_sp->right->name)[0] - 'A'] = left_sp->coord;
-	return (1);
-}
+	int		i;
+	int 	k;
+	t_dance	*spacer;
 
-int add_increase_middle_rows(t_dance *head, int old_side, int numfig)
-{
-	int		*lines;
-	t_dance	*head_curr;
-	t_dance *curr;
-
-
-	if (!(lines = (int*)ft_memalloc(sizeof(int) * numfig)))
-		return (0);
-	head_curr = head->right;
-	while (head_curr != head)
+	i = 0;
+	while (i < numfig)
 	{
-		if (head_curr->coord % LEAD_DIGT == old_side)
-		{
-			curr = head_curr->down;
-			while (curr != head_curr)
-			{
-				if ((lines[(curr->name)[0] - 'A'] < curr->spacer->coord)
-					&& (!(incr_row_n_lines(curr->spacer, lines))))
-						return (0);
-				curr = curr->down;
-			}
-		}
-		head_curr = head_curr->right;
+		spacer = head->down;
+		while ((spacer->right->name)[0] - 'A' - 1 != i) /// так нельзя там есть долбаный пустой спейсер у него имя Sp
+			spacer = spacer->down;
+		k = 0;
+		while (k < 4)
+			figures[i][k++] += LEAD_DIGT;
+		if (!(add_first_last_row(figures[i], head, spacer)))
+			return (0);
+		i++;
 	}
 	return (1);
 }

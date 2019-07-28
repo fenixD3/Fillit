@@ -95,6 +95,9 @@
 		<Unit filename="/Users/mdeanne/Fillit/fillit/increase_list.c">
 			<Option target="fill"/>
 		</Unit>
+		<Unit filename="/Users/mdeanne/Fillit/fillit/increase_rows.c">
+			<Option target="fill"/>
+		</Unit>
 		<Unit filename="/Users/mdeanne/Fillit/fillit/libft/ft_atoi.c">
 			<Option target="fill"/>
 		</Unit>

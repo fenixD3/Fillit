@@ -71,6 +71,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fill.dir/fillit/dance_create.c.o"
   "CMakeFiles/fill.dir/tests/funcs_for_tests.c.o"
   "CMakeFiles/fill.dir/fillit/increase_list.c.o"
+  "CMakeFiles/fill.dir/fillit/increase_rows.c.o"
   "fill.pdb"
   "fill"
 )
