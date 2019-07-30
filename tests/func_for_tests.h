@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include "../fillit/dance.h"
 #include "../fillit/fillit.h"
+#include "../fillit/libft/libft.h"
 
 void	print_cage(t_dance *head);
 int		find_max_low_dgtnum(const int *figure);

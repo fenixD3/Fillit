@@ -11,13 +11,13 @@ void print_cage(t_dance *head)
 	t_dance *printing = head->right;
 	while (printing != head)
 	{
-		printf("%s : %d", printing->name, printing->coord);
+		printf("%c : %d", printing->name, printing->coord);
 		printing = printing->right;
 	}
 	printing = head->down;
 	while (printing != head)
 	{
-		printf("%s : %d\n", printing->name, printing->coord);
+		printf("%c : %d\n", printing->name, printing->coord);
 		printing = printing->down;
 	}
 }
@@ -55,7 +55,7 @@ void print_arr(int **arr, int numfig)
 	printing = head->down->right;
 	while (printing != NULL)
 	{
-		while (ft_strcmp(printing->name, "Sp") != 0)
+		while (ft_strcmp(printing->name, 's') != 0)
 		{
 			while (head_check->coord != printing->coord)
 			{
@@ -97,14 +97,14 @@ void print_list(t_dance *head)
 	{
 		ft_putnbr(printing->left->coord);
 		ft_putstr("\t");
-		while (ft_strcmp(printing->name, "Sp") != 0)
+		while (printing->name != 's')
 		{
 			while (head_check->coord != printing->coord)
 			{
 				head_check = head_check->right;
 				ft_putstr("\t");
 			}
-			ft_putchar(*(printing->name));
+			ft_putchar(printing->name);
 			ft_putstr("\t");
 			printing = printing->right;
 			head_check = head_check->right;

@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mdeanne/Fillit
+CMAKE_SOURCE_DIR = /home/yas/Fillit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mdeanne/Fillit/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yas/Fillit/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/mdeanne/Fillit/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/Fillit/cmake-build-debug/CMakeFiles /Users/mdeanne/Fillit/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yas/Fillit/cmake-build-debug/CMakeFiles /home/yas/Fillit/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/Fillit/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yas/Fillit/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -204,6 +204,33 @@ fillit/filling_list.c.s:
 	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/filling_list.c.s
 .PHONY : fillit/filling_list.c.s
 
+fillit/increase.o: fillit/increase.c.o
+
+.PHONY : fillit/increase.o
+
+# target to build an object file
+fillit/increase.c.o:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/increase.c.o
+.PHONY : fillit/increase.c.o
+
+fillit/increase.i: fillit/increase.c.i
+
+.PHONY : fillit/increase.i
+
+# target to preprocess a source file
+fillit/increase.c.i:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/increase.c.i
+.PHONY : fillit/increase.c.i
+
+fillit/increase.s: fillit/increase.c.s
+
+.PHONY : fillit/increase.s
+
+# target to generate assembly for a file
+fillit/increase.c.s:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/increase.c.s
+.PHONY : fillit/increase.c.s
+
 fillit/increase_list.o: fillit/increase_list.c.o
 
 .PHONY : fillit/increase_list.o
@@ -230,33 +257,6 @@ fillit/increase_list.s: fillit/increase_list.c.s
 fillit/increase_list.c.s:
 	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/increase_list.c.s
 .PHONY : fillit/increase_list.c.s
-
-fillit/increase_rows.o: fillit/increase_rows.c.o
-
-.PHONY : fillit/increase_rows.o
-
-# target to build an object file
-fillit/increase_rows.c.o:
-	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/increase_rows.c.o
-.PHONY : fillit/increase_rows.c.o
-
-fillit/increase_rows.i: fillit/increase_rows.c.i
-
-.PHONY : fillit/increase_rows.i
-
-# target to preprocess a source file
-fillit/increase_rows.c.i:
-	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/increase_rows.c.i
-.PHONY : fillit/increase_rows.c.i
-
-fillit/increase_rows.s: fillit/increase_rows.c.s
-
-.PHONY : fillit/increase_rows.s
-
-# target to generate assembly for a file
-fillit/increase_rows.c.s:
-	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/increase_rows.c.s
-.PHONY : fillit/increase_rows.c.s
 
 fillit/libft/ft_atoi.o: fillit/libft/ft_atoi.c.o
 
@@ -2101,8 +2101,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... fill"
+	@echo "... edit_cache"
 	@echo "... fillit/dance_cage.o"
 	@echo "... fillit/dance_cage.i"
 	@echo "... fillit/dance_cage.s"
@@ -2112,12 +2112,12 @@ help:
 	@echo "... fillit/filling_list.o"
 	@echo "... fillit/filling_list.i"
 	@echo "... fillit/filling_list.s"
+	@echo "... fillit/increase.o"
+	@echo "... fillit/increase.i"
+	@echo "... fillit/increase.s"
 	@echo "... fillit/increase_list.o"
 	@echo "... fillit/increase_list.i"
 	@echo "... fillit/increase_list.s"
-	@echo "... fillit/increase_rows.o"
-	@echo "... fillit/increase_rows.i"
-	@echo "... fillit/increase_rows.s"
 	@echo "... fillit/libft/ft_atoi.o"
 	@echo "... fillit/libft/ft_atoi.i"
 	@echo "... fillit/libft/ft_atoi.s"

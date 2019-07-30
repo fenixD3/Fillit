@@ -19,14 +19,14 @@ int 	fill_row(int *figure, int step, const char n_name, t_dance *head)
 	{
 		while (curr->coord != figure[i] + step)
 			curr = curr->right;
-		if (!(new = create_connct(prev, NULL, curr->up, curr)) ||
-		!node_set_params(new, &n_name, figure[i] + step, head->up))
+		if (!(new = create_connct(prev, NULL, curr->up, curr)))
 			return (0);
+		node_set_params(new, n_name, figure[i] + step, head->up);
 		new->home = curr;
 		prev = prev->right;
 		i++;
 	}
-	if (!(add_spacer(head, create("Sp", 1), 0, new)))
+	if (!(add_spacer(head, create('s', 1), 0, new)))
 		return (0);
 	new->right->left = new;
 	return (1);
@@ -48,7 +48,9 @@ int		find_max_low_dgtnum(const int *figure)
 	return (lowdn);
 }
 
-
+/// NEED: protect
+/// NEDD: make 25 lines
+/// NEED: free **figures
 void 	filling_list(int **figures, int numfig, t_dance *head, int side)
 {
 	int i;
@@ -68,10 +70,9 @@ void 	filling_list(int **figures, int numfig, t_dance *head, int side)
 				fill_row(figures[i], step++, ((char) i + 'A'), head); /// if (!) clear list
 			else if (highdn < side)
 			{
-				step = 0;
-				while (step < 4)
-					figures[i][step++] += LEAD_DIGT;
-				step = 0;
+				step = 4;
+				while (step)
+					figures[i][step-- - 1] += LEAD_DIGT;
 				highdn++;
 			}
 			else if (highdn == side)
