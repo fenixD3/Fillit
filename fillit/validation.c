@@ -73,3 +73,13 @@ int		ft_readfile(char *filename, char **line)
 	*line = ft_strdup(buf);
 	return ((ret + 1) / 21);
 }
+
+int		give_side(int numfig)
+{
+	int sqt;
+
+	sqt = ft_sqrt(numfig * 4, 0);
+	if (numfig * 4 % sqt)
+		return (++sqt);
+	return (sqt);
+}

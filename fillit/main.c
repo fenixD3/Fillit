@@ -31,13 +31,15 @@ int main()
 {
 	char	*line;
 	int		numfig;
+	int		side;
 	int 	**figures;
 
 	char	*filename = "/Users/mdeanne/Fillit/tests/mkfigtest";
 
 	numfig = ft_readfile(filename, &line);
+	side = give_side(numfig);
+	printf("%d\n", side);
 	figures = mkfig_arr(line, numfig);
-
 	printf("%d\n", numfig);
 	print_arr(figures, numfig);
 //	printf("%d %d %d\n", find_max_low_dgtnum(figures[0]), find_max_low_dgtnum(figures[1]), find_max_low_dgtnum(figures[2]));

@@ -94,5 +94,6 @@ double			ft_pow(double num, long long power);
 int				ft_isupper(int c);
 int				ft_islower(int c);
 int				ft_fib(int n);
+int				ft_sqrt(int num, _Bool precision);
 
 #endif
