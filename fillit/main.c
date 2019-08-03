@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/07/31 01:21:08 by yas              ###   ########.fr       */
+/*   Updated: 2019/08/03 22:57:48 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ int main()
 	int		numfig;
 	int 	**figures;
 
-//	char	*filename = "/Users/mdeanne/Fillit/tests/mkfigtest2";
-	char	*filename = "/home/yas/Fillit/tests/mkfigtest4";
+	char	*filename = "/Users/mdeanne/111/tests/mkfigtest4";
+//	char	*filename = "/home/yas/Fillit/tests/mkfigtest4";
 
 	numfig = ft_readfile(filename, &line);
 	figures = mkfig_arr(line, numfig);
@@ -53,11 +53,9 @@ int main()
 	increase_list(head, START_SIDE + 1, numfig);
 
 	print_list(head);
+	recursion_test(head->down);
 
-	free(line);
 	free_list(&head);
-	free_arrfigs(figures, numfig);
-//	free_arrfigs(figures, numfig);
 
 /*	t_dance *head = make_cage(3);
 	print_cage(head);

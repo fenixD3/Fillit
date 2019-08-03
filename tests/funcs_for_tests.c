@@ -119,3 +119,11 @@ void print_list(t_dance *head)
 		head_check = head->right;
 	}
 }
+
+void recursion_test(t_dance *sp)
+{
+	sp = sp->right;
+	sp->up = NULL;
+	if (sp->right)
+		recursion_test(sp);
+}
