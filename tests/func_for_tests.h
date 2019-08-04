@@ -7,10 +7,12 @@
 #include <stdio.h>
 #include "../fillit/dance.h"
 #include "../fillit/fillit.h"
+#include "../fillit/libft/libft.h"
 
 void	print_cage(t_dance *head);
 int		find_max_low_dgtnum(const int *figure);
 void 	print_arr(int **arr, int numfig);
 void 	print_list(t_dance *head);
+void	recursion_test(t_dance *sp);
 
 #endif //FILL_FUNC_FOR_TESTS_H

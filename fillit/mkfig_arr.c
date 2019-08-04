@@ -1,6 +1,14 @@
-//
-// Created by Mort Deanne on 2019-07-20.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   mkfig_arr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/03 22:57:08 by mdeanne           #+#    #+#             */
+/*   Updated: 2019/08/03 22:57:14 by mdeanne          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "fillit.h"
 
@@ -75,7 +83,7 @@ int		*mkfig(const char *line)
 	return (figure - 4);
 }
 
-void	clean_arrfigs(int **figures, int n)
+void	free_arrfigs(int **figures, int n)
 {
 	int i;
 
@@ -92,22 +100,25 @@ void	clean_arrfigs(int **figures, int n)
 
 int		**mkfig_arr(const char *line, int numfig)
 {
+	char	*start_line;
 	int		**figures;
 	int		i;
 
 	if (!(figures = (int**)malloc(sizeof(int*) * numfig)))
 		ft_mkerr();
 	i = 0;
+	start_line = (char*)line;
 	while (i < numfig)
 	{
 		if (!((figures[i]) = mkfig(line)))
 		{
-			clean_arrfigs(figures, i);
+			free_arrfigs(figures, i);
 			ft_mkerr();
 		}
 		move2zero(figures[i]);
 		line += 21;
 		i++;
 	}
+	free(start_line);
 	return (figures);
 }

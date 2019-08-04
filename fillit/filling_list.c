@@ -1,6 +1,14 @@
-//
-// Created by Mort Deanne on 2019-07-21.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   filling_list.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/03 22:55:49 by mdeanne           #+#    #+#             */
+/*   Updated: 2019/08/03 22:55:58 by mdeanne          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "fillit.h"
 #include "dance.h"
@@ -19,14 +27,14 @@ int 	fill_row(int *figure, int step, const char n_name, t_dance *head)
 	{
 		while (curr->coord != figure[i] + step)
 			curr = curr->right;
-		if (!(new = create_connct(prev, NULL, curr->up, curr)) ||
-		!node_set_params(new, &n_name, figure[i] + step, head->up))
+		if (!(new = create_connct(prev, NULL, curr->up, curr)))
 			return (0);
+		node_set_params(new, n_name, figure[i] + step, head->up);
 		new->home = curr;
 		prev = prev->right;
 		i++;
 	}
-	if (!(add_spacer(head, create("Sp", 1), 0, new)))
+	if (!(add_spacer(head, create('s', 1), 0, new)))
 		return (0);
 	new->right->left = new;
 	return (1);
@@ -48,7 +56,18 @@ int		find_max_low_dgtnum(const int *figure)
 	return (lowdn);
 }
 
+void	increase_figure_on_lead_digit(int *figure, int *highdn, int *step)
+{
+	int i;
 
+	i = 0;
+	while (i < 4)
+		figure[i++] += LEAD_DIGT;
+	(*highdn)++;
+	*step = 0;
+}
+
+/// NEED: free **figures
 void 	filling_list(int **figures, int numfig, t_dance *head, int side)
 {
 	int i;
@@ -56,8 +75,8 @@ void 	filling_list(int **figures, int numfig, t_dance *head, int side)
 	int highdn; //max high digit number
 	int step;
 
-	i = 0;
-	while (i < numfig)
+	i = -1;
+	while (++i < numfig)
 	{
 		step = 0;
 		lowdn = find_max_low_dgtnum(figures[i]);
@@ -65,18 +84,15 @@ void 	filling_list(int **figures, int numfig, t_dance *head, int side)
 		while (highdn <= side)
 		{
 			if (lowdn + step <= side)
-				fill_row(figures[i], step++, ((char) i + 'A'), head); /// if (!) clear list
-			else if (highdn < side)
 			{
-				step = 0;
-				while (step < 4)
-					figures[i][step++] += LEAD_DIGT;
-				step = 0;
-				highdn++;
+				if (!fill_row(figures[i], step++, ((char) i + 'A'), head))
+					free_list(&head);
 			}
+			else if (highdn < side)
+				increase_figure_on_lead_digit(figures[i], &highdn, &step);
 			else if (highdn == side)
 				break ;
 		}
-		i++;
 	}
+	free_arrfigs(figures, numfig);
 }

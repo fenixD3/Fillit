@@ -6,15 +6,47 @@
 
 #IncludeRegexTransform: 
 
-/Users/mdeanne/Fillit/fillit/dance.h
+/Users/mdeanne/111/fillit/dance.h
 
-/Users/mdeanne/Fillit/fillit/fillit.h
-libft/libft.h
-/Users/mdeanne/Fillit/fillit/libft/libft.h
+/Users/mdeanne/111/fillit/dance_cage.c
+fillit.h
+/Users/mdeanne/111/fillit/fillit.h
 dance.h
-/Users/mdeanne/Fillit/fillit/dance.h
+/Users/mdeanne/111/fillit/dance.h
+stdlib.h
+-
 
-/Users/mdeanne/Fillit/fillit/libft/libft.h
+/Users/mdeanne/111/fillit/dance_create.c
+fillit.h
+/Users/mdeanne/111/fillit/fillit.h
+dance.h
+/Users/mdeanne/111/fillit/dance.h
+stdlib.h
+-
+
+/Users/mdeanne/111/fillit/filling_list.c
+fillit.h
+/Users/mdeanne/111/fillit/fillit.h
+dance.h
+/Users/mdeanne/111/fillit/dance.h
+
+/Users/mdeanne/111/fillit/fillit.h
+libft/libft.h
+/Users/mdeanne/111/fillit/libft/libft.h
+dance.h
+/Users/mdeanne/111/fillit/dance.h
+
+/Users/mdeanne/111/fillit/increase.c
+fillit.h
+/Users/mdeanne/111/fillit/fillit.h
+
+/Users/mdeanne/111/fillit/increase_list.c
+dance.h
+/Users/mdeanne/111/fillit/dance.h
+fillit.h
+/Users/mdeanne/111/fillit/fillit.h
+
+/Users/mdeanne/111/fillit/libft/libft.h
 string.h
 -
 stdlib.h
@@ -22,15 +54,35 @@ stdlib.h
 unistd.h
 -
 
-/Users/mdeanne/Fillit/tests/func_for_tests.h
+/Users/mdeanne/111/fillit/main.c
+fillit.h
+/Users/mdeanne/111/fillit/fillit.h
+dance.h
+/Users/mdeanne/111/fillit/dance.h
+../tests/func_for_tests.h
+/Users/mdeanne/111/tests/func_for_tests.h
+
+/Users/mdeanne/111/fillit/mkfig_arr.c
+fillit.h
+/Users/mdeanne/111/fillit/fillit.h
+
+/Users/mdeanne/111/fillit/validation.c
+fillit.h
+/Users/mdeanne/111/fillit/fillit.h
+fcntl.h
+-
+
+/Users/mdeanne/111/tests/func_for_tests.h
 stdio.h
 -
 ../fillit/dance.h
-/Users/mdeanne/Fillit/fillit/dance.h
+/Users/mdeanne/111/fillit/dance.h
 ../fillit/fillit.h
-/Users/mdeanne/Fillit/fillit/fillit.h
+/Users/mdeanne/111/fillit/fillit.h
+../fillit/libft/libft.h
+/Users/mdeanne/111/fillit/libft/libft.h
 
-/Users/mdeanne/Fillit/tests/funcs_for_tests.c
+/Users/mdeanne/111/tests/funcs_for_tests.c
 func_for_tests.h
-/Users/mdeanne/Fillit/tests/func_for_tests.h
+/Users/mdeanne/111/tests/func_for_tests.h
 
