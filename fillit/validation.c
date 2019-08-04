@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:59:02 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/03 22:57:47 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/04 21:39:43 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ int		give_side(int numfig)
 	int sqt;
 
 	sqt = ft_sqrt(numfig * 4, 0);
-	if (numfig * 4 % sqt)
+	if (sqt * sqt < numfig * 4)
 		return (++sqt);
 	return (sqt);
 }

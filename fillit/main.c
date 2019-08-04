@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/03 22:57:48 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/04 21:48:19 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,28 +35,28 @@ int main()
 	int		side;
 	int 	**figures;
 
-	char	*filename = "/Users/mdeanne/111/tests/mkfigtest4";
+	char	*filename = "/Users/mdeanne/123/tests/mkfigtest3";
 //	char	*filename = "/home/yas/Fillit/tests/mkfigtest4";
 
 	numfig = ft_readfile(filename, &line);
 	side = give_side(numfig);
 	printf("%d\n", side);
+
 	figures = mkfig_arr(line, numfig);
 	printf("%d\n", numfig);
-	print_arr(figures, numfig);
-//	printf("%d %d %d\n", find_max_low_dgtnum(figures[0]), find_max_low_dgtnum(figures[1]), find_max_low_dgtnum(figures[2]));
 
 
-	t_dance *head = make_cage(START_SIDE);
-	filling_list(figures, numfig, head, START_SIDE);
-
+	t_dance *head = make_cage(side);
+	filling_list(figures, numfig, head, side);
 	print_list(head);
 
-	increase_list(head, START_SIDE + 1, numfig);
+	if (!solver(head->down, numfig, 1, side))
+		printf("not enough side");
 
-	print_list(head);
-	recursion_test(head->down);
+/*	increase_list(head, side + 1, numfig);
 
+	if (!solver(head->down, numfig, 1, side))
+		printf("not enough side");*/
 	free_list(&head);
 
 /*	t_dance *head = make_cage(3);

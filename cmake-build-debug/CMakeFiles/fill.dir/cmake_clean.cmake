@@ -34,6 +34,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fill.dir/fillit/libft/ft_putnbr_fd.c.o"
   "CMakeFiles/fill.dir/fillit/libft/ft_putstr.c.o"
   "CMakeFiles/fill.dir/fillit/libft/ft_putstr_fd.c.o"
+  "CMakeFiles/fill.dir/fillit/libft/ft_sqrt.c.o"
   "CMakeFiles/fill.dir/fillit/libft/ft_strcat.c.o"
   "CMakeFiles/fill.dir/fillit/libft/ft_strchr.c.o"
   "CMakeFiles/fill.dir/fillit/libft/ft_strclr.c.o"
@@ -72,6 +73,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fill.dir/tests/funcs_for_tests.c.o"
   "CMakeFiles/fill.dir/fillit/increase_list.c.o"
   "CMakeFiles/fill.dir/fillit/increase.c.o"
+  "CMakeFiles/fill.dir/fillit/solver.c.o"
   "fill.pdb"
   "fill"
 )

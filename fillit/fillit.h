@@ -9,6 +9,8 @@
 # include "libft/libft.h" /// wrong (should be only libft.h!!!)
 # include "dance.h"
 
+#include <stdio.h>
+
 
 void	ft_mkerr();
 int		ft_readfile(char *filename, char **line);

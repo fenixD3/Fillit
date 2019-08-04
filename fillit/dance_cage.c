@@ -41,6 +41,7 @@ int			add_spacer(t_dance *head, t_dance *new, _Bool edge, t_dance *curr)
 		curr->right = new;
 		new->left = curr;
 	}
+	new->home = head;
 	return (1);
 }
 

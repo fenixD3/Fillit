@@ -40,6 +40,7 @@ int 	add_increase_row(t_dance *left_sp, int step)
 			left_sp->down)))
 		return (0);
 	node_set_params(n_sp, 's', left_sp->coord + 1, n_sp);
+	n_sp->home = n_sp->up->home;
 	prev = n_sp;
 	while (left_sp->right != n_sp)
 	{
