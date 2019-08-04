@@ -1,18 +1,6 @@
 #include "dance.h"
 #include "fillit.h"
 
-/* static t_dance	*find_fst_spacer(t_dance *head, char fined_name)
-{
-	t_dance *spacer;
-	t_dance *nxt_spacer;
-
-	spacer = head->down;
-	while (spacer->right->name != fined_name)
-		spacer = spacer->down;
-
-	return (spacer);
-} */
-
 static t_dance	*hide_option(t_dance *opt)
 {
 /* Reduce each row corresponding to each option at this column, where
@@ -52,33 +40,47 @@ static void		hide_spacers(t_dance *spacer)
 	curr->down = spacer;
 }
 
-static _Bool	print_solution(t_dance *head);
+static void		open_rows(t_dance *spacer)
+{
+	t_dance *opt;
+	t_dance *curr;
+
+	opt = spacer->right;
+	while (opt != spacer->down)
+	{
+		curr = opt->down;
+		while (curr != opt->home)
+		{
+			if (curr->spacer->up->down != curr->spacer &&
+			curr->sapcer->down->up != curr->sapcer)
+			{
+				curr->spacer->up->down = curr->spacer;
+				curr->spacer->down->up = curr->spacer;
+			}
+			curr = curr->down;
+		}
+		opt = opt->right;
+	}
+}
 
 _Bool			solver(t_dance *head, t_dance *spacer, int numfig, int counter)
 {
 /* This func receives counter equal to 1 from main */
-	t_dance	*opt;
-	// t_dance	*spacer;
-	// char	fined_name;
+	t_dance *opt;
 
-	/* if (!spacer->right)
-		return (0); */
-	/* if (spacer->right && counter == numfig)
-		return (print_solution(head)); */
-	// fined_name = 'A' + counter;
-	// spacer = find_fst_spacer(head, fined_name);
 	hide_spacers(spacer);
 	opt = spacer->right;
 	while (counter != numfig && opt != spacer->down)
-		opt = hide_option(opt);
-	spacer = spacer->down;
+		opt = hide_option(opt);	
 	if (counter == numfig)
-		return (print_solution(head)); // return (1);
-	if (!spacer->right)
-		// Add opening hided rows before backtrack!
+		return (1);
+	if (!spacer->down->right)
+	{
+		open_rows(spacer);
 		return (0);
-	/* if (!solver(head, spacer, numfig, ++counter))
-		solver(head, spacer->down, numfig, counter); */
+	}
+	spacer = spacer->down;
 	while (!solver(head, spacer, numfig, ++counter))
 		spacer = spacer->down;
+	return (1);
 }
