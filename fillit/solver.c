@@ -1,5 +1,5 @@
-#include "dance.h"
 #include "fillit.h"
+#include <unistd.h>
 
 static t_dance	*hide_option(t_dance *opt)
 {
@@ -63,7 +63,36 @@ static void		open_rows(t_dance *spacer)
 	}
 }
 
-_Bool			solver(t_dance *head, t_dance *spacer, int numfig, int counter)
+static _Bool		print_solution(t_dance *opt, int side, int counter)
+{
+	char	sol_map[side][side];
+	int		i;
+	int		j;
+
+	while (opt->right)
+	{
+		if (opt->name != 's')
+			sol_map[opt->coord / LEAD_DIGT][opt->coord % LEAD_DIGT] = opt->name;
+		opt = opt->right;
+	}
+	i = -1;
+	while (++i < side)
+	{
+		j = -1;
+		while (++j < side)
+		{
+			if (sol_map[i][j] >= 'A' && sol_map[i][j] <= 'A' + counter)
+				write(&sol_map[i][j], 1);
+			else
+				write(".", 1);
+		}
+		if (i < side - 1)
+			write ("\n", 1);
+	}
+	return (1);
+}
+
+_Bool			solver(t_dance *spacer, int numfig, int counter, int side)
 {
 /* This func receives counter equal to 1 from main */
 	t_dance *opt;
@@ -71,16 +100,16 @@ _Bool			solver(t_dance *head, t_dance *spacer, int numfig, int counter)
 	hide_spacers(spacer);
 	opt = spacer->right;
 	while (counter != numfig && opt != spacer->down)
-		opt = hide_option(opt);	
+		opt = hide_option(opt);
 	if (counter == numfig)
-		return (1);
+		return (print_solution(spacer->home->down->right, side, counter));
 	if (!spacer->down->right)
 	{
 		open_rows(spacer);
 		return (0);
 	}
 	spacer = spacer->down;
-	while (!solver(head, spacer, numfig, ++counter))
+	while (!solver(spacer, numfig, ++counter))
 		spacer = spacer->down;
 	return (1);
 }
