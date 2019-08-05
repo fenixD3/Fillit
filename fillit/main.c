@@ -35,7 +35,7 @@ int main()
 	int		side;
 	int 	**figures;
 
-	char	*filename = "/Users/mdeanne/123/tests/mkfigtest3";
+	char	*filename = "/home/ylila/Fillit/tests/mkfigtest4";
 //	char	*filename = "/home/yas/Fillit/tests/mkfigtest4";
 
 	numfig = ft_readfile(filename, &line);
