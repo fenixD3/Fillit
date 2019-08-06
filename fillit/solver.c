@@ -80,16 +80,33 @@ static void		open_rows(t_dance *spacer)
 	open_spacers(spacer, opt);
 }
 
+void	print_spacers(t_dance *head)
+{
+	t_dance *curr = head->down;
+	while (curr != head)
+	{
+		printf("%d, ",curr->coord);
+		curr = curr->down;
+	}
+	printf("\n");
+}
+
 _Bool			solver(t_dance *spacer, int numfig, int counter, int side)
 {
 /* This func receives counter equal to 1 from main */
 	t_dance *opt;
 
-	printf("Sp row : %d, Recursion num = %d\n", spacer->coord, counter);
+printf("Sp row : %d, Recursion num = %d\n", spacer->coord, counter);
+printf("\tFirst step\n");
+print_spacers(spacer->home);
 	hide_spacers(spacer);
+printf("\tAfter hide_spacers\n");
+print_spacers(spacer->home);
 	opt = spacer->right;
 	while (counter != numfig && opt->name != 's')
 		opt = hide_option(opt);
+printf("\tAfter hide_option\n");
+print_spacers(spacer->home);
 	if (counter == numfig)
 		return (print_solution(spacer->home->down, side, counter - 1));
 	if (!spacer->down->right)
