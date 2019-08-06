@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/04 21:48:19 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/06 22:46:36 by ylila            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,42 @@ void	ft_mkerr()
 }
 
 
+static char	**create_init_sol_map(int side)
+{
+		char	**sol_map;
+			int		i;
+				int		j;
 
+					if (!(sol_map = (char **)malloc(sizeof(char *) * side)))
+								; // add free_list
+						i = -1;
+							while (++i < side)
+									{
+												j = -1;
+														if (!(sol_map[i] = (char *)malloc(sizeof(char) * side)))
+																		; // add free_array & free_list
+																while(++j < side)
+																				sol_map[i][j] = '.';
+																	}
+								return (sol_map);
+}
+
+_Bool		print_solution2(char **sol_map, int side)
+{
+		int		i;
+			int		j;
+
+				i = -1;
+					while (++i < side)
+							{
+										j = -1;
+												while (++j < side)
+																write(1, &sol_map[i][j], 1);
+														if (i < side)
+																		write (1, "\n", 1);
+															}
+						return (1);
+}
 
 
 
@@ -35,7 +70,7 @@ int main()
 	int		side;
 	int 	**figures;
 
-	char	*filename = "/home/ylila/Fillit/tests/mkfigtest4";
+	char	*filename = "/Users/ylila/Fillit_hub/tests/mkfigtest4";
 //	char	*filename = "/home/yas/Fillit/tests/mkfigtest4";
 
 	numfig = ft_readfile(filename, &line);
@@ -44,15 +79,15 @@ int main()
 
 	figures = mkfig_arr(line, numfig);
 	printf("%d\n", numfig);
-
+	char **sol_map = create_init_sol_map(side);
 
 	t_dance *head = make_cage(side);
 	filling_list(figures, numfig, head, side);
 	print_list(head);
 
-	if (!solver(head->down, numfig, 1, side))
+	if (!solver(head->down, numfig, sol_map, side))
 		printf("not enough side");
-
+	print_solution2(sol_map, side);
 /*	increase_list(head, side + 1, numfig);
 
 	if (!solver(head->down, numfig, 1, side))

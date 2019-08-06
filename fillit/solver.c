@@ -8,8 +8,8 @@ static t_dance	*hide_option(t_dance *opt)
 	t_dance *curr;
 
 	curr = opt;
-	while (curr->name == opt->name)
-		curr = curr->down;
+	/*while (curr->name == opt->name)
+		curr = curr->down;*/
 	while (curr != opt->home)
 	{
 		if (curr->spacer->up->down == curr->spacer &&
@@ -77,7 +77,7 @@ static void		open_rows(t_dance *spacer)
 		}
 		opt = opt->right;
 	}
-	open_spacers(spacer, opt);
+	//open_spacers(spacer, opt);
 }
 
 void	print_spacers(t_dance *head)
@@ -91,9 +91,9 @@ void	print_spacers(t_dance *head)
 	printf("\n");
 }
 
-_Bool			solver(t_dance *spacer, int numfig, int counter, int side)
+/* _Bool			solver(t_dance *spacer, int numfig, int counter, int side)
 {
-/* This func receives counter equal to 1 from main */
+ This func receives counter equal to 1 from main
 	t_dance *opt;
 
 printf("Sp row : %d, Recursion num = %d\n", spacer->coord, counter);
@@ -114,7 +114,10 @@ print_spacers(spacer->home);
 		open_rows(spacer);
 		return (0);
 	}
-	spacer = spacer->down;
+	if (spacer->down->right->name == spacer->right->name + 1)
+		spacer = spacer->down;
+	else
+		return (0);
 	++counter;
 	while (!solver(spacer, numfig, counter, side))
 	{
@@ -124,4 +127,51 @@ print_spacers(spacer->home);
 			return (0);
 	}
 	return (1);
+} */
+
+static _Bool fill_opt_sol_map(t_dance *node, char **sol_map)
+{
+	while (node->name != 's')
+	{
+		sol_map[node->coord / LEAD_DIGT - 1][node->coord % LEAD_DIGT - 1]
+		= node->name;
+		node = node->right;
+	}
+	return (1);
+}
+
+_Bool			solver(t_dance *spacer, int numfig, char **sol_map, int side)
+{
+/* This func receives counter equal to 1 from main */
+	t_dance		*opt;
+	static int	counter;
+
+	++counter;
+	opt = spacer->right;
+	if (counter == numfig)
+		return (fill_opt_sol_map(spacer->right, sol_map));
+	else
+	{
+		while (opt->name != 's')
+			opt = hide_option(opt);
+		opt = spacer;
+		while (opt->down->right && opt->down->right->name == opt->right->name)
+			opt = opt->down;
+		if (opt->down->right && opt->down->right->name - opt->right->name == 1)
+			opt = opt->down;
+		if (!opt->right || !opt->down->right)
+		{
+			open_rows(spacer);
+			--counter;
+			return (0);
+		}
+		while (!solver(opt, numfig, sol_map, side))
+		{
+			if (opt->down->right->name == opt->right->name)
+				opt = opt->down;
+			else
+				return (0);
+		}
+	}
+	return (fill_opt_sol_map(spacer->right, sol_map));
 }

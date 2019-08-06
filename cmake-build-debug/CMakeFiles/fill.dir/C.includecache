@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/mdeanne/123/fillit/dance.h
+/Users/ylila/Fillit_hub/fillit/dance.h
 
-/Users/mdeanne/123/fillit/fillit.h
+/Users/ylila/Fillit_hub/fillit/fillit.h
 libft/libft.h
-/Users/mdeanne/123/fillit/libft/libft.h
+/Users/ylila/Fillit_hub/fillit/libft/libft.h
 dance.h
-/Users/mdeanne/123/fillit/dance.h
+/Users/ylila/Fillit_hub/fillit/dance.h
 stdio.h
 -
 
-/Users/mdeanne/123/fillit/libft/libft.h
+/Users/ylila/Fillit_hub/fillit/libft/libft.h
 string.h
 -
 stdlib.h
@@ -24,9 +24,21 @@ stdlib.h
 unistd.h
 -
 
-/Users/mdeanne/123/fillit/solver.c
+/Users/ylila/Fillit_hub/fillit/main.c
 fillit.h
-/Users/mdeanne/123/fillit/fillit.h
-unistd.h
+/Users/ylila/Fillit_hub/fillit/fillit.h
+dance.h
+/Users/ylila/Fillit_hub/fillit/dance.h
+../tests/func_for_tests.h
+/Users/ylila/Fillit_hub/tests/func_for_tests.h
+
+/Users/ylila/Fillit_hub/tests/func_for_tests.h
+stdio.h
 -
+../fillit/dance.h
+/Users/ylila/Fillit_hub/fillit/dance.h
+../fillit/fillit.h
+/Users/ylila/Fillit_hub/fillit/fillit.h
+../fillit/libft/libft.h
+/Users/ylila/Fillit_hub/fillit/libft/libft.h
 
