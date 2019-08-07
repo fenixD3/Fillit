@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/03 22:55:49 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/03 22:55:58 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/07 17:38:12 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,26 @@ void	increase_figure_on_lead_digit(int *figure, int *highdn, int *step)
 	*step = 0;
 }
 
-/// NEED: free **figures
+char	**create_init_sol_map(int side)
+{
+	char	**sol_map;
+	int		i;
+	int		j;
+
+	if (!(sol_map = (char **)malloc(sizeof(char *) * side)))
+		; // add free_list
+	i = -1;
+	while (++i < side)
+	{
+		j = -1;
+		if (!(sol_map[i] = (char *)malloc(sizeof(char) * side)))
+			; // add free_array & free_list
+		while(++j < side)
+			sol_map[i][j] = '.';
+	}
+	return (sol_map);
+}
+
 void 	filling_list(int **figures, int numfig, t_dance *head, int side)
 {
 	int i;
@@ -94,5 +113,5 @@ void 	filling_list(int **figures, int numfig, t_dance *head, int side)
 				break ;
 		}
 	}
-	free_arrfigs(figures, numfig);
+	free_array(figures, numfig);
 }

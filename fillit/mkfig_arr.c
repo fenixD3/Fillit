@@ -33,7 +33,7 @@ int		find_indx_of_min_low_order(const int *figure)
 	return (imin);
 }
 
-void	move2zero(int *figure)
+void	move_to_zero(int *figure)
 {
 	int i;
 	int difference;
@@ -79,23 +79,8 @@ int		*mkfig(const char *line)
 		}
 		j++;
 	}
-	move2zero(figure - 4);
+	move_to_zero(figure - 4);
 	return (figure - 4);
-}
-
-void	free_arrfigs(int **figures, int n)
-{
-	int i;
-
-	i = 0;
-	while (i < n)
-	{
-		free(figures[i]);
-//		figures[i] = NULL;
-		i++;
-	}
-	free(figures);
-	figures = NULL;
 }
 
 int		**mkfig_arr(const char *line, int numfig)
@@ -112,10 +97,10 @@ int		**mkfig_arr(const char *line, int numfig)
 	{
 		if (!((figures[i]) = mkfig(line)))
 		{
-			free_arrfigs(figures, i);
+			free_array(figures, i);
 			ft_mkerr();
 		}
-		move2zero(figures[i]);
+		move_to_zero(figures[i]);
 		line += 21;
 		i++;
 	}

@@ -45,33 +45,6 @@ int			add_spacer(t_dance *head, t_dance *new, _Bool edge, t_dance *curr)
 	return (1);
 }
 
-void		free_cage(t_dance **head, _Bool error)
-	// _Bool need for define exit with error or not
-{
-	t_dance *prev;
-	t_dance *upper;
-
-	prev = *head;
-	upper = (*head)->down;
-	prev->left->right = NULL;
-	upper->up->up->down = NULL;
-	while (*head)
-	{
-		*head = (*head)->right;
-		free(prev);
-		prev = *head;
-	}
-	*head = upper;
-	while (*head)
-	{
-		*head = (*head)->down;
-		free(upper);
-		upper = *head;
-	}
-	error ? ft_mkerr() : error;
-	*head = NULL;
-}
-
 t_dance		*make_cage(int side)
 {
 	t_dance	*head;

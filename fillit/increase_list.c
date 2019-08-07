@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/03 22:56:32 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/03 22:56:49 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/07 18:21:20 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,7 +95,7 @@ int add_increase_last_rows(t_dance *head, int side, int numfig)
 	return (1);
 }
 
-void	increase_list(t_dance *head, int side, int numfig)
+void increase_list(t_dance *head, int side, int numfig, char ***sol_map)
 {
 	if (!increase_cage(head, side) ||
 		!add_increase_middle_rows(head, side, numfig) ||
@@ -104,4 +104,6 @@ void	increase_list(t_dance *head, int side, int numfig)
 		free_list(&head);
 		ft_mkerr();
 	}
+	free_array((int**)(*sol_map), side - 1);
+	*sol_map = create_init_sol_map(side);
 }
