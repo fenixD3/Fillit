@@ -68,14 +68,15 @@ int 	increment_row_n_lines(t_dance *left_sp, int *lines, int side)
 		return (0);
 	flag = 0;
 	curr = left_sp->down;
-	while (curr != left_sp->down->down)
+/*	while (curr != left_sp->down->down)
 	{
 		if (curr->coord % LEAD_DIGT == side - 1)
 			flag++;
 		curr = curr->right;
 	}
 	lines[left_sp->right->name - 'A'] =
-			(flag ? left_sp->down->coord : left_sp->coord);
+			(flag ? left_sp->down->coord : left_sp->coord);*/
+	lines[left_sp->right->name - 'A'] = left_sp->down->coord;
 	return (1);
 }
 
