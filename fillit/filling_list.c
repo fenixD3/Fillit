@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/03 22:55:49 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/07 17:38:12 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/08 20:19:49 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,15 @@ int 	fill_row(int *figure, int step, const char n_name, t_dance *head)
 	t_dance *curr;
 	t_dance *prev;
 	t_dance *new;
+
+/*	/////////////////
+	static int num;
+	num++;
+	ft_putnbr(num);
+	ft_putchar('\n');
+	if (num == 160)
+		ft_putchar('G');
+	/////////////////*/
 
 	i = 0;
 	curr = head;
@@ -113,5 +122,5 @@ void 	filling_list(int **figures, int numfig, t_dance *head, int side)
 				break ;
 		}
 	}
-	free_array(figures, numfig);
+	//free_array(figures, numfig);
 }

@@ -6,17 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/Users/mdeanne/123/fillit/dance.h
+/Users/mdeanne/aa/fillit/dance.h
 
-/Users/mdeanne/123/fillit/fillit.h
+/Users/mdeanne/aa/fillit/fillit.h
 libft/libft.h
-/Users/mdeanne/123/fillit/libft/libft.h
+/Users/mdeanne/aa/fillit/libft/libft.h
 dance.h
-/Users/mdeanne/123/fillit/dance.h
+/Users/mdeanne/aa/fillit/dance.h
 stdio.h
 -
 
-/Users/mdeanne/123/fillit/libft/libft.h
+/Users/mdeanne/aa/fillit/increase_list.c
+dance.h
+/Users/mdeanne/aa/fillit/dance.h
+fillit.h
+/Users/mdeanne/aa/fillit/fillit.h
+../tests/func_for_tests.h
+/Users/mdeanne/aa/tests/func_for_tests.h
+
+/Users/mdeanne/aa/fillit/libft/libft.h
 string.h
 -
 stdlib.h
@@ -24,9 +32,13 @@ stdlib.h
 unistd.h
 -
 
-/Users/mdeanne/123/fillit/solver.c
-fillit.h
-/Users/mdeanne/123/fillit/fillit.h
-unistd.h
+/Users/mdeanne/aa/tests/func_for_tests.h
+stdio.h
 -
+../fillit/dance.h
+/Users/mdeanne/aa/fillit/dance.h
+../fillit/fillit.h
+/Users/mdeanne/aa/fillit/fillit.h
+../fillit/libft/libft.h
+/Users/mdeanne/aa/fillit/libft/libft.h
 

@@ -104,6 +104,6 @@ int		**mkfig_arr(const char *line, int numfig)
 		line += 21;
 		i++;
 	}
-	free(start_line);
+	//free(start_line);
 	return (figures);
 }

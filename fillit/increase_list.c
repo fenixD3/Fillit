@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/03 22:56:32 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/07 18:21:20 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/08 21:27:17 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 
 int		increase_cage(t_dance *head, int side)
 {
+	ft_putendl("increasing cage");
+
+
 	t_dance *curr;
 
 	curr = head->right;
@@ -38,8 +41,15 @@ int		increase_cage(t_dance *head, int side)
 	return (1);
 }
 
+///////////////////////
+#include "../tests/func_for_tests.h"
+///////////////////////
+
 int		add_increase_middle_rows(t_dance *head, int side, int numfig)
 {
+	ft_putendl("increasing middle rows");
+
+
 	int		*lines;
 	t_dance	*head_curr;
 	t_dance *curr;
@@ -58,6 +68,7 @@ int		add_increase_middle_rows(t_dance *head, int side, int numfig)
 				if ((lines[curr->name - 'A'] < curr->spacer->coord)
 					&& (!(increment_row_n_lines(curr->spacer, lines, side))))
 					return (0);
+				print_list(head);
 				curr = curr->down;
 			}
 		}
@@ -69,6 +80,8 @@ int		add_increase_middle_rows(t_dance *head, int side, int numfig)
 
 int add_increase_last_rows(t_dance *head, int side, int numfig)
 {
+	ft_putendl("increasing last rows");
+
 	int		i;
 	int		lowdn;
 	t_dance	*spacer;

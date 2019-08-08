@@ -14,7 +14,7 @@
 # define FILLIT_H
 # define BUFF_SIZE 550
 # define LEAD_DIGT 100
-# include "libft.h"
+# include "libft/libft.h"
 # include "dance.h"
 
 #include <stdio.h>

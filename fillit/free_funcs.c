@@ -64,5 +64,5 @@ void		free_list(t_dance **head)
 		free(curr->left);
 	}
 	free(*head);
-	head = NULL;
+	*head = NULL;
 }

@@ -4,7 +4,6 @@
 
 #include "fillit.h"
 
-
 _Bool	fill_opt_to_sol_map(t_dance *node, char **sol_map)
 {
 	while (node->name != 's')
@@ -52,6 +51,11 @@ int		knuth_check(t_dance *spacer, int numfig, int *counter, char **sol_map)
 	return (2);
 }
 
+///////////////
+#include "../tests/func_for_tests.h"
+///////////////
+
+
 _Bool	knuth_solver(t_dance *spacer, int numfig, char **sol_map)
 {
 	static int	counter;
@@ -59,6 +63,19 @@ _Bool	knuth_solver(t_dance *spacer, int numfig, char **sol_map)
 	int 		tmp;
 
 	counter++;
+
+/*	static int num;
+	num++;
+	if (num == 1899)
+		ft_putstr("\t num = ");
+	ft_putstr("counter = ");
+	ft_putnbr(counter);
+	ft_putstr("\t num = ");
+	ft_putnbr(num);
+	ft_putchar('\n');
+	//print_list(spacer->home);*/
+
+
 	if (!(tmp = knuth_check(spacer, numfig, &counter, sol_map)))
 		return (0);
 	else if (tmp == 1)

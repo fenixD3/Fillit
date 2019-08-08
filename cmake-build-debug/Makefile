@@ -48,10 +48,10 @@ RM = /Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mdeanne/123
+CMAKE_SOURCE_DIR = /Users/mdeanne/aa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mdeanne/123/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/mdeanne/aa/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/123/cmake-build-debug/CMakeFiles /Users/mdeanne/123/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/aa/cmake-build-debug/CMakeFiles /Users/mdeanne/aa/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/123/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/aa/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ fill: cmake_check_build_system
 fill/fast:
 	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/build
 .PHONY : fill/fast
+
+fillit/bad_options.o: fillit/bad_options.c.o
+
+.PHONY : fillit/bad_options.o
+
+# target to build an object file
+fillit/bad_options.c.o:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/bad_options.c.o
+.PHONY : fillit/bad_options.c.o
+
+fillit/bad_options.i: fillit/bad_options.c.i
+
+.PHONY : fillit/bad_options.i
+
+# target to preprocess a source file
+fillit/bad_options.c.i:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/bad_options.c.i
+.PHONY : fillit/bad_options.c.i
+
+fillit/bad_options.s: fillit/bad_options.c.s
+
+.PHONY : fillit/bad_options.s
+
+# target to generate assembly for a file
+fillit/bad_options.c.s:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/bad_options.c.s
+.PHONY : fillit/bad_options.c.s
 
 fillit/dance_cage.o: fillit/dance_cage.c.o
 
@@ -204,6 +231,33 @@ fillit/filling_list.c.s:
 	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/filling_list.c.s
 .PHONY : fillit/filling_list.c.s
 
+fillit/free_funcs.o: fillit/free_funcs.c.o
+
+.PHONY : fillit/free_funcs.o
+
+# target to build an object file
+fillit/free_funcs.c.o:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/free_funcs.c.o
+.PHONY : fillit/free_funcs.c.o
+
+fillit/free_funcs.i: fillit/free_funcs.c.i
+
+.PHONY : fillit/free_funcs.i
+
+# target to preprocess a source file
+fillit/free_funcs.c.i:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/free_funcs.c.i
+.PHONY : fillit/free_funcs.c.i
+
+fillit/free_funcs.s: fillit/free_funcs.c.s
+
+.PHONY : fillit/free_funcs.s
+
+# target to generate assembly for a file
+fillit/free_funcs.c.s:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/free_funcs.c.s
+.PHONY : fillit/free_funcs.c.s
+
 fillit/increase.o: fillit/increase.c.o
 
 .PHONY : fillit/increase.o
@@ -257,6 +311,33 @@ fillit/increase_list.s: fillit/increase_list.c.s
 fillit/increase_list.c.s:
 	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/increase_list.c.s
 .PHONY : fillit/increase_list.c.s
+
+fillit/knuth_solver.o: fillit/knuth_solver.c.o
+
+.PHONY : fillit/knuth_solver.o
+
+# target to build an object file
+fillit/knuth_solver.c.o:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/knuth_solver.c.o
+.PHONY : fillit/knuth_solver.c.o
+
+fillit/knuth_solver.i: fillit/knuth_solver.c.i
+
+.PHONY : fillit/knuth_solver.i
+
+# target to preprocess a source file
+fillit/knuth_solver.c.i:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/knuth_solver.c.i
+.PHONY : fillit/knuth_solver.c.i
+
+fillit/knuth_solver.s: fillit/knuth_solver.c.s
+
+.PHONY : fillit/knuth_solver.s
+
+# target to generate assembly for a file
+fillit/knuth_solver.c.s:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/knuth_solver.c.s
+.PHONY : fillit/knuth_solver.c.s
 
 fillit/libft/ft_atoi.o: fillit/libft/ft_atoi.c.o
 
@@ -2067,33 +2148,6 @@ fillit/mkfig_arr.c.s:
 	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/mkfig_arr.c.s
 .PHONY : fillit/mkfig_arr.c.s
 
-fillit/solver.o: fillit/solver.c.o
-
-.PHONY : fillit/solver.o
-
-# target to build an object file
-fillit/solver.c.o:
-	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/solver.c.o
-.PHONY : fillit/solver.c.o
-
-fillit/solver.i: fillit/solver.c.i
-
-.PHONY : fillit/solver.i
-
-# target to preprocess a source file
-fillit/solver.c.i:
-	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/solver.c.i
-.PHONY : fillit/solver.c.i
-
-fillit/solver.s: fillit/solver.c.s
-
-.PHONY : fillit/solver.s
-
-# target to generate assembly for a file
-fillit/solver.c.s:
-	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/solver.c.s
-.PHONY : fillit/solver.c.s
-
 fillit/validation.o: fillit/validation.c.o
 
 .PHONY : fillit/validation.o
@@ -2157,6 +2211,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... fill"
+	@echo "... fillit/bad_options.o"
+	@echo "... fillit/bad_options.i"
+	@echo "... fillit/bad_options.s"
 	@echo "... fillit/dance_cage.o"
 	@echo "... fillit/dance_cage.i"
 	@echo "... fillit/dance_cage.s"
@@ -2166,12 +2223,18 @@ help:
 	@echo "... fillit/filling_list.o"
 	@echo "... fillit/filling_list.i"
 	@echo "... fillit/filling_list.s"
+	@echo "... fillit/free_funcs.o"
+	@echo "... fillit/free_funcs.i"
+	@echo "... fillit/free_funcs.s"
 	@echo "... fillit/increase.o"
 	@echo "... fillit/increase.i"
 	@echo "... fillit/increase.s"
 	@echo "... fillit/increase_list.o"
 	@echo "... fillit/increase_list.i"
 	@echo "... fillit/increase_list.s"
+	@echo "... fillit/knuth_solver.o"
+	@echo "... fillit/knuth_solver.i"
+	@echo "... fillit/knuth_solver.s"
 	@echo "... fillit/libft/ft_atoi.o"
 	@echo "... fillit/libft/ft_atoi.i"
 	@echo "... fillit/libft/ft_atoi.s"
@@ -2373,9 +2436,6 @@ help:
 	@echo "... fillit/mkfig_arr.o"
 	@echo "... fillit/mkfig_arr.i"
 	@echo "... fillit/mkfig_arr.s"
-	@echo "... fillit/solver.o"
-	@echo "... fillit/solver.i"
-	@echo "... fillit/solver.s"
 	@echo "... fillit/validation.o"
 	@echo "... fillit/validation.i"
 	@echo "... fillit/validation.s"

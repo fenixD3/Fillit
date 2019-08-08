@@ -73,7 +73,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/fill.dir/tests/funcs_for_tests.c.o"
   "CMakeFiles/fill.dir/fillit/increase_list.c.o"
   "CMakeFiles/fill.dir/fillit/increase.c.o"
-  "CMakeFiles/fill.dir/fillit/solver.c.o"
+  "CMakeFiles/fill.dir/fillit/bad_options.c.o"
+  "CMakeFiles/fill.dir/fillit/free_funcs.c.o"
+  "CMakeFiles/fill.dir/fillit/knuth_solver.c.o"
   "fill.pdb"
   "fill"
 )
