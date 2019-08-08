@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/06 22:46:36 by ylila            ###   ########.fr       */
+/*   Updated: 2019/08/08 22:34:47 by ylila            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,8 +85,15 @@ int main()
 	filling_list(figures, numfig, head, side);
 	print_list(head);
 
-	if (!solver(head->down, numfig, sol_map, side))
-		printf("not enough side");
+	while (!solver(head->down, numfig, sol_map, side))
+	{
+		printf("not enough side\n");
+		++side;
+		increase_list(head, side, numfig);
+		free_arrfigs(sol_map, side - 1);
+		print_list(head);
+		sol_map = create_init_sol_map(side);
+	}
 	print_solution2(sol_map, side);
 /*	increase_list(head, side + 1, numfig);
 

@@ -24,21 +24,7 @@ stdlib.h
 unistd.h
 -
 
-/Users/ylila/Fillit_hub/fillit/main.c
+/Users/ylila/Fillit_hub/fillit/solver.c
 fillit.h
 /Users/ylila/Fillit_hub/fillit/fillit.h
-dance.h
-/Users/ylila/Fillit_hub/fillit/dance.h
-../tests/func_for_tests.h
-/Users/ylila/Fillit_hub/tests/func_for_tests.h
-
-/Users/ylila/Fillit_hub/tests/func_for_tests.h
-stdio.h
--
-../fillit/dance.h
-/Users/ylila/Fillit_hub/fillit/dance.h
-../fillit/fillit.h
-/Users/ylila/Fillit_hub/fillit/fillit.h
-../fillit/libft/libft.h
-/Users/ylila/Fillit_hub/fillit/libft/libft.h
 

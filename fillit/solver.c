@@ -1,85 +1,5 @@
 #include "fillit.h"
 
-static t_dance	*hide_option(t_dance *opt)
-{
-/* Reduce each row corresponding to each option at this column, where
- * opt pointer is pointing, leaving out options with name == opt->name
- */
-	t_dance *curr;
-
-	curr = opt;
-	/*while (curr->name == opt->name)
-		curr = curr->down;*/
-	while (curr != opt->home)
-	{
-		if (curr->spacer->up->down == curr->spacer &&
-		curr->spacer->down->up == curr->spacer)
-		{
-			curr->spacer->up->down = curr->spacer->down;
-			curr->spacer->down->up = curr->spacer->up;
-		}
-		curr = curr->down;
-	}
-	return (opt->right);
-}
-
-static void		hide_spacers(t_dance *spacer)
-{
-	t_dance *curr;
-
-	curr = spacer->down;
-	while (curr->right && curr->right->name == spacer->right->name)
-		curr = curr->down;
-	spacer->down = curr;
-	curr->up = spacer;
-	curr = spacer->up;
-	while (curr->right->name == spacer->right->name)
-		curr = curr->up;
-	spacer->up = curr;
-	curr->down = spacer;
-}
-
-static void		open_spacers(t_dance *spacer, t_dance *curr)
-{
-	spacer->down = curr;
-	while (curr->down->right && curr->down->right->name == spacer->right->name)
-		curr = curr->down;
-	curr->down->up = curr;
-	curr = spacer->left;
-	while (curr->name != 's')
-		curr = curr->left;
-	if (curr->down != spacer)
-	{
-		spacer->up = curr;
-		while (curr->up->right->name == spacer->right->name)
-			curr = curr->up;
-		curr->up->down = curr;
-	}
-}
-static void		open_rows(t_dance *spacer)
-{
-	t_dance *opt;
-	t_dance *curr;
-
-	opt = spacer->right;
-	while (opt->name != 's')
-	{
-		curr = opt->down;
-		while (curr != opt->home)
-		{
-			if (curr->spacer->up->down != curr->spacer &&
-			curr->spacer->down->up != curr->spacer)
-			{
-				curr->spacer->up->down = curr->spacer;
-				curr->spacer->down->up = curr->spacer;
-			}
-			curr = curr->down;
-		}
-		opt = opt->right;
-	}
-	//open_spacers(spacer, opt);
-}
-
 void	print_spacers(t_dance *head)
 {
 	t_dance *curr = head->down;
@@ -90,44 +10,6 @@ void	print_spacers(t_dance *head)
 	}
 	printf("\n");
 }
-
-/* _Bool			solver(t_dance *spacer, int numfig, int counter, int side)
-{
- This func receives counter equal to 1 from main
-	t_dance *opt;
-
-printf("Sp row : %d, Recursion num = %d\n", spacer->coord, counter);
-printf("\tFirst step\n");
-print_spacers(spacer->home);
-	hide_spacers(spacer);
-printf("\tAfter hide_spacers\n");
-print_spacers(spacer->home);
-	opt = spacer->right;
-	while (counter != numfig && opt->name != 's')
-		opt = hide_option(opt);
-printf("\tAfter hide_option\n");
-print_spacers(spacer->home);
-	if (counter == numfig)
-		return (print_solution(spacer->home->down, side, counter - 1));
-	if (!spacer->down->right)
-	{
-		open_rows(spacer);
-		return (0);
-	}
-	if (spacer->down->right->name == spacer->right->name + 1)
-		spacer = spacer->down;
-	else
-		return (0);
-	++counter;
-	while (!solver(spacer, numfig, counter, side))
-	{
-		if (spacer->down->right->name == spacer->right->name)
-			spacer = spacer->down;
-		else
-			return (0);
-	}
-	return (1);
-} */
 
 static _Bool fill_opt_sol_map(t_dance *node, char **sol_map)
 {
@@ -140,6 +22,121 @@ static _Bool fill_opt_sol_map(t_dance *node, char **sol_map)
 	return (1);
 }
 
+static void		open_opt(t_dance *it)
+{
+	t_dance *lft;
+
+	lft = it->left;
+	it = it->right;
+	while (1)
+	{
+		if (it->name == 's' && lft->name == 's')
+			break ;
+		if (it->name != 's')
+		{
+			if (it->up->down != it || it->down->up != it)
+			{
+				it->up->down = it;
+				it->down->up = it;
+			}
+			it = it->right;
+		}
+		if (lft->name != 's')
+		{
+			if (lft->up->down != lft || lft->down->up != lft)
+			{
+				lft->up->down = lft;
+				lft->down->up = lft;
+			}
+			lft = lft->left;
+		}
+	}
+}
+
+static void		open_row_opt(t_dance *spacer)
+{
+	t_dance *opt;
+	t_dance *curr;
+
+	opt = spacer->right;
+	while (opt->name != 's')
+	{
+		curr = opt;
+		while (curr->name == spacer->right->name)
+			curr = curr->down;
+		while (curr != opt->home)
+		{
+			if (curr->spacer->up->down != curr->spacer ||
+				curr->spacer->down->up != curr->spacer)
+			{
+				curr->spacer->up->down = curr->spacer;
+				curr->spacer->down->up = curr->spacer;
+			}
+			/*printf("\t\tOpen rows. Opt coord: %d Curr name: %c Curr space: %d\n\t", opt->coord, curr->name, curr->spacer->coord);
+			print_spacers(spacer->home);*/
+			open_opt(curr);
+			curr = curr->down;
+		}
+		opt = opt->right;
+	}
+}
+
+static void		hide_opt(t_dance *it)
+{
+	t_dance *lft;
+
+	lft = it->left;
+	it = it->right;
+	while (1)
+	{
+		if (it->name == 's' && lft->name == 's')
+			break ;
+		if (it->name != 's')
+		{
+			if (it->up->down == it && it->down->up == it)
+			{
+				it->up->down = it->down;
+				it->down->up = it->up;
+			}
+			it = it->right;
+		}
+		if (lft->name != 's')
+		{
+			if (lft->up->down == lft && lft->down->up == lft)
+			{
+				lft->up->down = lft->down;
+				lft->down->up = lft->up;
+			}
+			lft = lft->left;
+		}
+	}
+}
+
+static t_dance	*hide_row_opt(t_dance *opt)
+{
+/* Reduce each row corresponding to each option at this column, where
+ * opt pointer is pointing, leaving out options with name == opt->name
+ */
+	t_dance *curr;
+	t_dance *it;
+
+	curr = opt;
+	while (curr->name == opt->name)
+		curr = curr->down;
+	while (curr != opt->home)
+	{
+		if (curr->spacer->up->down == curr->spacer &&
+			curr->spacer->down->up == curr->spacer)
+		{
+			curr->spacer->up->down = curr->spacer->down;
+			curr->spacer->down->up = curr->spacer->up;
+		}
+		hide_opt(curr);
+		curr = curr->down;
+	}
+	return (opt->right);
+}
+
 _Bool			solver(t_dance *spacer, int numfig, char **sol_map, int side)
 {
 /* This func receives counter equal to 1 from main */
@@ -147,13 +144,21 @@ _Bool			solver(t_dance *spacer, int numfig, char **sol_map, int side)
 	static int	counter;
 
 	++counter;
-	opt = spacer->right;
+	printf("Recursion num = %d, Spacer = %d\n", counter, spacer->coord);
+	/*printf("\tEnter\n");
+	print_spacers(spacer->home);*/
 	if (counter == numfig)
+	{
+		printf("Spacer coord : %d\n", spacer->coord);
 		return (fill_opt_sol_map(spacer->right, sol_map));
+	}
 	else
 	{
+		opt = spacer->right;
 		while (opt->name != 's')
-			opt = hide_option(opt);
+			opt = hide_row_opt(opt);
+		/*printf("\tAfter hide\n");
+		print_spacers(spacer->home);*/
 		opt = spacer;
 		while (opt->down->right && opt->down->right->name == opt->right->name)
 			opt = opt->down;
@@ -161,7 +166,9 @@ _Bool			solver(t_dance *spacer, int numfig, char **sol_map, int side)
 			opt = opt->down;
 		if (!opt->right || !opt->down->right)
 		{
-			open_rows(spacer);
+			open_row_opt(spacer);
+			/*printf("\tAfter open\n");
+			print_spacers(spacer->home);*/
 			--counter;
 			return (0);
 		}
@@ -170,8 +177,13 @@ _Bool			solver(t_dance *spacer, int numfig, char **sol_map, int side)
 			if (opt->down->right->name == opt->right->name)
 				opt = opt->down;
 			else
+			{
+				open_row_opt(spacer);
+				--counter;
 				return (0);
+			}
 		}
 	}
+	printf("Spacer coord : %d\n", spacer->coord);
 	return (fill_opt_sol_map(spacer->right, sol_map));
 }
