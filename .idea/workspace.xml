@@ -12,16 +12,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e87ec5ad-e55c-4773-8137-f7453846fdab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/test_15" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fillit/solver.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/increase_list.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/increase_list.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/dance_cage.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/dance_cage.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/filling_list.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/filling_list.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/increase_list.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/mkfig_arr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/mkfig_arr.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/validation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/validation.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/fill" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/fill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/increase.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/increase.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/increase_list.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/increase_list.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/fill.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/fill.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fillit/dance.h" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/dance.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fillit/dance_cage.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/dance_cage.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fillit/filling_list.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/filling_list.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fillit/fillit.h" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/fillit.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fillit/free_funcs.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/free_funcs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fillit/increase.c" beforeDir="false" afterPath="$PROJECT_DIR$/increase/increase.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fillit/increase_list.c" beforeDir="false" afterPath="$PROJECT_DIR$/increase/increase_list.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fillit/knuth_solver.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/knuth_solver.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fillit/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/sqrs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/sqrs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fillit/mkfig_arr.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/mkfig_arr.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fillit/validation.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/validation.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,11 +91,12 @@
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tests" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/fillit" />
+      <recent name="$PROJECT_DIR$/increase" />
+      <recent name="$PROJECT_DIR$/tests" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
@@ -137,7 +160,9 @@
       <workItem from="1564941079535" duration="9851000" />
       <workItem from="1565198843927" duration="2405000" />
       <workItem from="1565277383446" duration="15150000" />
-      <workItem from="1565356691710" duration="9640000" />
+      <workItem from="1565356691710" duration="9680000" />
+      <workItem from="1565371734769" duration="947000" />
+      <workItem from="1565372844569" duration="9618000" />
     </task>
     <task id="LOCAL-00001" summary="validation v 0.1&#10;errors not tested enough">
       <created>1563315205455</created>
@@ -223,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565296257336</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="all done">
+      <created>1565371521201</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1565371521201</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,52 +289,26 @@
     <MESSAGE value="increasing list: rows v0.5" />
     <MESSAGE value="solver done. increment middle rows error" />
     <MESSAGE value="checking" />
-    <option name="LAST_COMMIT_MESSAGE" value="checking" />
+    <MESSAGE value="all done" />
+    <option name="LAST_COMMIT_MESSAGE" value="all done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/fillit/solver.c</url>
-          <line>99</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/fillit/main.c</url>
           <line>41</line>
           <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/fillit/filling_list.c</url>
-          <line>116</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/fillit/main.c</url>
-          <line>77</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/fillit/main.c</url>
-          <line>71</line>
-          <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
-        <watch expression="head-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right" language="ObjectiveC" />
-        <watch expression="head-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;down" language="ObjectiveC" />
-        <watch expression="head-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;down-&gt;down" language="ObjectiveC" />
-        <watch expression="head-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;down-&gt;down-&gt;down" language="ObjectiveC" />
-        <watch expression="left_sp-&gt;right" language="ObjectiveC" />
-        <watch expression="left_sp-&gt;right-&gt;right" language="ObjectiveC" />
-        <watch expression="left_sp-&gt;right-&gt;right-&gt;right" language="ObjectiveC" />
-        <watch expression="left_sp-&gt;right-&gt;right-&gt;right-&gt;right" language="ObjectiveC" />
-        <watch expression="curr-&gt;spacer-&gt;coord" language="ObjectiveC" />
-        <watch expression="curr-&gt;coord" language="ObjectiveC" />
-        <watch expression="curr-&gt;name" language="ObjectiveC" />
-        <watch expression="left_sp-&gt;coord" language="ObjectiveC" />
+        <watch expression="figures[i][0]" language="ObjectiveC" />
+        <watch expression="figures[i][1]" language="ObjectiveC" />
+        <watch expression="figures[i][2]" language="ObjectiveC" />
+        <watch expression="figures[i][3]" language="ObjectiveC" />
+        <watch expression="i" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>

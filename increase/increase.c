@@ -6,11 +6,11 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/03 22:56:22 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/09 16:52:19 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/09 21:40:50 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../fillit/fillit.h"
 
 void	increment_down_rownum(t_dance *curr)
 {
@@ -61,21 +61,8 @@ int 	add_increase_row(t_dance *left_sp, int step)
 
 int 	increment_row_n_lines(t_dance *left_sp, int *lines, int side)
 {
-	int 	flag;
-	t_dance	*curr;
-
 	if (!add_increase_row(left_sp, 1))
 		return (0);
-	flag = 0;
-	curr = left_sp->down;
-/*	while (curr != left_sp->down->down)
-	{
-		if (curr->coord % LEAD_DIGT == side - 1)
-			flag++;
-		curr = curr->right;
-	}
-	lines[left_sp->right->name - 'A'] =
-			(flag ? left_sp->down->coord : left_sp->coord);*/
 	lines[left_sp->right->name - 'A'] = left_sp->down->coord;
 	return (1);
 }

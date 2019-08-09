@@ -36,17 +36,7 @@ t_dance				*create_connct(t_dance *left, t_dance *right, t_dance *up,
 																t_dance *down);
 void				node_set_params(t_dance *curr, char n_name, int n_coord,
 															t_dance *spacer);
-void				increment_down_rownum(t_dance *curr);
-void increase_list(t_dance *head, int side, int numfig, char ***sol_map);
-int					increase_cage(t_dance *head, int side);
-int					add_increase_row(t_dance *left_sp, int step);
-int					add_increase_middle_rows(t_dance *head, int side,
-																int numfig);
-int					add_increase_last_rows(t_dance *head, int side,
-																int numfig);
-int					increment_row_n_lines(t_dance *left_sp, int *lines,
-																	int side);
-int					lst_find_max_low_dgtnum(t_dance *spacer);
+
 
 void				hide_option(t_dance *node);
 void				open_option(t_dance *node);

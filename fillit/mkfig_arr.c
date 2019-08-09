@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/03 22:57:08 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/03 22:57:14 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/09 22:44:25 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,16 @@ void	move_to_zero(int *figure)
 	}
 }
 
+void	drop_mkfigarr(int **figures, int numfig)
+{
+	int i = 0;
+	while (i < numfig)
+	{
+		move_to_zero(figures[i]);
+		i++;
+	}
+}
+
 int		*mkfig(const char *line)
 {
 	int		*figure;
@@ -79,20 +89,18 @@ int		*mkfig(const char *line)
 		}
 		j++;
 	}
-	move_to_zero(figure - 4);
+	//move_to_zero(figure - 4); /// зачем это здесь?
 	return (figure - 4);
 }
 
 int		**mkfig_arr(const char *line, int numfig)
 {
-	char	*start_line;
 	int		**figures;
 	int		i;
 
 	if (!(figures = (int**)malloc(sizeof(int*) * numfig)))
 		ft_mkerr();
 	i = 0;
-	start_line = (char*)line;
 	while (i < numfig)
 	{
 		if (!((figures[i]) = mkfig(line)))
@@ -104,6 +112,5 @@ int		**mkfig_arr(const char *line, int numfig)
 		line += 21;
 		i++;
 	}
-	//free(start_line);
 	return (figures);
 }

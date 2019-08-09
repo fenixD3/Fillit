@@ -26,23 +26,11 @@ CMakeFiles/fill.dir/fillit/free_funcs.c.o
  /Users/mdeanne/aa/fillit/fillit.h
  /Users/mdeanne/aa/fillit/free_funcs.c
  /Users/mdeanne/aa/fillit/libft/libft.h
-CMakeFiles/fill.dir/fillit/increase.c.o
- /Users/mdeanne/aa/fillit/dance.h
- /Users/mdeanne/aa/fillit/fillit.h
- /Users/mdeanne/aa/fillit/increase.c
- /Users/mdeanne/aa/fillit/libft/libft.h
-CMakeFiles/fill.dir/fillit/increase_list.c.o
- /Users/mdeanne/aa/fillit/dance.h
- /Users/mdeanne/aa/fillit/fillit.h
- /Users/mdeanne/aa/fillit/increase_list.c
- /Users/mdeanne/aa/fillit/libft/libft.h
- /Users/mdeanne/aa/tests/func_for_tests.h
 CMakeFiles/fill.dir/fillit/knuth_solver.c.o
  /Users/mdeanne/aa/fillit/dance.h
  /Users/mdeanne/aa/fillit/fillit.h
  /Users/mdeanne/aa/fillit/knuth_solver.c
  /Users/mdeanne/aa/fillit/libft/libft.h
- /Users/mdeanne/aa/tests/func_for_tests.h
 CMakeFiles/fill.dir/fillit/libft/ft_atoi.c.o
  /Users/mdeanne/aa/fillit/libft/ft_atoi.c
 CMakeFiles/fill.dir/fillit/libft/ft_bzero.c.o
@@ -219,6 +207,11 @@ CMakeFiles/fill.dir/fillit/mkfig_arr.c.o
  /Users/mdeanne/aa/fillit/fillit.h
  /Users/mdeanne/aa/fillit/libft/libft.h
  /Users/mdeanne/aa/fillit/mkfig_arr.c
+CMakeFiles/fill.dir/fillit/solver.c.o
+ /Users/mdeanne/aa/fillit/dance.h
+ /Users/mdeanne/aa/fillit/fillit.h
+ /Users/mdeanne/aa/fillit/libft/libft.h
+ /Users/mdeanne/aa/fillit/solver.c
 CMakeFiles/fill.dir/fillit/validation.c.o
  /Users/mdeanne/aa/fillit/dance.h
  /Users/mdeanne/aa/fillit/fillit.h

@@ -6,12 +6,12 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/03 22:56:32 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/09 17:47:14 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/09 21:33:56 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "dance.h"
-#include "fillit.h"
+#include "../fillit/dance.h"
+#include "../fillit/fillit.h"
 
 int		increase_cage(t_dance *head, int side)
 {
@@ -25,8 +25,7 @@ int		increase_cage(t_dance *head, int side)
 				return (0);
 		curr = curr->right;
 	}
-	if (!add_cage(head->left, head,
-			create('c', side * LEAD_DIGT + 1)))
+	if (!add_cage(head->left, head, create('c', side * LEAD_DIGT + 1)))
 		return (0);
 	curr = head->left;
 	while (side-- - 1)
@@ -100,6 +99,7 @@ int add_increase_last_rows(t_dance *head, int side, int numfig)
 
 void increase_list(t_dance *head, int side, int numfig, char ***sol_map)
 {
+	free_array((int**)(*sol_map), side - 1);
 	if (!increase_cage(head, side) ||
 		!add_increase_middle_rows(head, side, numfig) ||
 		!add_increase_last_rows(head, side, numfig))
@@ -107,6 +107,9 @@ void increase_list(t_dance *head, int side, int numfig, char ***sol_map)
 		free_list(&head);
 		ft_mkerr();
 	}
-	free_array((int**)(*sol_map), side - 1);
-	*sol_map = create_init_sol_map(side);
+	if(!(*sol_map = create_init_sol_map(side)))
+	{
+		free_array((int**)sol_map, side);
+		freelst_and_exit(head);
+	}
 }

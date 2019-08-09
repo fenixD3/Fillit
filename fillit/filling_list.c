@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/03 22:55:49 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/08 20:19:49 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/09 23:25:51 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,6 @@ int 	fill_row(int *figure, int step, const char n_name, t_dance *head)
 	t_dance *prev;
 	t_dance *new;
 
-/*	/////////////////
-	static int num;
-	num++;
-	ft_putnbr(num);
-	ft_putchar('\n');
-	if (num == 160)
-		ft_putchar('G');
-	/////////////////*/
-
 	i = 0;
 	curr = head;
 	prev = head->up;
@@ -37,14 +28,14 @@ int 	fill_row(int *figure, int step, const char n_name, t_dance *head)
 		while (curr->coord != figure[i] + step)
 			curr = curr->right;
 		if (!(new = create_connct(prev, NULL, curr->up, curr)))
-			return (0);
+			freelst_and_exit(head);
 		node_set_params(new, n_name, figure[i] + step, head->up);
 		new->home = curr;
 		prev = prev->right;
 		i++;
 	}
 	if (!(add_spacer(head, create('s', 1), 0, new)))
-		return (0);
+		freelst_and_exit(head);
 	new->right->left = new;
 	return (1);
 }
@@ -76,33 +67,18 @@ void	increase_figure_on_lead_digit(int *figure, int *highdn, int *step)
 	*step = 0;
 }
 
-char	**create_init_sol_map(int side)
-{
-	char	**sol_map;
-	int		i;
-	int		j;
 
-	if (!(sol_map = (char **)malloc(sizeof(char *) * side)))
-		; // add free_list
-	i = -1;
-	while (++i < side)
-	{
-		j = -1;
-		if (!(sol_map[i] = (char *)malloc(sizeof(char) * side)))
-			; // add free_array & free_list
-		while(++j < side)
-			sol_map[i][j] = '.';
-	}
-	return (sol_map);
-}
 
-void 	filling_list(int **figures, int numfig, t_dance *head, int side)
+t_dance 	*filling_list(int **figures, int numfig, int side)
 {
 	int i;
 	int lowdn; //max low digit number
 	int highdn; //max high digit number
 	int step;
+	t_dance *head;
 
+	head = make_cage(side);
+	//////// защита фигур
 	i = -1;
 	while (++i < numfig)
 	{
@@ -112,15 +88,14 @@ void 	filling_list(int **figures, int numfig, t_dance *head, int side)
 		while (highdn <= side)
 		{
 			if (lowdn + step <= side)
-			{
-				if (!fill_row(figures[i], step++, ((char) i + 'A'), head))
-					free_list(&head);
-			}
+				fill_row(figures[i], step++, ((char) i + 'A'), head);
+			//////защита фигур
 			else if (highdn < side)
 				increase_figure_on_lead_digit(figures[i], &highdn, &step);
 			else if (highdn == side)
 				break ;
 		}
 	}
-	//free_array(figures, numfig);
+	drop_mkfigarr(figures, numfig);
+	return (head);
 }

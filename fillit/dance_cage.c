@@ -53,7 +53,7 @@ t_dance		*make_cage(int side)
 	int		low_bit;
 
 	if (!(head = create('h', 0)))
-		return (NULL);
+		ft_mkerr();
 	high_bit = 0;
 	curr = head;
 	while (++high_bit <= side)

@@ -26,22 +26,10 @@ CMakeFiles/fill.dir/fillit/free_funcs.c.o: ../fillit/fillit.h
 CMakeFiles/fill.dir/fillit/free_funcs.c.o: ../fillit/free_funcs.c
 CMakeFiles/fill.dir/fillit/free_funcs.c.o: ../fillit/libft/libft.h
 
-CMakeFiles/fill.dir/fillit/increase.c.o: ../fillit/dance.h
-CMakeFiles/fill.dir/fillit/increase.c.o: ../fillit/fillit.h
-CMakeFiles/fill.dir/fillit/increase.c.o: ../fillit/increase.c
-CMakeFiles/fill.dir/fillit/increase.c.o: ../fillit/libft/libft.h
-
-CMakeFiles/fill.dir/fillit/increase_list.c.o: ../fillit/dance.h
-CMakeFiles/fill.dir/fillit/increase_list.c.o: ../fillit/fillit.h
-CMakeFiles/fill.dir/fillit/increase_list.c.o: ../fillit/increase_list.c
-CMakeFiles/fill.dir/fillit/increase_list.c.o: ../fillit/libft/libft.h
-CMakeFiles/fill.dir/fillit/increase_list.c.o: ../tests/func_for_tests.h
-
 CMakeFiles/fill.dir/fillit/knuth_solver.c.o: ../fillit/dance.h
 CMakeFiles/fill.dir/fillit/knuth_solver.c.o: ../fillit/fillit.h
 CMakeFiles/fill.dir/fillit/knuth_solver.c.o: ../fillit/knuth_solver.c
 CMakeFiles/fill.dir/fillit/knuth_solver.c.o: ../fillit/libft/libft.h
-CMakeFiles/fill.dir/fillit/knuth_solver.c.o: ../tests/func_for_tests.h
 
 CMakeFiles/fill.dir/fillit/libft/ft_atoi.c.o: ../fillit/libft/ft_atoi.c
 
@@ -218,6 +206,11 @@ CMakeFiles/fill.dir/fillit/mkfig_arr.c.o: ../fillit/dance.h
 CMakeFiles/fill.dir/fillit/mkfig_arr.c.o: ../fillit/fillit.h
 CMakeFiles/fill.dir/fillit/mkfig_arr.c.o: ../fillit/libft/libft.h
 CMakeFiles/fill.dir/fillit/mkfig_arr.c.o: ../fillit/mkfig_arr.c
+
+CMakeFiles/fill.dir/fillit/solver.c.o: ../fillit/dance.h
+CMakeFiles/fill.dir/fillit/solver.c.o: ../fillit/fillit.h
+CMakeFiles/fill.dir/fillit/solver.c.o: ../fillit/libft/libft.h
+CMakeFiles/fill.dir/fillit/solver.c.o: ../fillit/solver.c
 
 CMakeFiles/fill.dir/fillit/validation.c.o: ../fillit/dance.h
 CMakeFiles/fill.dir/fillit/validation.c.o: ../fillit/fillit.h

@@ -51,11 +51,6 @@ int		knuth_check(t_dance *spacer, int numfig, int *counter, char **sol_map)
 	return (2);
 }
 
-///////////////
-#include "../tests/func_for_tests.h"
-///////////////
-
-
 _Bool	knuth_solver(t_dance *spacer, int numfig, char **sol_map)
 {
 	static int	counter;
@@ -63,19 +58,6 @@ _Bool	knuth_solver(t_dance *spacer, int numfig, char **sol_map)
 	int 		tmp;
 
 	counter++;
-
-/*	static int num;
-	num++;
-	if (num == 1899)
-		ft_putstr("\t num = ");
-	ft_putstr("counter = ");
-	ft_putnbr(counter);
-	ft_putstr("\t num = ");
-	ft_putnbr(num);
-	ft_putchar('\n');
-	//print_list(spacer->home);*/
-
-
 	if (!(tmp = knuth_check(spacer, numfig, &counter, sol_map)))
 		return (0);
 	else if (tmp == 1)
@@ -96,46 +78,3 @@ _Bool	knuth_solver(t_dance *spacer, int numfig, char **sol_map)
 			return (fill_opt_to_sol_map(spacer->right, sol_map));
 	}
 }
-
-/*_Bool	knuth_solver(t_dance *spacer, int numfig, char **sol_map)
-{
-	static int	counter;
-	t_dance		*curr;
-
-	counter++;
-	if (counter == numfig *//**&& spacer->right*//*)
-		return (fill_opt_to_sol_map(spacer->right, sol_map));
-	else if (spacer->right)
-		bad_options(spacer->right, hide_option);
-	else if (!spacer->right)
-		if (prepare_backtrack(spacer, &counter))
-			return (0);
-	if (spacer->down->right && spacer->right->name == spacer->down->right->name)
-	{
-		curr = spacer->down;
-		while (!(curr->up->right->name - curr->right->name))
-			curr = curr->down;
-		if (curr->right->name - curr->up->right->name != 1)
-			if (prepare_backtrack(spacer, &counter))
-				return (0);
-	}
-	else
-		if (prepare_backtrack(spacer, &counter))
-			return (0);
-	while (1)
-	{
-		if (!knuth_solver(curr, numfig, sol_map))
-		{
-			if (curr->down->right->name == curr->right->name)
-				curr = curr->down;
-			else
-				if (prepare_backtrack(spacer, &counter))
-					return (0);
-		}
-		if (counter == numfig *//**&& spacer->right*//*)
-		{
-			fill_opt_to_sol_map(spacer->right, sol_map);
-			return (1);
-		}
-	}
-}*/

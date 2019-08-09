@@ -993,35 +993,9 @@ CMakeFiles/fill.dir/tests/funcs_for_tests.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fill.dir/tests/funcs_for_tests.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mdeanne/aa/tests/funcs_for_tests.c -o CMakeFiles/fill.dir/tests/funcs_for_tests.c.s
 
-CMakeFiles/fill.dir/fillit/increase_list.c.o: CMakeFiles/fill.dir/flags.make
-CMakeFiles/fill.dir/fillit/increase_list.c.o: ../fillit/increase_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mdeanne/aa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/fill.dir/fillit/increase_list.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fill.dir/fillit/increase_list.c.o   -c /Users/mdeanne/aa/fillit/increase_list.c
-
-CMakeFiles/fill.dir/fillit/increase_list.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fill.dir/fillit/increase_list.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mdeanne/aa/fillit/increase_list.c > CMakeFiles/fill.dir/fillit/increase_list.c.i
-
-CMakeFiles/fill.dir/fillit/increase_list.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fill.dir/fillit/increase_list.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mdeanne/aa/fillit/increase_list.c -o CMakeFiles/fill.dir/fillit/increase_list.c.s
-
-CMakeFiles/fill.dir/fillit/increase.c.o: CMakeFiles/fill.dir/flags.make
-CMakeFiles/fill.dir/fillit/increase.c.o: ../fillit/increase.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mdeanne/aa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/fill.dir/fillit/increase.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fill.dir/fillit/increase.c.o   -c /Users/mdeanne/aa/fillit/increase.c
-
-CMakeFiles/fill.dir/fillit/increase.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fill.dir/fillit/increase.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mdeanne/aa/fillit/increase.c > CMakeFiles/fill.dir/fillit/increase.c.i
-
-CMakeFiles/fill.dir/fillit/increase.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fill.dir/fillit/increase.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mdeanne/aa/fillit/increase.c -o CMakeFiles/fill.dir/fillit/increase.c.s
-
 CMakeFiles/fill.dir/fillit/bad_options.c.o: CMakeFiles/fill.dir/flags.make
 CMakeFiles/fill.dir/fillit/bad_options.c.o: ../fillit/bad_options.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mdeanne/aa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/fill.dir/fillit/bad_options.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mdeanne/aa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/fill.dir/fillit/bad_options.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fill.dir/fillit/bad_options.c.o   -c /Users/mdeanne/aa/fillit/bad_options.c
 
 CMakeFiles/fill.dir/fillit/bad_options.c.i: cmake_force
@@ -1034,7 +1008,7 @@ CMakeFiles/fill.dir/fillit/bad_options.c.s: cmake_force
 
 CMakeFiles/fill.dir/fillit/free_funcs.c.o: CMakeFiles/fill.dir/flags.make
 CMakeFiles/fill.dir/fillit/free_funcs.c.o: ../fillit/free_funcs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mdeanne/aa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/fill.dir/fillit/free_funcs.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mdeanne/aa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/fill.dir/fillit/free_funcs.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fill.dir/fillit/free_funcs.c.o   -c /Users/mdeanne/aa/fillit/free_funcs.c
 
 CMakeFiles/fill.dir/fillit/free_funcs.c.i: cmake_force
@@ -1047,7 +1021,7 @@ CMakeFiles/fill.dir/fillit/free_funcs.c.s: cmake_force
 
 CMakeFiles/fill.dir/fillit/knuth_solver.c.o: CMakeFiles/fill.dir/flags.make
 CMakeFiles/fill.dir/fillit/knuth_solver.c.o: ../fillit/knuth_solver.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mdeanne/aa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/fill.dir/fillit/knuth_solver.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mdeanne/aa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/fill.dir/fillit/knuth_solver.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fill.dir/fillit/knuth_solver.c.o   -c /Users/mdeanne/aa/fillit/knuth_solver.c
 
 CMakeFiles/fill.dir/fillit/knuth_solver.c.i: cmake_force
@@ -1057,6 +1031,19 @@ CMakeFiles/fill.dir/fillit/knuth_solver.c.i: cmake_force
 CMakeFiles/fill.dir/fillit/knuth_solver.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fill.dir/fillit/knuth_solver.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mdeanne/aa/fillit/knuth_solver.c -o CMakeFiles/fill.dir/fillit/knuth_solver.c.s
+
+CMakeFiles/fill.dir/fillit/solver.c.o: CMakeFiles/fill.dir/flags.make
+CMakeFiles/fill.dir/fillit/solver.c.o: ../fillit/solver.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mdeanne/aa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/fill.dir/fillit/solver.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fill.dir/fillit/solver.c.o   -c /Users/mdeanne/aa/fillit/solver.c
+
+CMakeFiles/fill.dir/fillit/solver.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fill.dir/fillit/solver.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mdeanne/aa/fillit/solver.c > CMakeFiles/fill.dir/fillit/solver.c.i
+
+CMakeFiles/fill.dir/fillit/solver.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fill.dir/fillit/solver.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mdeanne/aa/fillit/solver.c -o CMakeFiles/fill.dir/fillit/solver.c.s
 
 # Object files for target fill
 fill_OBJECTS = \
@@ -1132,11 +1119,10 @@ fill_OBJECTS = \
 "CMakeFiles/fill.dir/fillit/dance_cage.c.o" \
 "CMakeFiles/fill.dir/fillit/dance_create.c.o" \
 "CMakeFiles/fill.dir/tests/funcs_for_tests.c.o" \
-"CMakeFiles/fill.dir/fillit/increase_list.c.o" \
-"CMakeFiles/fill.dir/fillit/increase.c.o" \
 "CMakeFiles/fill.dir/fillit/bad_options.c.o" \
 "CMakeFiles/fill.dir/fillit/free_funcs.c.o" \
-"CMakeFiles/fill.dir/fillit/knuth_solver.c.o"
+"CMakeFiles/fill.dir/fillit/knuth_solver.c.o" \
+"CMakeFiles/fill.dir/fillit/solver.c.o"
 
 # External object files for target fill
 fill_EXTERNAL_OBJECTS =
@@ -1213,14 +1199,13 @@ fill: CMakeFiles/fill.dir/fillit/filling_list.c.o
 fill: CMakeFiles/fill.dir/fillit/dance_cage.c.o
 fill: CMakeFiles/fill.dir/fillit/dance_create.c.o
 fill: CMakeFiles/fill.dir/tests/funcs_for_tests.c.o
-fill: CMakeFiles/fill.dir/fillit/increase_list.c.o
-fill: CMakeFiles/fill.dir/fillit/increase.c.o
 fill: CMakeFiles/fill.dir/fillit/bad_options.c.o
 fill: CMakeFiles/fill.dir/fillit/free_funcs.c.o
 fill: CMakeFiles/fill.dir/fillit/knuth_solver.c.o
+fill: CMakeFiles/fill.dir/fillit/solver.c.o
 fill: CMakeFiles/fill.dir/build.make
 fill: CMakeFiles/fill.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mdeanne/aa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Linking C executable fill"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mdeanne/aa/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Linking C executable fill"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fill.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

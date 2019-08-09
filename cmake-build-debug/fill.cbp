@@ -98,12 +98,6 @@
 		<Unit filename="/Users/mdeanne/aa/fillit/free_funcs.c">
 			<Option target="fill"/>
 		</Unit>
-		<Unit filename="/Users/mdeanne/aa/fillit/increase.c">
-			<Option target="fill"/>
-		</Unit>
-		<Unit filename="/Users/mdeanne/aa/fillit/increase_list.c">
-			<Option target="fill"/>
-		</Unit>
 		<Unit filename="/Users/mdeanne/aa/fillit/knuth_solver.c">
 			<Option target="fill"/>
 		</Unit>
@@ -309,6 +303,9 @@
 			<Option target="fill"/>
 		</Unit>
 		<Unit filename="/Users/mdeanne/aa/fillit/mkfig_arr.c">
+			<Option target="fill"/>
+		</Unit>
+		<Unit filename="/Users/mdeanne/aa/fillit/solver.c">
 			<Option target="fill"/>
 		</Unit>
 		<Unit filename="/Users/mdeanne/aa/fillit/validation.c">

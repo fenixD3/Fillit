@@ -66,3 +66,9 @@ void		free_list(t_dance **head)
 	free(*head);
 	*head = NULL;
 }
+
+void		freelst_and_exit(t_dance *head)
+{
+	free_list(&head);
+	ft_mkerr();
+}

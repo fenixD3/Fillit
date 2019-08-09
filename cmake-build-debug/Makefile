@@ -258,60 +258,6 @@ fillit/free_funcs.c.s:
 	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/free_funcs.c.s
 .PHONY : fillit/free_funcs.c.s
 
-fillit/increase.o: fillit/increase.c.o
-
-.PHONY : fillit/increase.o
-
-# target to build an object file
-fillit/increase.c.o:
-	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/increase.c.o
-.PHONY : fillit/increase.c.o
-
-fillit/increase.i: fillit/increase.c.i
-
-.PHONY : fillit/increase.i
-
-# target to preprocess a source file
-fillit/increase.c.i:
-	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/increase.c.i
-.PHONY : fillit/increase.c.i
-
-fillit/increase.s: fillit/increase.c.s
-
-.PHONY : fillit/increase.s
-
-# target to generate assembly for a file
-fillit/increase.c.s:
-	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/increase.c.s
-.PHONY : fillit/increase.c.s
-
-fillit/increase_list.o: fillit/increase_list.c.o
-
-.PHONY : fillit/increase_list.o
-
-# target to build an object file
-fillit/increase_list.c.o:
-	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/increase_list.c.o
-.PHONY : fillit/increase_list.c.o
-
-fillit/increase_list.i: fillit/increase_list.c.i
-
-.PHONY : fillit/increase_list.i
-
-# target to preprocess a source file
-fillit/increase_list.c.i:
-	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/increase_list.c.i
-.PHONY : fillit/increase_list.c.i
-
-fillit/increase_list.s: fillit/increase_list.c.s
-
-.PHONY : fillit/increase_list.s
-
-# target to generate assembly for a file
-fillit/increase_list.c.s:
-	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/increase_list.c.s
-.PHONY : fillit/increase_list.c.s
-
 fillit/knuth_solver.o: fillit/knuth_solver.c.o
 
 .PHONY : fillit/knuth_solver.o
@@ -2148,6 +2094,33 @@ fillit/mkfig_arr.c.s:
 	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/mkfig_arr.c.s
 .PHONY : fillit/mkfig_arr.c.s
 
+fillit/solver.o: fillit/solver.c.o
+
+.PHONY : fillit/solver.o
+
+# target to build an object file
+fillit/solver.c.o:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/solver.c.o
+.PHONY : fillit/solver.c.o
+
+fillit/solver.i: fillit/solver.c.i
+
+.PHONY : fillit/solver.i
+
+# target to preprocess a source file
+fillit/solver.c.i:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/solver.c.i
+.PHONY : fillit/solver.c.i
+
+fillit/solver.s: fillit/solver.c.s
+
+.PHONY : fillit/solver.s
+
+# target to generate assembly for a file
+fillit/solver.c.s:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/solver.c.s
+.PHONY : fillit/solver.c.s
+
 fillit/validation.o: fillit/validation.c.o
 
 .PHONY : fillit/validation.o
@@ -2226,12 +2199,6 @@ help:
 	@echo "... fillit/free_funcs.o"
 	@echo "... fillit/free_funcs.i"
 	@echo "... fillit/free_funcs.s"
-	@echo "... fillit/increase.o"
-	@echo "... fillit/increase.i"
-	@echo "... fillit/increase.s"
-	@echo "... fillit/increase_list.o"
-	@echo "... fillit/increase_list.i"
-	@echo "... fillit/increase_list.s"
 	@echo "... fillit/knuth_solver.o"
 	@echo "... fillit/knuth_solver.i"
 	@echo "... fillit/knuth_solver.s"
@@ -2436,6 +2403,9 @@ help:
 	@echo "... fillit/mkfig_arr.o"
 	@echo "... fillit/mkfig_arr.i"
 	@echo "... fillit/mkfig_arr.s"
+	@echo "... fillit/solver.o"
+	@echo "... fillit/solver.i"
+	@echo "... fillit/solver.s"
 	@echo "... fillit/validation.o"
 	@echo "... fillit/validation.i"
 	@echo "... fillit/validation.s"
