@@ -72,8 +72,6 @@ static void		open_row_opt(t_dance *spacer)
 				curr->spacer->up->down = curr->spacer;
 				curr->spacer->down->up = curr->spacer;
 			}
-			/*printf("\t\tOpen rows. Opt coord: %d Curr name: %c Curr space: %d\n\t", opt->coord, curr->name, curr->spacer->coord);
-			print_spacers(spacer->home);*/
 			open_opt(curr);
 			curr = curr->down;
 		}
@@ -118,7 +116,6 @@ static t_dance	*hide_row_opt(t_dance *opt)
  * opt pointer is pointing, leaving out options with name == opt->name
  */
 	t_dance *curr;
-	t_dance *it;
 
 	curr = opt;
 	while (curr->name == opt->name)
@@ -137,53 +134,39 @@ static t_dance	*hide_row_opt(t_dance *opt)
 	return (opt->right);
 }
 
-_Bool			solver(t_dance *spacer, int numfig, char **sol_map, int side)
+_Bool			solver(t_dance *spacer, int numfig, char **sol_map)
 {
-/* This func receives counter equal to 1 from main */
 	t_dance		*opt;
 	static int	counter;
 
 	++counter;
-	printf("Recursion num = %d, Spacer = %d\n", counter, spacer->coord);
-	/*printf("\tEnter\n");
-	print_spacers(spacer->home);*/
 	if (counter == numfig)
-	{
-		printf("Spacer coord : %d\n", spacer->coord);
 		return (fill_opt_sol_map(spacer->right, sol_map));
-	}
 	else
 	{
 		opt = spacer->right;
 		while (opt->name != 's')
 			opt = hide_row_opt(opt);
-		/*printf("\tAfter hide\n");
-		print_spacers(spacer->home);*/
 		opt = spacer;
-		while (opt->down->right && opt->down->right->name == opt->right->name)
+		while (opt->right && opt->right->name == spacer->right->name)
 			opt = opt->down;
-		if (opt->down->right && opt->down->right->name - opt->right->name == 1)
-			opt = opt->down;
-		if (!opt->right || !opt->down->right)
+		if ((!opt->down->right && opt->right->name - spacer->right->name != 1) || !opt->right)
 		{
 			open_row_opt(spacer);
-			/*printf("\tAfter open\n");
-			print_spacers(spacer->home);*/
 			--counter;
 			return (0);
 		}
-		while (!solver(opt, numfig, sol_map, side))
+		while (!solver(opt, numfig, sol_map))
 		{
-			if (opt->down->right->name == opt->right->name)
+			if (opt->down->right && opt->down->right->name == opt->right->name)
 				opt = opt->down;
 			else
 			{
-				open_row_opt(spacer);
+				open_row_opt(opt);
 				--counter;
 				return (0);
 			}
 		}
 	}
-	printf("Spacer coord : %d\n", spacer->coord);
 	return (fill_opt_sol_map(spacer->right, sol_map));
 }

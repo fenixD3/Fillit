@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/08 22:34:47 by ylila            ###   ########.fr       */
+/*   Updated: 2019/08/09 23:04:29 by ylila            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,16 +61,18 @@ _Bool		print_solution2(char **sol_map, int side)
 						return (1);
 }
 
-
+#include <time.h>
 
 int main()
 {
+	clock_t begin = clock();
 	char	*line;
 	int		numfig;
 	int		side;
 	int 	**figures;
 
-	char	*filename = "/Users/ylila/Fillit_hub/tests/mkfigtest4";
+	//char	*filename = "/Users/ylila/Fillit_hub/tests/mkfigtest4";
+	char	*filename = "/Users/ylila/Fillit_hub/tests/vtest2";
 //	char	*filename = "/home/yas/Fillit/tests/mkfigtest4";
 
 	numfig = ft_readfile(filename, &line);
@@ -83,16 +85,20 @@ int main()
 
 	t_dance *head = make_cage(side);
 	filling_list(figures, numfig, head, side);
-	print_list(head);
+	//print_list(head);
 
-	while (!solver(head->down, numfig, sol_map, side))
+	while (!solver(head->down, numfig, sol_map))
 	{
-		printf("not enough side\n");
-		++side;
-		increase_list(head, side, numfig);
-		free_arrfigs(sol_map, side - 1);
-		print_list(head);
+		ft_putendl("new solve\n");
+		side++;
+		free_arrfigs((int**)(sol_map), side - 1);
 		sol_map = create_init_sol_map(side);
+		free_list(&head);
+		head = make_cage(side);
+		//free_arrfigs(figures, numfig);
+		figures = mkfig_arr(line, numfig);
+		filling_list(figures, numfig, head, side); //free_array commented
+		//print_list(head);
 	}
 	print_solution2(sol_map, side);
 /*	increase_list(head, side + 1, numfig);
@@ -111,4 +117,6 @@ int main()
 
 	print_cage(head);
 	free_cage(&head, 0);*/
+	clock_t  end = clock();
+	printf("Time = %f\n", (double)(end - begin) / CLOCKS_PER_SEC);
 }

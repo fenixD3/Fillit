@@ -12,13 +12,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e87ec5ad-e55c-4773-8137-f7453846fdab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/sqrs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test11" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/mkfig_arr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/mkfig_arr.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/fill" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/fill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fillit/fillit.h" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/fillit.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fillit/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fillit/mkfig_arr.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/mkfig_arr.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fillit/solver.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/solver.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,12 +72,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/fillit" />
-      <recent name="$PROJECT_DIR$/tests" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
+      <recent name="$PROJECT_DIR$/fillit" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -138,7 +142,8 @@
       <workItem from="1565121310653" duration="947000" />
       <workItem from="1565195583479" duration="907000" />
       <workItem from="1565196833089" duration="1150000" />
-      <workItem from="1565281587434" duration="10261000" />
+      <workItem from="1565281587434" duration="10519000" />
+      <workItem from="1565374305893" duration="7127000" />
     </task>
     <task id="LOCAL-00001" summary="validation v 0.1&#10;errors not tested enough">
       <created>1563315205455</created>
@@ -217,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565121005592</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Let's do final testsssss">
+      <created>1565296285525</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1565296285525</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +263,8 @@
     <MESSAGE value="increasing list: rows v0.5" />
     <MESSAGE value="New fucking solver" />
     <MESSAGE value="New f***ing solver" />
-    <option name="LAST_COMMIT_MESSAGE" value="New f***ing solver" />
+    <MESSAGE value="Let's do final testsssss" />
+    <option name="LAST_COMMIT_MESSAGE" value="Let's do final testsssss" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -19,7 +19,7 @@ void	free_arrfigs(int **figures, int n);
 void 	filling_list(int **figures, int numfig, t_dance *head, int side);
 int		give_side(int numfig);
 //_Bool	solver(t_dance *spacer, int numfig, int counter, int side);
-_Bool			solver(t_dance *spacer, int numfig, char **sol_map, int side);
+_Bool			solver(t_dance *spacer, int numfig, char **sol_map);
 //_Bool filL_opt_sol_map(t_dance *node, char **sol_map);
 
 
