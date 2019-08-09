@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/08 22:32:02 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/09 20:00:24 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ clock_t begin = clock();
 	}
 	numfig = ft_readfile(av[1], &line);*/
 ///////////////////
-	numfig = ft_readfile("/Users/mdeanne/aa/tests/test_8", &line);
+	numfig = ft_readfile("/Users/mdeanne/aa/tests/test_11", &line);
 //////////////////
 	side = give_side(numfig);
 	head = make_cage(side);
@@ -77,18 +77,16 @@ clock_t begin_solver = clock();
 
 	while (!knuth_solver(head->down, numfig, sol_map))
 	{
-		//ft_putendl("new solve\n");
+		ft_putendl("new solve\n");
 		side++;
-		print_list(head);
-		increase_list(head, side, numfig, &sol_map);
-/*		free_array((int**)(sol_map), side - 1);
+/*		increase_list(head, side, numfig, &sol_map);*/
+		free_array((int**)(sol_map), side - 1);
 		sol_map = create_init_sol_map(side);
 		free_list(&head);
 		head = make_cage(side);
 		free_array(figures, numfig);
 		figures = mkfig_arr(line, numfig);
-		filling_list(figures, numfig, head, side); //free_array commented*/
-		print_list(head);
+		filling_list(figures, numfig, head, side); //free_array commented
 	}
 	print_solution(sol_map, side);
 

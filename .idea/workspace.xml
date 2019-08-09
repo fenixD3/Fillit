@@ -12,11 +12,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e87ec5ad-e55c-4773-8137-f7453846fdab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/test_15" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/increase_list.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/increase_list.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/fill" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/fill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fillit/increase.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/increase.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fillit/increase_list.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/increase_list.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fillit/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/sqrs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/sqrs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +56,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -64,11 +69,11 @@
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/fillit" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fillit" />
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
@@ -131,7 +136,8 @@
       <workItem from="1564862267561" duration="2079000" />
       <workItem from="1564941079535" duration="9851000" />
       <workItem from="1565198843927" duration="2405000" />
-      <workItem from="1565277383446" duration="15052000" />
+      <workItem from="1565277383446" duration="15150000" />
+      <workItem from="1565356691710" duration="9640000" />
     </task>
     <task id="LOCAL-00001" summary="validation v 0.1&#10;errors not tested enough">
       <created>1563315205455</created>
@@ -210,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565291490111</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="checking">
+      <created>1565296257336</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1565296257336</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +256,8 @@
     <MESSAGE value="for row in spacers now using coord" />
     <MESSAGE value="increasing list: rows v0.5" />
     <MESSAGE value="solver done. increment middle rows error" />
-    <option name="LAST_COMMIT_MESSAGE" value="solver done. increment middle rows error" />
+    <MESSAGE value="checking" />
+    <option name="LAST_COMMIT_MESSAGE" value="checking" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -264,28 +278,31 @@
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/fillit/increase_list.c</url>
-          <line>65</line>
-          <option name="timeStamp" value="56" />
+          <url>file://$PROJECT_DIR$/fillit/main.c</url>
+          <line>77</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/fillit/main.c</url>
+          <line>71</line>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
-        <watch expression="lines[0]" language="ObjectiveC" />
-        <watch expression="lines[1]" language="ObjectiveC" />
-        <watch expression="lines[2]" language="ObjectiveC" />
-        <watch expression="lines[3]" language="ObjectiveC" />
-        <watch expression="lines[4]" language="ObjectiveC" />
-        <watch expression="lines[5]" language="ObjectiveC" />
-        <watch expression="lines[6]" language="ObjectiveC" />
-        <watch expression="lines[7]" language="ObjectiveC" />
-        <watch expression="lines[8]" language="ObjectiveC" />
-        <watch expression="lines[9]" language="ObjectiveC" />
-        <watch expression="lines[10]" language="ObjectiveC" />
-        <watch expression="head_curr-&gt;coord" language="ObjectiveC" />
+        <watch expression="head-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right" language="ObjectiveC" />
+        <watch expression="head-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;down" language="ObjectiveC" />
+        <watch expression="head-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;down-&gt;down" language="ObjectiveC" />
+        <watch expression="head-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;right-&gt;down-&gt;down-&gt;down" language="ObjectiveC" />
+        <watch expression="left_sp-&gt;right" language="ObjectiveC" />
+        <watch expression="left_sp-&gt;right-&gt;right" language="ObjectiveC" />
+        <watch expression="left_sp-&gt;right-&gt;right-&gt;right" language="ObjectiveC" />
+        <watch expression="left_sp-&gt;right-&gt;right-&gt;right-&gt;right" language="ObjectiveC" />
         <watch expression="curr-&gt;spacer-&gt;coord" language="ObjectiveC" />
-        <watch expression="curr-&gt;down-&gt;spacer-&gt;coord" language="ObjectiveC" />
+        <watch expression="curr-&gt;coord" language="ObjectiveC" />
+        <watch expression="curr-&gt;name" language="ObjectiveC" />
+        <watch expression="left_sp-&gt;coord" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>

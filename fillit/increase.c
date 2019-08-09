@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/03 22:56:22 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/03 22:56:29 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/09 16:52:19 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int 	add_increase_row(t_dance *left_sp, int step)
 	{
 		left_sp = left_sp->right;
 		curr = set_step_for_increase(left_sp->home, step)->down;
-		while (curr->spacer->coord < n_sp->coord - 1)
+		while (curr->spacer->coord < n_sp->coord && curr->name != 'c') ///  неверная проверка (Убрал "- 1")
 			curr = curr->down;
 		if (!(curr = create_connct(prev, n_sp->down, curr->up, curr)))
 			return (0);
