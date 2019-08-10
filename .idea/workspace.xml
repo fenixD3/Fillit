@@ -11,116 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e87ec5ad-e55c-4773-8137-f7453846fdab" name="Default Changelist" comment="free_manager done &amp;&amp; all protect">
-      <change afterPath="$PROJECT_DIR$/fillit/move_to_zero.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/fill" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/fill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/fill.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/fill.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/dance_cage.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/dance_cage.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/dance_create.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/dance_create.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/fillit.h" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/fillit.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/free_funcs.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/free_funcs.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/knuth_solver.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/knuth_solver.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_atoi.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_atoi.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_bzero.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_bzero.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_fib.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_fib.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_isalnum.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_isalnum.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_isalpha.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_isalpha.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_isascii.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_isascii.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_isdigit.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_isdigit.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_islower.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_islower.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_isprint.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_isprint.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_isupper.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_isupper.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_itoa.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_itoa.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_lstadd.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_lstadd.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_lstdel.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_lstdel.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_lstdelone.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_lstdelone.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_lstiter.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_lstiter.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_lstmap.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_lstmap.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_lstnew.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_lstnew.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_lstpush.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_lstpush.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_memalloc.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_memalloc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_memccpy.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_memccpy.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_memchr.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_memchr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_memcmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_memcmp.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_memcpy.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_memcpy.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_memdel.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_memdel.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_memmove.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_memmove.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_memset.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_memset.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_pow.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_pow.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_putchar.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_putchar.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_putchar_fd.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_putchar_fd.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_putendl.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_putendl.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_putendl_fd.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_putendl_fd.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_putnbr.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_putnbr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_putnbr_fd.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_putnbr_fd.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_putstr.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_putstr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_putstr_fd.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_putstr_fd.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strcat.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strcat.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strchr.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strchr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strclr.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strclr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strcmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strcmp.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strcpy.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strcpy.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strdel.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strdel.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strdup.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strdup.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strequ.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strequ.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_striter.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_striter.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_striteri.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_striteri.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strjoin.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strjoin.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strlcat.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strlcat.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strlen.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strlen.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strmap.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strmap.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strmapi.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strmapi.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strncat.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strncat.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strncmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strncmp.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strncpy.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strncpy.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strnequ.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strnequ.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strnew.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strnew.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strnstr.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strnstr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strrchr.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strrchr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strsplit.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strsplit.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strstr.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strstr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strsub.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strsub.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_strtrim.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_strtrim.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_tolower.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_tolower.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/ft_toupper.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/ft_toupper.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/get_next_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/get_next_line.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/get_next_line.h" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/get_next_line.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/libft.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/libft/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/libft/libft.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/mkfig_arr.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/mkfig_arr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/solver.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/solver.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fillit/validation.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/validation.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/increase/increase.c" beforeDir="false" afterPath="$PROJECT_DIR$/increase/increase.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/increase/increase_list.c" beforeDir="false" afterPath="$PROJECT_DIR$/increase/increase_list.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/func_for_tests.h" beforeDir="false" afterPath="$PROJECT_DIR$/tests/func_for_tests.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/funcs_for_tests.c" beforeDir="false" afterPath="$PROJECT_DIR$/tests/funcs_for_tests.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/sqrs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/sqrs" afterDir="false" />
-    </list>
+    <list default="true" id="e87ec5ad-e55c-4773-8137-f7453846fdab" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +131,7 @@
       <workItem from="1565371734769" duration="947000" />
       <workItem from="1565372844569" duration="9618000" />
       <workItem from="1565406954452" duration="5932000" />
-      <workItem from="1565455264601" duration="18265000" />
+      <workItem from="1565455264601" duration="18459000" />
     </task>
     <task id="LOCAL-00001" summary="validation v 0.1&#10;errors not tested enough">
       <created>1563315205455</created>
@@ -333,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565371521201</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="all done!!!">
+      <created>1565479568907</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1565479568907</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +281,8 @@
     <MESSAGE value="checking" />
     <MESSAGE value="all done" />
     <MESSAGE value="free_manager done &amp;&amp; all protect" />
-    <option name="LAST_COMMIT_MESSAGE" value="free_manager done &amp;&amp; all protect" />
+    <MESSAGE value="all done!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="all done!!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
