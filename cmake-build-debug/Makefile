@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -E remove -f
+RM = /Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yas/Fillit
+CMAKE_SOURCE_DIR = /Users/mdeanne/Fillit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yas/Fillit/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/mdeanne/Fillit/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/yas/Fillit/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yas/Fillit/cmake-build-debug/CMakeFiles /home/yas/Fillit/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/Fillit/cmake-build-debug/CMakeFiles /Users/mdeanne/Fillit/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yas/Fillit/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/Fillit/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -2121,32 +2121,32 @@ fillit/mkfig_arr.c.s:
 	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/mkfig_arr.c.s
 .PHONY : fillit/mkfig_arr.c.s
 
-fillit/solver.o: fillit/solver.c.o
+fillit/move_to_zero.o: fillit/move_to_zero.c.o
 
-.PHONY : fillit/solver.o
+.PHONY : fillit/move_to_zero.o
 
 # target to build an object file
-fillit/solver.c.o:
-	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/solver.c.o
-.PHONY : fillit/solver.c.o
+fillit/move_to_zero.c.o:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/move_to_zero.c.o
+.PHONY : fillit/move_to_zero.c.o
 
-fillit/solver.i: fillit/solver.c.i
+fillit/move_to_zero.i: fillit/move_to_zero.c.i
 
-.PHONY : fillit/solver.i
+.PHONY : fillit/move_to_zero.i
 
 # target to preprocess a source file
-fillit/solver.c.i:
-	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/solver.c.i
-.PHONY : fillit/solver.c.i
+fillit/move_to_zero.c.i:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/move_to_zero.c.i
+.PHONY : fillit/move_to_zero.c.i
 
-fillit/solver.s: fillit/solver.c.s
+fillit/move_to_zero.s: fillit/move_to_zero.c.s
 
-.PHONY : fillit/solver.s
+.PHONY : fillit/move_to_zero.s
 
 # target to generate assembly for a file
-fillit/solver.c.s:
-	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/solver.c.s
-.PHONY : fillit/solver.c.s
+fillit/move_to_zero.c.s:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/move_to_zero.c.s
+.PHONY : fillit/move_to_zero.c.s
 
 fillit/validation.o: fillit/validation.c.o
 
@@ -2209,8 +2209,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... fill"
 	@echo "... edit_cache"
+	@echo "... fill"
 	@echo "... fillit/bad_options.o"
 	@echo "... fillit/bad_options.i"
 	@echo "... fillit/bad_options.s"
@@ -2433,9 +2433,9 @@ help:
 	@echo "... fillit/mkfig_arr.o"
 	@echo "... fillit/mkfig_arr.i"
 	@echo "... fillit/mkfig_arr.s"
-	@echo "... fillit/solver.o"
-	@echo "... fillit/solver.i"
-	@echo "... fillit/solver.s"
+	@echo "... fillit/move_to_zero.o"
+	@echo "... fillit/move_to_zero.i"
+	@echo "... fillit/move_to_zero.s"
 	@echo "... fillit/validation.o"
 	@echo "... fillit/validation.i"
 	@echo "... fillit/validation.s"

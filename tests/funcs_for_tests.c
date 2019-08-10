@@ -78,6 +78,47 @@ void print_arr(int **arr, int numfig)
 	}
 }*/
 
+
+
+void print_hidesp(t_dance *head)
+{
+	int coord;
+
+	coord = 0;
+	while (head->right)
+	{
+		if (head->coord == coord)
+		{
+			head = head->down;
+			coord++;
+		}
+		else
+		{
+			printf("%d, ", coord);
+			coord++;
+		}
+	}
+	printf("\n");
+}
+
+void print_sp(t_dance *head)
+{
+	while (head->right)
+	{
+		printf("%d, ", head->coord);
+		head = head->down;
+	}
+	printf("%d\n", head->coord);
+}
+
+void print_sp2(t_dance *head)
+{
+	printf("spasers is\n");
+	print_sp(head);
+	printf("hide spasers is\n");
+	print_hidesp(head);
+}
+
 void print_list(t_dance *head)
 {
 	printf("Print list\n");

@@ -6,55 +6,11 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/03 22:57:08 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/10 07:19:45 by yas              ###   ########.fr       */
+/*   Updated: 2019/08/11 02:15:23 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
-
-int		find_indx_of_min_low_order(const int *figure)
-{
-	int i;
-	int minloworder;
-	int imin;
-
-	i = 1;
-	minloworder = figure[0] % LEAD_DIGT;
-	imin = 0;
-	while (i != 4)
-	{
-		if (minloworder > figure[i] % LEAD_DIGT)
-		{
-			minloworder = figure[i] % LEAD_DIGT;
-			imin = i;
-		}
-		i++;
-	}
-	return (imin);
-}
-
-void	move_to_zero(int *figure)
-{
-	int i;
-	int difference;
-	int flag;
-
-	difference = figure[find_indx_of_min_low_order(figure)] - (LEAD_DIGT + 1);
-	i = 0;
-	while (i != 4)
-		figure[i++] -= difference;
-	flag = 0;
-	i = 0;
-	while (i != 4)
-		if (figure[i++] / LEAD_DIGT == 0)
-			flag = 1;
-	if (flag == 1)
-	{
-		i = 0;
-		while (i != 4)
-			figure[i++] += LEAD_DIGT;
-	}
-}
 
 void	drop_mkfigarr(int **figures, int numfig)
 {

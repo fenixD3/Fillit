@@ -6,30 +6,41 @@
 #    By: ylila <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/03/11 12:26:13 by ylila             #+#    #+#              #
-#    Updated: 2019/08/10 06:15:53 by yas              ###   ########.fr        #
+#    Updated: 2019/08/10 22:24:32 by ylila            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fillit
+LIB_NAME = ./libft/libft.a
 
 FLAGS = -Wall -Wextra -Werror
 
-SRCS = main.c validation.c mkfig_arr.c dance_create.c dance_cage.c \
-	   filling_list.c increase_list.c increase.c knuth_solver.c \
-	   bad_options.c free_funcs.c
+SRC_PATH = ./
+HEAD_PATH = ./
+LIB_PATH = ./libft/
 
-OBJECTS = $(SRCS:.c=.o)
+SRC_FILES = *.c
+SRCS = $(addprefix $(SRC_PATH), $(SRC_FILES))
+
+OBJS = $(SRC_FILES:.c=.o)
 
 all: $(NAME)
 
-$(NAME):
-	gcc $(FLAGS) -c $(SRCS) -I./ -I./libft/
-	gcc $(FLAGS) -o $(NAME) $(OBJECTS) -L ./libft/ -lft
+$(NAME): $(LIB_NAME) $(OBJS)
+	@gcc -o $(NAME) $(OBJS) -L$(LIB_PATH) -lft
+
+$(OBJS):
+	@gcc -c $(SRCS) $(FLAGS) -I$(HEAD_PATH) -I$(LIB_PATH)
+
+$(LIB_NAME):
+	@make -C $(LIB_PATH) re
 
 clean:
-	rm -f $(OBJECTS)
+	@rm -f $(OBJS)
+	@make -C $(LIB_PATH) clean
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
+	@make -C $(LIB_PATH) fclean
 
 re: fclean all

@@ -34,33 +34,6 @@ void	free_sol_map(char ***sol_map, int n)
 	*sol_map = NULL;
 }
 
-// _Bool need for define exit with error or not
-void		free_cage(t_dance **head, _Bool error)
-{
-	t_dance *prev;
-	t_dance *upper;
-
-	prev = *head;
-	upper = (*head)->down;
-	prev->left->right = NULL;
-	upper->up->up->down = NULL;
-	while (*head)
-	{
-		*head = (*head)->right;
-		free(prev);
-		prev = *head;
-	}
-	*head = upper;
-	while (*head)
-	{
-		*head = (*head)->down;
-		free(upper);
-		upper = *head;
-	}
-	error ? ft_mkerr() : error;
-	*head = NULL;
-}
-
 void		free_list(t_dance **head)
 {
 	t_dance *curr;
@@ -80,10 +53,4 @@ void		free_list(t_dance **head)
 	}
 	free(*head);
 	*head = NULL;
-}
-
-void		freelst_and_exit(t_dance *head)
-{
-	free_list(&head);
-	ft_mkerr();
 }

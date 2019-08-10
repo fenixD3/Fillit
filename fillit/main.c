@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/10 07:52:10 by yas              ###   ########.fr       */
+/*   Updated: 2019/08/11 01:47:26 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 /// DELETE THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //#include "../tests/func_for_tests.h"
-//#include <time.h>
+#include <time.h>
 #include "../tests/func_for_tests.h"
 /////////////////////////////////////////////
 
@@ -42,29 +42,33 @@ void	ft_mkerr()
 	exit(1);
 }
 
-char	**create_init_sol_map(int side)
+char **create_init_sol_map(t_freem *mem)
 {
 	char	**sol_map;
 	int		i;
 	int		j;
 
-	if (!(sol_map = (char **)malloc(sizeof(char *) * side)))
-		return (0);
+	if (!(sol_map = (char **)malloc(sizeof(char *) * mem->side)))
+		free_manager(mem, 128);
 	i = -1;
-	while (++i < side)
+	while (++i < mem->side)
 	{
 		j = -1;
-		if (!(sol_map[i] = (char *)malloc(sizeof(char) * side)))
-			return (0);
-		while(++j < side)
+		if (!(sol_map[i] = (char *)malloc(sizeof(char) * mem->side)))
+			free_manager(mem, 128);
+		while(++j < mem->side)
 			sol_map[i][j] = '.';
 	}
 	return (sol_map);
 }
 
+
+_Bool			solver(t_dance *spacer, int numfig, char **sol_map);
+
+
 int		main(int ac, char **av)
 {
-//clock_t begin = clock();
+clock_t begin = clock();
 
 	t_freem	mem;
 
@@ -73,20 +77,18 @@ int		main(int ac, char **av)
 		ft_putendl("usage: ./fillit sample.fillit");
 		return (0);
 	}
-	numfig = ft_readfile(av[1], &line);*/
+	mem.numfig = ft_readfile(av[1], &mem.line, &mem.side);*/
 ///////////////////
-	mem.numfig = ft_readfile("/home/yas/Fillit/tests/test_11", &mem.line, &mem.side);
+	mem.numfig = ft_readfile("/Users/mdeanne/Fillit/tests/42checker/valid_9", &mem.line, &mem.side);
 //////////////////
 	mem.figures = mkfig_arr(mem.line, mem.numfig);
-	if (!(mem.sol_map = create_init_sol_map(mem.side)))
-		free_manager(&mem, 128);
+	mem.sol_map = create_init_sol_map(&mem);
 	filling_list(&mem);
 	while (!knuth_solver(mem.head->down, mem.numfig, mem.sol_map))
 	{
 		free_manager(&mem, 6); // free sol_map && list
 		mem.side++;
-		if (!(mem.sol_map = create_init_sol_map(mem.side)))
-			free_manager(&mem, 128);
+		mem.sol_map = create_init_sol_map(&mem);
 		filling_list(&mem);
 	}
 	print_solution(mem.sol_map, mem.side);
@@ -94,42 +96,7 @@ int		main(int ac, char **av)
 
 
 
-//clock_t end = clock();
-//double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-//printf("time program = %lf\n", time_spent);
+clock_t end = clock();
+double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+printf("time program = %lf\n", time_spent);
 }
-/*		char	*line;
-	int		numfig;
-	int		side;
-	int 	**figures;
-	char 	**sol_map;
-
-	char	*filename = "/Users/mdeanne/Fillit/tests/mkfigtest4";
-//	char	*filename = "/home/yas/Fillit/tests/mkfigtest4";
-
-	numfig = ft_readfile(filename, &line);
-	side = give_side(numfig);
-	printf("side = %d\n", side);
-
-	figures = mkfig_arr(line, numfig);
-	printf("numfig = %d\n", numfig);
-
-
-	t_dance *head = make_cage(side);
-	filling_list(figures, numfig, head, side);
-
-	sol_map = create_init_sol_map(side);
-	if (!knuth_solver(head->down, numfig, sol_map))
-	{
-		printf("not enough side\nincreasing list\n");
-		increase_list(head, side + 1, numfig, &sol_map);
-		knuth_solver(head->down, numfig, sol_map);
-		print_solution(sol_map, side + 1);
-	}
-	else
-		print_solution(sol_map, side);
-
-	free_list(&head);
-
-
-}*/

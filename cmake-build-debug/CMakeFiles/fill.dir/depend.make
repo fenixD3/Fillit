@@ -221,6 +221,12 @@ CMakeFiles/fill.dir/fillit/mkfig_arr.c.o: ../fillit/free_manager.h
 CMakeFiles/fill.dir/fillit/mkfig_arr.c.o: ../fillit/libft/libft.h
 CMakeFiles/fill.dir/fillit/mkfig_arr.c.o: ../fillit/mkfig_arr.c
 
+CMakeFiles/fill.dir/fillit/move_to_zero.c.o: ../fillit/dance.h
+CMakeFiles/fill.dir/fillit/move_to_zero.c.o: ../fillit/fillit.h
+CMakeFiles/fill.dir/fillit/move_to_zero.c.o: ../fillit/free_manager.h
+CMakeFiles/fill.dir/fillit/move_to_zero.c.o: ../fillit/libft/libft.h
+CMakeFiles/fill.dir/fillit/move_to_zero.c.o: ../fillit/move_to_zero.c
+
 CMakeFiles/fill.dir/fillit/solver.c.o: ../fillit/dance.h
 CMakeFiles/fill.dir/fillit/solver.c.o: ../fillit/fillit.h
 CMakeFiles/fill.dir/fillit/solver.c.o: ../fillit/free_manager.h

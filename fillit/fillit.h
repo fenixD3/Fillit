@@ -24,13 +24,14 @@
 void	ft_mkerr();
 int 	ft_readfile(char *filename, char **line, int *side);
 int		**mkfig_arr(const char *line, int numfig);
+void	move_to_zero(int *figure);
 void	free_arrfig(int ***figures, int n);
 void	free_sol_map(char ***sol_map, int n);
 void filling_list(t_freem *mem);
 int		give_side(int numfig);
 void	drop_mkfigarr(int **figures, int numfig);
 
-char	**create_init_sol_map(int side);
+char **create_init_sol_map(t_freem *mem);
 _Bool	knuth_solver(t_dance *spacer, int numfig, char **sol_map);
 
 #endif
