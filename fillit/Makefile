@@ -14,20 +14,33 @@ NAME = fillit
 
 FLAGS = -Wall -Wextra -Werror
 
-SRCS = 
+SRC_PATH = ./
+HEAD_PATH = ./
+LIB_PATH = ./libft/
 
-OBJECTS = 
+SRC_FILES = *.c
+SRCS = $(addprefix $(SRC_PATH), $(SRC_FILES))
+
+HEAD_FILES = *.h
+HDRS = $(addprefix $(HEAD_PATH), $(HEAD_FILES))
+
+OBJS = $(SRC_FILES:.c=.O)
 
 all: $(NAME)
 
-$(NAME):
-	@gcc -c $(SRCS) $(FLAGS) -L. -lft
-	@gcc -o $(NAME) $(OBJECTS)
+$(NAME): lib
+	@gcc -c $(SRCS) $(FLAGS) -I$(HEAD_PATH) -I$(LIB_PATH)
+	@gcc -o $(NAME) $(OBJS) -L$(LIB_PATH) -lft
+
+lib:
+	@make -C $(LIB_PATH) re
 
 clean:
-	@rm -f $(OBJECTS)
+	@rm -f $(OBJS)
+	@make -C $(LIB_PATH) clean
 
 fclean: clean
 	@rm -f $(NAME)
+	@make -C $(LIB_PATH) fclean
 
 re: fclean all
