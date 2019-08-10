@@ -6,7 +6,7 @@
 /*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/21 16:59:04 by ylila             #+#    #+#             */
-/*   Updated: 2019/07/30 18:14:22 by yas              ###   ########.fr       */
+/*   Updated: 2019/08/10 19:41:03 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,33 +45,6 @@ int			add_spacer(t_dance *head, t_dance *new, _Bool edge, t_dance *curr)
 	return (1);
 }
 
-void		free_cage(t_dance **head, _Bool error)
-	// _Bool need for define exit with error or not
-{
-	t_dance *prev;
-	t_dance *upper;
-
-	prev = *head;
-	upper = (*head)->down;
-	prev->left->right = NULL;
-	upper->up->up->down = NULL;
-	while (*head)
-	{
-		*head = (*head)->right;
-		free(prev);
-		prev = *head;
-	}
-	*head = upper;
-	while (*head)
-	{
-		*head = (*head)->down;
-		free(upper);
-		upper = *head;
-	}
-	error ? ft_mkerr() : error;
-	*head = NULL;
-}
-
 t_dance		*make_cage(int side)
 {
 	t_dance	*head;
@@ -80,7 +53,7 @@ t_dance		*make_cage(int side)
 	int		low_bit;
 
 	if (!(head = create('h', 0)))
-		return (NULL);
+		return (0);
 	high_bit = 0;
 	curr = head;
 	while (++high_bit <= side)
@@ -90,11 +63,11 @@ t_dance		*make_cage(int side)
 		{
 			if (!add_cage(curr, head,
 			create('c', high_bit * LEAD_DIGT + low_bit)))
-				free_cage(&head, 1);
+				return (0);
 			curr = curr->right;
 		}
 	}
 	if (!(add_spacer(head, create('s', 1), 1, curr)))
-		free_cage(&head, 1);
+		return (0);
 	return (head);
 }

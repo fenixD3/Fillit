@@ -6,7 +6,7 @@
 /*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/21 16:56:15 by ylila             #+#    #+#             */
-/*   Updated: 2019/07/30 23:41:19 by yas              ###   ########.fr       */
+/*   Updated: 2019/08/10 19:41:03 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ void		node_set_params(t_dance *curr, char n_name,
 	curr->spacer = spacer;
 }
 
+/*
 void		free_list(t_dance **head)
 {
 	t_dance *curr;
@@ -84,4 +85,4 @@ void		free_list(t_dance **head)
 	}
 	free(*head);
 	head = NULL;
-}
+}*/

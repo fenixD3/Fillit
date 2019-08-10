@@ -6,7 +6,11 @@
 #    By: ylila <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/03/11 12:26:13 by ylila             #+#    #+#              #
+<<<<<<< HEAD:den/fillit/libft/Makefile
 #    Updated: 2019/08/10 19:50:46 by ylila            ###   ########.fr        #
+=======
+#    Updated: 2019/08/10 19:41:03 by mdeanne          ###   ########.fr        #
+>>>>>>> eg:fillit/libft/Makefile
 #                                                                              #
 # **************************************************************************** #
 

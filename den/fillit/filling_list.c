@@ -6,14 +6,14 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/03 22:55:49 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/03 22:55:58 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/10 07:52:11 by yas              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 #include "dance.h"
 
-int 	fill_row(int *figure, int step, const char n_name, t_dance *head)
+int fill_row(int *figure, int step, const char n_name, t_freem *mem)
 {
 	int i;
 	t_dance *curr;
@@ -21,21 +21,21 @@ int 	fill_row(int *figure, int step, const char n_name, t_dance *head)
 	t_dance *new;
 
 	i = 0;
-	curr = head;
-	prev = head->up;
+	curr = mem->head;
+	prev = mem->head->up;
 	while (i < 4)
 	{
 		while (curr->coord != figure[i] + step)
 			curr = curr->right;
 		if (!(new = create_connct(prev, NULL, curr->up, curr)))
-			return (0);
-		node_set_params(new, n_name, figure[i] + step, head->up);
+			free_manager(mem, 128);
+		node_set_params(new, n_name, figure[i] + step, mem->head->up);
 		new->home = curr;
 		prev = prev->right;
 		i++;
 	}
-	if (!(add_spacer(head, create('s', 1), 0, new)))
-		return (0);
+	if (!(add_spacer(mem->head, create('s', 1), 0, new)))
+		free_manager(mem, 128);
 	new->right->left = new;
 	return (1);
 }
@@ -67,32 +67,32 @@ void	increase_figure_on_lead_digit(int *figure, int *highdn, int *step)
 	*step = 0;
 }
 
-/// NEED: free **figures
-void 	filling_list(int **figures, int numfig, t_dance *head, int side)
+
+
+void filling_list(t_freem *mem)
 {
 	int i;
 	int lowdn; //max low digit number
 	int highdn; //max high digit number
 	int step;
 
+	if (!(mem->head = make_cage(mem->side)))
+		free_manager(mem, 128);
 	i = -1;
-	while (++i < numfig)
+	while (++i < mem->numfig)
 	{
 		step = 0;
-		lowdn = find_max_low_dgtnum(figures[i]);
-		highdn = figures[i][3] / LEAD_DIGT;
-		while (highdn <= side)
+		lowdn = find_max_low_dgtnum(mem->figures[i]);
+		highdn = mem->figures[i][3] / LEAD_DIGT;
+		while (highdn <= mem->side)
 		{
-			if (lowdn + step <= side)
-			{
-				if (!fill_row(figures[i], step++, ((char) i + 'A'), head))
-					free_list(&head);
-			}
-			else if (highdn < side)
-				increase_figure_on_lead_digit(figures[i], &highdn, &step);
-			else if (highdn == side)
+			if (lowdn + step <= mem->side)
+				fill_row(mem->figures[i], step++, ((char) i + 'A'), mem);
+			else if (highdn < mem->side)
+				increase_figure_on_lead_digit(mem->figures[i], &highdn, &step);
+			else if (highdn == mem->side)
 				break ;
 		}
 	}
-	free_arrfigs(figures, numfig);
+	drop_mkfigarr(mem->figures, mem->numfig);
 }

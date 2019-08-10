@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:59:02 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/04 21:39:43 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/10 19:41:03 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ void	ft_check(char line[BUFF_SIZE])
 	}
 }
 
-int		ft_readfile(char *filename, char **line)
+int ft_readfile(char *filename, char **line, int *side)
 {
 	int		fd;
 	int		ret;
@@ -70,7 +70,14 @@ int		ft_readfile(char *filename, char **line)
 		ft_mkerr();
 	buf[ret] = '\0';
 	ft_check(buf);
-	*line = ft_strdup(buf);
+	if (!(*line = ft_strdup(buf)))
+	{
+		close(fd);
+		ft_mkerr();
+	}
+	if (close(fd))
+		ft_mkerr();
+	*side = give_side((ret + 1) / 21);
 	return ((ret + 1) / 21);
 }
 

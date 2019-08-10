@@ -6,53 +6,19 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/03 22:57:08 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/03 22:57:14 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/11 02:15:23 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 
-int		find_indx_of_min_low_order(const int *figure)
+void	drop_mkfigarr(int **figures, int numfig)
 {
-	int i;
-	int minloworder;
-	int imin;
-
-	i = 1;
-	minloworder = figure[0] % LEAD_DIGT;
-	imin = 0;
-	while (i != 4)
+	int i = 0;
+	while (i < numfig)
 	{
-		if (minloworder > figure[i] % LEAD_DIGT)
-		{
-			minloworder = figure[i] % LEAD_DIGT;
-			imin = i;
-		}
+		move_to_zero(figures[i]);
 		i++;
-	}
-	return (imin);
-}
-
-void	move2zero(int *figure)
-{
-	int i;
-	int difference;
-	int flag;
-
-	difference = figure[find_indx_of_min_low_order(figure)] - (LEAD_DIGT + 1);
-	i = 0;
-	while (i != 4)
-		figure[i++] -= difference;
-	flag = 0;
-	i = 0;
-	while (i != 4)
-		if (figure[i++] / LEAD_DIGT == 0)
-			flag = 1;
-	if (flag == 1)
-	{
-		i = 0;
-		while (i != 4)
-			figure[i++] += LEAD_DIGT;
 	}
 }
 
@@ -79,46 +45,32 @@ int		*mkfig(const char *line)
 		}
 		j++;
 	}
-	move2zero(figure - 4);
+	//move_to_zero(figure - 4); /// зачем это здесь?
 	return (figure - 4);
-}
-
-void	free_arrfigs(int **figures, int n)
-{
-	int i;
-
-	i = 0;
-	while (i < n)
-	{
-		free(figures[i]);
-//		figures[i] = NULL;
-		i++;
-	}
-	free(figures);
-	figures = NULL;
 }
 
 int		**mkfig_arr(const char *line, int numfig)
 {
-	char	*start_line;
 	int		**figures;
 	int		i;
 
 	if (!(figures = (int**)malloc(sizeof(int*) * numfig)))
 		ft_mkerr();
 	i = 0;
-	start_line = (char*)line;
 	while (i < numfig)
 	{
 		if (!((figures[i]) = mkfig(line)))
 		{
-			free_arrfigs(figures, i);
+			free_arrfig(&figures, i);
 			ft_mkerr();
 		}
-		move2zero(figures[i]);
+		move_to_zero(figures[i]);
 		line += 21;
 		i++;
 	}
+<<<<<<< HEAD
+=======
 	//free(start_line);
+>>>>>>> master
 	return (figures);
 }
