@@ -22,6 +22,7 @@ LIB_PATH = ./libft/
 SRC_FILES = *.c
 SRCS = $(addprefix $(SRC_PATH), $(SRC_FILES))
 
+<<<<<<< HEAD
 OBJS = $(SRC_FILES:.c=.o)
 
 all: $(NAME)
@@ -33,6 +34,20 @@ $(OBJS):
 	@gcc -c $(SRCS) $(FLAGS) -I$(HEAD_PATH) -I$(LIB_PATH)
 
 $(LIB_NAME):
+=======
+HEAD_FILES = *.h
+HDRS = $(addprefix $(HEAD_PATH), $(HEAD_FILES))
+
+OBJS = $(SRC_FILES:.c=.O)
+
+all: $(NAME)
+
+$(NAME): lib
+	@gcc -c $(SRCS) $(FLAGS) -I$(HEAD_PATH) -I$(LIB_PATH)
+	@gcc -o $(NAME) $(OBJS) -L$(LIB_PATH) -lft
+
+lib:
+>>>>>>> master
 	@make -C $(LIB_PATH) re
 
 clean:

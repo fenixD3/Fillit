@@ -68,5 +68,9 @@ int		**mkfig_arr(const char *line, int numfig)
 		line += 21;
 		i++;
 	}
+<<<<<<< HEAD
+=======
+	//free(start_line);
+>>>>>>> master
 	return (figures);
 }

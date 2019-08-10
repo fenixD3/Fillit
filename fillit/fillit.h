@@ -29,9 +29,18 @@ void	free_arrfig(int ***figures, int n);
 void	free_sol_map(char ***sol_map, int n);
 void filling_list(t_freem *mem);
 int		give_side(int numfig);
+<<<<<<< HEAD
 void	drop_mkfigarr(int **figures, int numfig);
 
 char **create_init_sol_map(t_freem *mem);
 _Bool	knuth_solver(t_dance *spacer, int numfig, char **sol_map);
+=======
+//_Bool	solver(t_dance *spacer, int numfig, int counter, int side);
+_Bool			solver(t_dance *spacer, int numfig, char **sol_map);
+//_Bool filL_opt_sol_map(t_dance *node, char **sol_map);
+
+
+_Bool	print_solution(t_dance *spacer, int side, int counter);
+>>>>>>> master
 
 #endif

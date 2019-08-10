@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="fill" targetName="fill" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="e87ec5ad-e55c-4773-8137-f7453846fdab" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="e87ec5ad-e55c-4773-8137-f7453846fdab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/sqrs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test11" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/mkfig_arr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/fill.dir/fillit/mkfig_arr.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/fill" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/fill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fillit/fillit.h" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/fillit.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fillit/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fillit/mkfig_arr.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/mkfig_arr.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fillit/solver.c" beforeDir="false" afterPath="$PROJECT_DIR$/fillit/solver.c" afterDir="false" />
+    </list>
+>>>>>>> master
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FavoritesManager">
+    <favorites_list name="fill" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="mdeanne &lt;mdeanne@oa-d4.21-school.ru&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectId" id="1OvcV9Iaozq2H5vFrT8U1JvgA2F" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+<<<<<<< HEAD
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+=======
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+>>>>>>> master
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
+      <recent name="$PROJECT_DIR$/fillit" />
+      <recent name="$PROJECT_DIR$/increase" />
+=======
+>>>>>>> master
+      <recent name="$PROJECT_DIR$/tests" />
+      <recent name="$PROJECT_DIR$/fillit" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="fill" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="fill" TARGET_NAME="fill" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="fill" RUN_TARGET_NAME="fill">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e87ec5ad-e55c-4773-8137-f7453846fdab" name="Default Changelist" comment="" />
+      <created>1563304769198</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563304769198</updated>
+      <workItem from="1563304770335" duration="28000" />
+      <workItem from="1563304811553" duration="50000" />
+      <workItem from="1563304926930" duration="62000" />
+      <workItem from="1563304999132" duration="15000" />
+      <workItem from="1563305025341" duration="40000" />
+      <workItem from="1563305100698" duration="16756000" />
+      <workItem from="1563627036033" duration="4872000" />
+      <workItem from="1563706140616" duration="11099000" />
+      <workItem from="1563723558617" duration="3063000" />
+      <workItem from="1563880662118" duration="7763000" />
+      <workItem from="1563992276797" duration="1370000" />
+      <workItem from="1564047372303" duration="5420000" />
+      <workItem from="1564058009819" duration="13067000" />
+      <workItem from="1564145706702" duration="14714000" />
+      <workItem from="1564245690492" duration="11492000" />
+      <workItem from="1564311828959" duration="12215000" />
+      <workItem from="1564493882256" duration="3544000" />
+      <workItem from="1564498584162" duration="14018000" />
+      <workItem from="1564514419224" duration="421000" />
+      <workItem from="1564516693364" duration="4724000" />
+      <workItem from="1564523044258" duration="3900000" />
+      <workItem from="1564856732562" duration="200000" />
+      <workItem from="1564857778852" duration="3076000" />
+      <workItem from="1564861389517" duration="59000" />
+      <workItem from="1564861540143" duration="369000" />
+      <workItem from="1564861947999" duration="83000" />
+      <workItem from="1564862041938" duration="13000" />
+      <workItem from="1564862267561" duration="2079000" />
+      <workItem from="1564941079535" duration="9851000" />
+<<<<<<< HEAD
+      <workItem from="1565198843927" duration="2405000" />
+      <workItem from="1565277383446" duration="15150000" />
+      <workItem from="1565356691710" duration="9680000" />
+      <workItem from="1565371734769" duration="947000" />
+      <workItem from="1565372844569" duration="9618000" />
+      <workItem from="1565406954452" duration="5932000" />
+      <workItem from="1565455264601" duration="18459000" />
+=======
+      <workItem from="1565117659395" duration="3009000" />
+      <workItem from="1565121310653" duration="947000" />
+      <workItem from="1565195583479" duration="907000" />
+      <workItem from="1565196833089" duration="1150000" />
+      <workItem from="1565281587434" duration="10519000" />
+      <workItem from="1565374305893" duration="7127000" />
+>>>>>>> master
+    </task>
+    <task id="LOCAL-00001" summary="validation v 0.1&#10;errors not tested enough">
+      <created>1563315205455</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563315205455</updated>
+    </task>
+    <task id="LOCAL-00002" summary="validation v 1.0&#10;all my tests are passed">
+      <created>1563319880623</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563319880623</updated>
+    </task>
+    <task id="LOCAL-00003" summary="validation v 1.0&#10;some comments">
+      <created>1563320293130</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1563320293130</updated>
+    </task>
+    <task id="LOCAL-00004" summary="count number of figures&#10;added into check">
+      <created>1563338344920</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1563338344920</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Making array of figures (some fix)">
+      <created>1563710278434</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1563710278434</updated>
+    </task>
+    <task id="LOCAL-00006" summary="11">
+      <created>1563717932770</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1563717932770</updated>
+    </task>
+    <task id="LOCAL-00007" summary="end flexing">
+      <created>1563724210427</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1563724210427</updated>
+    </task>
+    <task id="LOCAL-00008" summary="filling list added&#10;tasks: addition of nodes when expanding the field (2 functions)">
+      <created>1564074093715</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1564074093715</updated>
+    </task>
+    <task id="LOCAL-00009" summary="for row in spacers now using coord">
+      <created>1564248692160</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1564248692160</updated>
+    </task>
+    <task id="LOCAL-00010" summary="increasing list: rows v0.5">
+      <created>1564261580428</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1564261580428</updated>
+    </task>
+<<<<<<< HEAD
+    <task id="LOCAL-00011" summary="solver done. increment middle rows error">
+      <created>1565291490111</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1565291490111</updated>
+    </task>
+    <task id="LOCAL-00012" summary="checking">
+      <created>1565296257336</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1565296257336</updated>
+    </task>
+    <task id="LOCAL-00013" summary="all done">
+      <created>1565371521201</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1565371521201</updated>
+    </task>
+    <task id="LOCAL-00014" summary="all done!!!">
+      <created>1565479568907</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1565479568907</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+=======
+    <task id="LOCAL-00011" summary="New f***ing solver">
+      <created>1565121005592</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1565121005592</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Let's do final testsssss">
+      <created>1565296285525</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1565296285525</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+>>>>>>> master
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="validation v 0.1&#10;errors not tested enough" />
+    <MESSAGE value="validation v 1.0&#10;all my tests are passed" />
+    <MESSAGE value="validation v 1.0&#10;some comments" />
+    <MESSAGE value="count number of figures&#10;added into check" />
+    <MESSAGE value="Making array of figures&#10;It's array of arrays with coordinates of figures moved to first cell of matrix of solution" />
+    <MESSAGE value="Making array of figures (some fix)" />
+    <MESSAGE value="11" />
+    <MESSAGE value="end flexing" />
+    <MESSAGE value="start do filling list" />
+    <MESSAGE value="filling list added&#10;tasks: addition of nodes when expanding the field (2 functions)" />
+    <MESSAGE value="for row in spacers now using coord" />
+    <MESSAGE value="increasing list: rows v0.5" />
+<<<<<<< HEAD
+    <MESSAGE value="solver done. increment middle rows error" />
+    <MESSAGE value="checking" />
+    <MESSAGE value="all done" />
+    <MESSAGE value="free_manager done &amp;&amp; all protect" />
+    <MESSAGE value="all done!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="all done!!!" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/fillit/filling_list.c</url>
+          <line>89</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/fillit/mkfig_arr.c</url>
+          <line>66</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="figures[i][0]" language="ObjectiveC" />
+        <watch expression="figures[i][1]" language="ObjectiveC" />
+        <watch expression="figures[i][2]" language="ObjectiveC" />
+        <watch expression="figures[i][3]" language="ObjectiveC" />
+        <watch expression="figure[0]" language="ObjectiveC" />
+        <watch expression="figure[1]" language="ObjectiveC" />
+        <watch expression="figure[2]" language="ObjectiveC" />
+        <watch expression="figure[3]" language="ObjectiveC" />
+=======
+    <MESSAGE value="New fucking solver" />
+    <MESSAGE value="New f***ing solver" />
+    <MESSAGE value="Let's do final testsssss" />
+    <option name="LAST_COMMIT_MESSAGE" value="Let's do final testsssss" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="sol_map[0][0]" language="ObjectiveC" />
+        <watch expression="sol_map[0][1]" language="ObjectiveC" />
+        <watch expression="sol_map[0][2]" language="ObjectiveC" />
+        <watch expression="sol_map[0][3]" language="ObjectiveC" />
+        <watch expression="sol_map[1][3]" language="ObjectiveC" />
+        <watch expression="sol_map[2][3]" language="ObjectiveC" />
+        <watch expression="sol_map[1][0]" language="ObjectiveC" />
+        <watch expression="sol_map[2][0]" language="ObjectiveC" />
+        <watch expression="sol_map[3][0]" language="ObjectiveC" />
+        <watch expression="sol_map[1][1]" language="ObjectiveC" />
+        <watch expression="sol_map[1][2]" language="ObjectiveC" />
+        <watch expression="sol_map[2][1]" language="ObjectiveC" />
+        <watch expression="counter" language="ObjectiveC" />
+>>>>>>> master
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
