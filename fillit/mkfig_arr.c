@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/03 22:57:08 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/09 22:44:25 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/10 07:19:45 by yas              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,7 +105,7 @@ int		**mkfig_arr(const char *line, int numfig)
 	{
 		if (!((figures[i]) = mkfig(line)))
 		{
-			free_array(figures, i);
+			free_arrfig(&figures, i);
 			ft_mkerr();
 		}
 		move_to_zero(figures[i]);

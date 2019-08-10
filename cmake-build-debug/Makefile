@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mdeanne/aa
+CMAKE_SOURCE_DIR = /home/yas/Fillit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mdeanne/aa/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yas/Fillit/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/mdeanne/aa/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/aa/cmake-build-debug/CMakeFiles /Users/mdeanne/aa/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yas/Fillit/cmake-build-debug/CMakeFiles /home/yas/Fillit/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/aa/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yas/Fillit/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -257,6 +257,33 @@ fillit/free_funcs.s: fillit/free_funcs.c.s
 fillit/free_funcs.c.s:
 	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/free_funcs.c.s
 .PHONY : fillit/free_funcs.c.s
+
+fillit/free_manager.o: fillit/free_manager.c.o
+
+.PHONY : fillit/free_manager.o
+
+# target to build an object file
+fillit/free_manager.c.o:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/free_manager.c.o
+.PHONY : fillit/free_manager.c.o
+
+fillit/free_manager.i: fillit/free_manager.c.i
+
+.PHONY : fillit/free_manager.i
+
+# target to preprocess a source file
+fillit/free_manager.c.i:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/free_manager.c.i
+.PHONY : fillit/free_manager.c.i
+
+fillit/free_manager.s: fillit/free_manager.c.s
+
+.PHONY : fillit/free_manager.s
+
+# target to generate assembly for a file
+fillit/free_manager.c.s:
+	$(MAKE) -f CMakeFiles/fill.dir/build.make CMakeFiles/fill.dir/fillit/free_manager.c.s
+.PHONY : fillit/free_manager.c.s
 
 fillit/knuth_solver.o: fillit/knuth_solver.c.o
 
@@ -2182,8 +2209,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... fill"
+	@echo "... edit_cache"
 	@echo "... fillit/bad_options.o"
 	@echo "... fillit/bad_options.i"
 	@echo "... fillit/bad_options.s"
@@ -2199,6 +2226,9 @@ help:
 	@echo "... fillit/free_funcs.o"
 	@echo "... fillit/free_funcs.i"
 	@echo "... fillit/free_funcs.s"
+	@echo "... fillit/free_manager.o"
+	@echo "... fillit/free_manager.i"
+	@echo "... fillit/free_manager.s"
 	@echo "... fillit/knuth_solver.o"
 	@echo "... fillit/knuth_solver.i"
 	@echo "... fillit/knuth_solver.s"

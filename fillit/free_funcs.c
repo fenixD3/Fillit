@@ -4,19 +4,34 @@
 
 #include "fillit.h"
 
-void	free_array(int **figures, int n)
+void	free_arrfig(int ***figures, int n)
 {
 	int i;
 
 	i = 0;
 	while (i < n)
 	{
-		free(figures[i]);
-		figures[i] = NULL;
+		free(*(figures[i]));
+		*(figures[i]) = NULL;
 		i++;
 	}
-	free(figures);
-	figures = NULL;
+	free(*figures);
+	*figures = NULL;
+}
+
+void	free_sol_map(char ***sol_map, int n)
+{
+	int i;
+
+	i = 0;
+	while (i < n)
+	{
+		free(*(sol_map[i]));
+		*(sol_map[i]) = NULL;
+		i++;
+	}
+	free(*sol_map);
+	*sol_map = NULL;
 }
 
 // _Bool need for define exit with error or not

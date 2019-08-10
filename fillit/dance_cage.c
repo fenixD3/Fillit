@@ -6,7 +6,7 @@
 /*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/21 16:59:04 by ylila             #+#    #+#             */
-/*   Updated: 2019/07/30 18:14:22 by yas              ###   ########.fr       */
+/*   Updated: 2019/08/10 06:15:53 by yas              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ t_dance		*make_cage(int side)
 	int		low_bit;
 
 	if (!(head = create('h', 0)))
-		ft_mkerr();
+		return (0);
 	high_bit = 0;
 	curr = head;
 	while (++high_bit <= side)
@@ -63,11 +63,11 @@ t_dance		*make_cage(int side)
 		{
 			if (!add_cage(curr, head,
 			create('c', high_bit * LEAD_DIGT + low_bit)))
-				free_cage(&head, 1);
+				return (0);
 			curr = curr->right;
 		}
 	}
 	if (!(add_spacer(head, create('s', 1), 1, curr)))
-		free_cage(&head, 1);
+		return (0);
 	return (head);
 }

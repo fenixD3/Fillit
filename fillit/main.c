@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/09 23:07:58 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/10 07:52:10 by yas              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 /// DELETE THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //#include "../tests/func_for_tests.h"
-#include <time.h>
+//#include <time.h>
 #include "../tests/func_for_tests.h"
 /////////////////////////////////////////////
 
@@ -34,7 +34,6 @@ void	print_solution(char **sol_map, int side)
 		if (i < side)
 			write (1, "\n", 1);
 	}
-	free_array((int**)sol_map, side);
 }
 
 void	ft_mkerr()
@@ -42,14 +41,6 @@ void	ft_mkerr()
 	ft_putendl("error");
 	exit(1);
 }
-
-/*void	three_free(t_dance **head, char **sol_map, char *line, int side)
-{
-	if (num == 1)
-		free_list(head);
-	if (num == 2)
-
-}*/
 
 char	**create_init_sol_map(int side)
 {
@@ -64,10 +55,7 @@ char	**create_init_sol_map(int side)
 	{
 		j = -1;
 		if (!(sol_map[i] = (char *)malloc(sizeof(char) * side)))
-		{
-			free_array((int**)sol_map, i);
 			return (0);
-		}
 		while(++j < side)
 			sol_map[i][j] = '.';
 	}
@@ -76,13 +64,9 @@ char	**create_init_sol_map(int side)
 
 int		main(int ac, char **av)
 {
-clock_t begin = clock();
-	int numfig;
-	int side;
-	char *line;
-	char **sol_map;
-	t_dance *head;
-	int **figures;
+//clock_t begin = clock();
+
+	t_freem	mem;
 
 /*	if (ac != 2)
 	{
@@ -91,46 +75,28 @@ clock_t begin = clock();
 	}
 	numfig = ft_readfile(av[1], &line);*/
 ///////////////////
-	numfig = ft_readfile("/Users/mdeanne/aa/tests/test_11", &line, &side);
+	mem.numfig = ft_readfile("/home/yas/Fillit/tests/test_11", &mem.line, &mem.side);
 //////////////////
-	figures = mkfig_arr(line, numfig);
-	head = filling_list(figures, numfig, side); // free_array  commented
-	if (!(sol_map = create_init_sol_map(side)))
+	mem.figures = mkfig_arr(mem.line, mem.numfig);
+	if (!(mem.sol_map = create_init_sol_map(mem.side)))
+		free_manager(&mem, 128);
+	filling_list(&mem);
+	while (!knuth_solver(mem.head->down, mem.numfig, mem.sol_map))
 	{
-		free_list(&head);
-		free_array(figures, numfig);
-		free(line);
-		ft_mkerr();
+		free_manager(&mem, 6); // free sol_map && list
+		mem.side++;
+		if (!(mem.sol_map = create_init_sol_map(mem.side)))
+			free_manager(&mem, 128);
+		filling_list(&mem);
 	}
+	print_solution(mem.sol_map, mem.side);
+	free_manager(&mem, 15);
 
 
 
-
-	while (!knuth_solver(head->down, numfig, sol_map))
-	{
-		ft_putendl("new solve");
-
-		free_array((int**)(sol_map), side);
-		free_list(&head);
-
-		side++;
-
-		if (!(sol_map = create_init_sol_map(side)))
-		{
-			free_array(figures, numfig);
-			free(line);
-			ft_mkerr();
-		}
-		head = filling_list(figures, numfig, side); //free_array commented
-	}
-	print_solution(sol_map, side);
-	free_list(&head);
-	free(line);
-
-
-clock_t end = clock();
-double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-printf("time program = %lf\n", time_spent);
+//clock_t end = clock();
+//double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+//printf("time program = %lf\n", time_spent);
 }
 /*		char	*line;
 	int		numfig;

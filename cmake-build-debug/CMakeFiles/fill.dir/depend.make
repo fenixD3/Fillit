@@ -4,30 +4,42 @@
 CMakeFiles/fill.dir/fillit/bad_options.c.o: ../fillit/bad_options.c
 CMakeFiles/fill.dir/fillit/bad_options.c.o: ../fillit/dance.h
 CMakeFiles/fill.dir/fillit/bad_options.c.o: ../fillit/fillit.h
+CMakeFiles/fill.dir/fillit/bad_options.c.o: ../fillit/free_manager.h
 CMakeFiles/fill.dir/fillit/bad_options.c.o: ../fillit/libft/libft.h
 
 CMakeFiles/fill.dir/fillit/dance_cage.c.o: ../fillit/dance.h
 CMakeFiles/fill.dir/fillit/dance_cage.c.o: ../fillit/dance_cage.c
 CMakeFiles/fill.dir/fillit/dance_cage.c.o: ../fillit/fillit.h
+CMakeFiles/fill.dir/fillit/dance_cage.c.o: ../fillit/free_manager.h
 CMakeFiles/fill.dir/fillit/dance_cage.c.o: ../fillit/libft/libft.h
 
 CMakeFiles/fill.dir/fillit/dance_create.c.o: ../fillit/dance.h
 CMakeFiles/fill.dir/fillit/dance_create.c.o: ../fillit/dance_create.c
 CMakeFiles/fill.dir/fillit/dance_create.c.o: ../fillit/fillit.h
+CMakeFiles/fill.dir/fillit/dance_create.c.o: ../fillit/free_manager.h
 CMakeFiles/fill.dir/fillit/dance_create.c.o: ../fillit/libft/libft.h
 
 CMakeFiles/fill.dir/fillit/filling_list.c.o: ../fillit/dance.h
 CMakeFiles/fill.dir/fillit/filling_list.c.o: ../fillit/filling_list.c
 CMakeFiles/fill.dir/fillit/filling_list.c.o: ../fillit/fillit.h
+CMakeFiles/fill.dir/fillit/filling_list.c.o: ../fillit/free_manager.h
 CMakeFiles/fill.dir/fillit/filling_list.c.o: ../fillit/libft/libft.h
 
 CMakeFiles/fill.dir/fillit/free_funcs.c.o: ../fillit/dance.h
 CMakeFiles/fill.dir/fillit/free_funcs.c.o: ../fillit/fillit.h
 CMakeFiles/fill.dir/fillit/free_funcs.c.o: ../fillit/free_funcs.c
+CMakeFiles/fill.dir/fillit/free_funcs.c.o: ../fillit/free_manager.h
 CMakeFiles/fill.dir/fillit/free_funcs.c.o: ../fillit/libft/libft.h
+
+CMakeFiles/fill.dir/fillit/free_manager.c.o: ../fillit/dance.h
+CMakeFiles/fill.dir/fillit/free_manager.c.o: ../fillit/fillit.h
+CMakeFiles/fill.dir/fillit/free_manager.c.o: ../fillit/free_manager.c
+CMakeFiles/fill.dir/fillit/free_manager.c.o: ../fillit/free_manager.h
+CMakeFiles/fill.dir/fillit/free_manager.c.o: ../fillit/libft/libft.h
 
 CMakeFiles/fill.dir/fillit/knuth_solver.c.o: ../fillit/dance.h
 CMakeFiles/fill.dir/fillit/knuth_solver.c.o: ../fillit/fillit.h
+CMakeFiles/fill.dir/fillit/knuth_solver.c.o: ../fillit/free_manager.h
 CMakeFiles/fill.dir/fillit/knuth_solver.c.o: ../fillit/knuth_solver.c
 CMakeFiles/fill.dir/fillit/knuth_solver.c.o: ../fillit/libft/libft.h
 
@@ -198,27 +210,32 @@ CMakeFiles/fill.dir/fillit/libft/get_next_line.c.o: ../fillit/libft/libft.h
 
 CMakeFiles/fill.dir/fillit/main.c.o: ../fillit/dance.h
 CMakeFiles/fill.dir/fillit/main.c.o: ../fillit/fillit.h
+CMakeFiles/fill.dir/fillit/main.c.o: ../fillit/free_manager.h
 CMakeFiles/fill.dir/fillit/main.c.o: ../fillit/libft/libft.h
 CMakeFiles/fill.dir/fillit/main.c.o: ../fillit/main.c
 CMakeFiles/fill.dir/fillit/main.c.o: ../tests/func_for_tests.h
 
 CMakeFiles/fill.dir/fillit/mkfig_arr.c.o: ../fillit/dance.h
 CMakeFiles/fill.dir/fillit/mkfig_arr.c.o: ../fillit/fillit.h
+CMakeFiles/fill.dir/fillit/mkfig_arr.c.o: ../fillit/free_manager.h
 CMakeFiles/fill.dir/fillit/mkfig_arr.c.o: ../fillit/libft/libft.h
 CMakeFiles/fill.dir/fillit/mkfig_arr.c.o: ../fillit/mkfig_arr.c
 
 CMakeFiles/fill.dir/fillit/solver.c.o: ../fillit/dance.h
 CMakeFiles/fill.dir/fillit/solver.c.o: ../fillit/fillit.h
+CMakeFiles/fill.dir/fillit/solver.c.o: ../fillit/free_manager.h
 CMakeFiles/fill.dir/fillit/solver.c.o: ../fillit/libft/libft.h
 CMakeFiles/fill.dir/fillit/solver.c.o: ../fillit/solver.c
 
 CMakeFiles/fill.dir/fillit/validation.c.o: ../fillit/dance.h
 CMakeFiles/fill.dir/fillit/validation.c.o: ../fillit/fillit.h
+CMakeFiles/fill.dir/fillit/validation.c.o: ../fillit/free_manager.h
 CMakeFiles/fill.dir/fillit/validation.c.o: ../fillit/libft/libft.h
 CMakeFiles/fill.dir/fillit/validation.c.o: ../fillit/validation.c
 
 CMakeFiles/fill.dir/tests/funcs_for_tests.c.o: ../fillit/dance.h
 CMakeFiles/fill.dir/tests/funcs_for_tests.c.o: ../fillit/fillit.h
+CMakeFiles/fill.dir/tests/funcs_for_tests.c.o: ../fillit/free_manager.h
 CMakeFiles/fill.dir/tests/funcs_for_tests.c.o: ../fillit/libft/libft.h
 CMakeFiles/fill.dir/tests/funcs_for_tests.c.o: ../tests/func_for_tests.h
 CMakeFiles/fill.dir/tests/funcs_for_tests.c.o: ../tests/funcs_for_tests.c
