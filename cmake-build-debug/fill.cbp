@@ -92,6 +92,9 @@
 		<Unit filename="/Users/ylila/Fillit_hub/fillit/fillit.h">
 			<Option target="fill"/>
 		</Unit>
+		<Unit filename="/Users/ylila/Fillit_hub/fillit/for_solver.c">
+			<Option target="fill"/>
+		</Unit>
 		<Unit filename="/Users/ylila/Fillit_hub/fillit/increase.c">
 			<Option target="fill"/>
 		</Unit>
