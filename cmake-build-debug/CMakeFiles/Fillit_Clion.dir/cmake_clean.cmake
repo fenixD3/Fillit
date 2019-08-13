@@ -77,6 +77,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Fillit_Clion.dir/final/move_to_zero.c.o"
   "CMakeFiles/Fillit_Clion.dir/final/solver.c.o"
   "CMakeFiles/Fillit_Clion.dir/final/validation.c.o"
+  "CMakeFiles/Fillit_Clion.dir/tests/funcs_for_tests.c.o"
   "Fillit_Clion.pdb"
   "Fillit_Clion"
 )

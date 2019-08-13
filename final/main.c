@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/11 01:47:26 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/13 19:17:20 by ylila            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 /// DELETE THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //#include "../tests/func_for_tests.h"
 #include <time.h>
-#include "../tests/func_for_tests.h"
 /////////////////////////////////////////////
 
 
@@ -68,24 +67,27 @@ _Bool			solver(t_dance *spacer, int numfig, char **sol_map);
 
 int		main(int ac, char **av)
 {
-clock_t begin = clock();
+//clock_t begin = clock();
 
 	t_freem	mem;
 
-/*	if (ac != 2)
+	if (ac != 2)
 	{
 		ft_putendl("usage: ./fillit sample.fillit");
 		return (0);
 	}
-	mem.numfig = ft_readfile(av[1], &mem.line, &mem.side);*/
+	mem.numfig = ft_readfile(av[1], &mem.line, &mem.side);
 ///////////////////
-	mem.numfig = ft_readfile("/home/yas/Fillit_Clion/tests/test_11", &mem.line, &mem.side);
+	/*mem.numfig = ft_readfile("/Users/ylila/Fillit_hub/tests/42checker/valid_7", &mem.line, &mem.side);
+	printf("Numfig = %d, side = %d\n", mem.numfig, mem.side);*/
 //////////////////
 	mem.figures = mkfig_arr(mem.line, mem.numfig);
 	mem.sol_map = create_init_sol_map(&mem);
 	filling_list(&mem);
-	while (!knuth_solver(mem.head->down, mem.numfig, mem.sol_map))
+	//print_list(mem.head);
+	while (!solver(mem.head->down, mem.numfig, mem.sol_map))
 	{
+		//printf("NEW\n");
 		free_manager(&mem, 6); // free sol_map && list
 		mem.side++;
 		mem.sol_map = create_init_sol_map(&mem);
@@ -96,7 +98,7 @@ clock_t begin = clock();
 
 
 
-clock_t end = clock();
+/*clock_t end = clock();
 double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-printf("time program = %lf\n", time_spent);
+printf("time program = %lf\n", time_spent);*/
 }

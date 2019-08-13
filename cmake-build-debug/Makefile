@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Users/ylila/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -E remove -f
+RM = /Users/ylila/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yas/Fillit_Clion
+CMAKE_SOURCE_DIR = /Users/ylila/Fillit_hub
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yas/Fillit_Clion/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ylila/Fillit_hub/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/yas/Fillit_Clion/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Users/ylila/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Users/ylila/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yas/Fillit_Clion/cmake-build-debug/CMakeFiles /home/yas/Fillit_Clion/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ylila/Fillit_hub/cmake-build-debug/CMakeFiles /Users/ylila/Fillit_hub/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yas/Fillit_Clion/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ylila/Fillit_hub/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -2229,6 +2229,33 @@ final/validation.c.s:
 	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/validation.c.s
 .PHONY : final/validation.c.s
 
+tests/funcs_for_tests.o: tests/funcs_for_tests.c.o
+
+.PHONY : tests/funcs_for_tests.o
+
+# target to build an object file
+tests/funcs_for_tests.c.o:
+	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/tests/funcs_for_tests.c.o
+.PHONY : tests/funcs_for_tests.c.o
+
+tests/funcs_for_tests.i: tests/funcs_for_tests.c.i
+
+.PHONY : tests/funcs_for_tests.i
+
+# target to preprocess a source file
+tests/funcs_for_tests.c.i:
+	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/tests/funcs_for_tests.c.i
+.PHONY : tests/funcs_for_tests.c.i
+
+tests/funcs_for_tests.s: tests/funcs_for_tests.c.s
+
+.PHONY : tests/funcs_for_tests.s
+
+# target to generate assembly for a file
+tests/funcs_for_tests.c.s:
+	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/tests/funcs_for_tests.c.s
+.PHONY : tests/funcs_for_tests.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2236,8 +2263,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... Fillit_Clion"
 	@echo "... edit_cache"
+	@echo "... Fillit_Clion"
 	@echo "... final/bad_options.o"
 	@echo "... final/bad_options.i"
 	@echo "... final/bad_options.s"
@@ -2472,6 +2499,9 @@ help:
 	@echo "... final/validation.o"
 	@echo "... final/validation.i"
 	@echo "... final/validation.s"
+	@echo "... tests/funcs_for_tests.o"
+	@echo "... tests/funcs_for_tests.i"
+	@echo "... tests/funcs_for_tests.s"
 .PHONY : help
 
 

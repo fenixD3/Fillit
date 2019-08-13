@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/07 18:52:29 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/11 03:34:28 by ylila            ###   ########.fr       */
+/*   Updated: 2019/08/13 19:13:13 by ylila            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@
 # include "dance.h"
 # include "free_manager.h"
 
+#include <stdio.h>
+#include "../tests/func_for_tests.h"
 
 void	ft_mkerr();
 int 	ft_readfile(char *filename, char **line, int *side);
@@ -34,7 +36,10 @@ _Bool	knuth_solver(t_dance *spacer, int numfig, char **sol_map);
 _Bool	fill_opt_to_sol_map(t_dance *node, char **sol_map);
 
 _Bool	solver(t_dance *spacer, int numfig, char **sol_map);
-_Bool	backtrack(t_dance *spacer, int *counter);
+_Bool	backtrack(t_dance *spacer, int *counter, _Bool decrement);
+t_dance	*find_next_spacer(t_dance *spacer);
 void	open_row_opt(t_dance *spacer);
+void	hide_row_opt(t_dance *opt);
+_Bool	check_recursion(t_dance **spacer, t_dance **nsp, int counter);
 
 #endif

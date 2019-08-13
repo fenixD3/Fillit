@@ -6,48 +6,56 @@ CMakeFiles/Fillit_Clion.dir/final/bad_options.c.o: ../final/dance.h
 CMakeFiles/Fillit_Clion.dir/final/bad_options.c.o: ../final/fillit.h
 CMakeFiles/Fillit_Clion.dir/final/bad_options.c.o: ../final/free_manager.h
 CMakeFiles/Fillit_Clion.dir/final/bad_options.c.o: ../final/libft/libft.h
+CMakeFiles/Fillit_Clion.dir/final/bad_options.c.o: ../tests/func_for_tests.h
 
 CMakeFiles/Fillit_Clion.dir/final/dance_cage.c.o: ../final/dance.h
 CMakeFiles/Fillit_Clion.dir/final/dance_cage.c.o: ../final/dance_cage.c
 CMakeFiles/Fillit_Clion.dir/final/dance_cage.c.o: ../final/fillit.h
 CMakeFiles/Fillit_Clion.dir/final/dance_cage.c.o: ../final/free_manager.h
 CMakeFiles/Fillit_Clion.dir/final/dance_cage.c.o: ../final/libft/libft.h
+CMakeFiles/Fillit_Clion.dir/final/dance_cage.c.o: ../tests/func_for_tests.h
 
 CMakeFiles/Fillit_Clion.dir/final/dance_create.c.o: ../final/dance.h
 CMakeFiles/Fillit_Clion.dir/final/dance_create.c.o: ../final/dance_create.c
 CMakeFiles/Fillit_Clion.dir/final/dance_create.c.o: ../final/fillit.h
 CMakeFiles/Fillit_Clion.dir/final/dance_create.c.o: ../final/free_manager.h
 CMakeFiles/Fillit_Clion.dir/final/dance_create.c.o: ../final/libft/libft.h
+CMakeFiles/Fillit_Clion.dir/final/dance_create.c.o: ../tests/func_for_tests.h
 
 CMakeFiles/Fillit_Clion.dir/final/filling_list.c.o: ../final/dance.h
 CMakeFiles/Fillit_Clion.dir/final/filling_list.c.o: ../final/filling_list.c
 CMakeFiles/Fillit_Clion.dir/final/filling_list.c.o: ../final/fillit.h
 CMakeFiles/Fillit_Clion.dir/final/filling_list.c.o: ../final/free_manager.h
 CMakeFiles/Fillit_Clion.dir/final/filling_list.c.o: ../final/libft/libft.h
+CMakeFiles/Fillit_Clion.dir/final/filling_list.c.o: ../tests/func_for_tests.h
 
 CMakeFiles/Fillit_Clion.dir/final/for_solver.c.o: ../final/dance.h
 CMakeFiles/Fillit_Clion.dir/final/for_solver.c.o: ../final/fillit.h
 CMakeFiles/Fillit_Clion.dir/final/for_solver.c.o: ../final/for_solver.c
 CMakeFiles/Fillit_Clion.dir/final/for_solver.c.o: ../final/free_manager.h
 CMakeFiles/Fillit_Clion.dir/final/for_solver.c.o: ../final/libft/libft.h
+CMakeFiles/Fillit_Clion.dir/final/for_solver.c.o: ../tests/func_for_tests.h
 
 CMakeFiles/Fillit_Clion.dir/final/free_funcs.c.o: ../final/dance.h
 CMakeFiles/Fillit_Clion.dir/final/free_funcs.c.o: ../final/fillit.h
 CMakeFiles/Fillit_Clion.dir/final/free_funcs.c.o: ../final/free_funcs.c
 CMakeFiles/Fillit_Clion.dir/final/free_funcs.c.o: ../final/free_manager.h
 CMakeFiles/Fillit_Clion.dir/final/free_funcs.c.o: ../final/libft/libft.h
+CMakeFiles/Fillit_Clion.dir/final/free_funcs.c.o: ../tests/func_for_tests.h
 
 CMakeFiles/Fillit_Clion.dir/final/free_manager.c.o: ../final/dance.h
 CMakeFiles/Fillit_Clion.dir/final/free_manager.c.o: ../final/fillit.h
 CMakeFiles/Fillit_Clion.dir/final/free_manager.c.o: ../final/free_manager.c
 CMakeFiles/Fillit_Clion.dir/final/free_manager.c.o: ../final/free_manager.h
 CMakeFiles/Fillit_Clion.dir/final/free_manager.c.o: ../final/libft/libft.h
+CMakeFiles/Fillit_Clion.dir/final/free_manager.c.o: ../tests/func_for_tests.h
 
 CMakeFiles/Fillit_Clion.dir/final/knuth_solver.c.o: ../final/dance.h
 CMakeFiles/Fillit_Clion.dir/final/knuth_solver.c.o: ../final/fillit.h
 CMakeFiles/Fillit_Clion.dir/final/knuth_solver.c.o: ../final/free_manager.h
 CMakeFiles/Fillit_Clion.dir/final/knuth_solver.c.o: ../final/knuth_solver.c
 CMakeFiles/Fillit_Clion.dir/final/knuth_solver.c.o: ../final/libft/libft.h
+CMakeFiles/Fillit_Clion.dir/final/knuth_solver.c.o: ../tests/func_for_tests.h
 
 CMakeFiles/Fillit_Clion.dir/final/libft/ft_atoi.c.o: ../final/libft/ft_atoi.c
 
@@ -226,22 +234,33 @@ CMakeFiles/Fillit_Clion.dir/final/mkfig_arr.c.o: ../final/fillit.h
 CMakeFiles/Fillit_Clion.dir/final/mkfig_arr.c.o: ../final/free_manager.h
 CMakeFiles/Fillit_Clion.dir/final/mkfig_arr.c.o: ../final/libft/libft.h
 CMakeFiles/Fillit_Clion.dir/final/mkfig_arr.c.o: ../final/mkfig_arr.c
+CMakeFiles/Fillit_Clion.dir/final/mkfig_arr.c.o: ../tests/func_for_tests.h
 
 CMakeFiles/Fillit_Clion.dir/final/move_to_zero.c.o: ../final/dance.h
 CMakeFiles/Fillit_Clion.dir/final/move_to_zero.c.o: ../final/fillit.h
 CMakeFiles/Fillit_Clion.dir/final/move_to_zero.c.o: ../final/free_manager.h
 CMakeFiles/Fillit_Clion.dir/final/move_to_zero.c.o: ../final/libft/libft.h
 CMakeFiles/Fillit_Clion.dir/final/move_to_zero.c.o: ../final/move_to_zero.c
+CMakeFiles/Fillit_Clion.dir/final/move_to_zero.c.o: ../tests/func_for_tests.h
 
 CMakeFiles/Fillit_Clion.dir/final/solver.c.o: ../final/dance.h
 CMakeFiles/Fillit_Clion.dir/final/solver.c.o: ../final/fillit.h
 CMakeFiles/Fillit_Clion.dir/final/solver.c.o: ../final/free_manager.h
 CMakeFiles/Fillit_Clion.dir/final/solver.c.o: ../final/libft/libft.h
 CMakeFiles/Fillit_Clion.dir/final/solver.c.o: ../final/solver.c
+CMakeFiles/Fillit_Clion.dir/final/solver.c.o: ../tests/func_for_tests.h
 
 CMakeFiles/Fillit_Clion.dir/final/validation.c.o: ../final/dance.h
 CMakeFiles/Fillit_Clion.dir/final/validation.c.o: ../final/fillit.h
 CMakeFiles/Fillit_Clion.dir/final/validation.c.o: ../final/free_manager.h
 CMakeFiles/Fillit_Clion.dir/final/validation.c.o: ../final/libft/libft.h
 CMakeFiles/Fillit_Clion.dir/final/validation.c.o: ../final/validation.c
+CMakeFiles/Fillit_Clion.dir/final/validation.c.o: ../tests/func_for_tests.h
+
+CMakeFiles/Fillit_Clion.dir/tests/funcs_for_tests.c.o: ../final/dance.h
+CMakeFiles/Fillit_Clion.dir/tests/funcs_for_tests.c.o: ../final/fillit.h
+CMakeFiles/Fillit_Clion.dir/tests/funcs_for_tests.c.o: ../final/free_manager.h
+CMakeFiles/Fillit_Clion.dir/tests/funcs_for_tests.c.o: ../final/libft/libft.h
+CMakeFiles/Fillit_Clion.dir/tests/funcs_for_tests.c.o: ../tests/func_for_tests.h
+CMakeFiles/Fillit_Clion.dir/tests/funcs_for_tests.c.o: ../tests/funcs_for_tests.c
 
