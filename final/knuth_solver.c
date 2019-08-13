@@ -6,14 +6,15 @@
 /*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/11 03:13:31 by ylila             #+#    #+#             */
-/*   Updated: 2019/08/11 03:35:18 by ylila            ###   ########.fr       */
+/*   Updated: 2019/08/13 20:47:06 by ylila            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 
-_Bool	fill_opt_to_sol_map(t_dance *node, char **sol_map)
+_Bool	fill_opt_to_sol_map(t_dance *node, char **sol_map, int *counter)
 {
+	--(*counter);
 	while (node->name != 's')
 	{
 		sol_map[node->coord / LEAD_DIGT - 1][node->coord % LEAD_DIGT - 1]
@@ -23,7 +24,7 @@ _Bool	fill_opt_to_sol_map(t_dance *node, char **sol_map)
 	return (1);
 }
 
-_Bool	prepare_backtrack(t_dance *spacer, int *counter)
+/*_Bool	prepare_backtrack(t_dance *spacer, int *counter)
 {
 	bad_options(spacer->right, open_option);
 	(*counter)--;
@@ -90,4 +91,4 @@ _Bool	knuth_solver(t_dance *spacer, int numfig, char **sol_map)
 		if (counter == numfig && spacer->right)
 			return (fill_opt_to_sol_map(spacer->right, sol_map));
 	}
-}
+}*/

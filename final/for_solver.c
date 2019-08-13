@@ -1,16 +1,15 @@
 #include "fillit.h"
 
-_Bool			backtrack(t_dance *spacer, int *counter, _Bool decrement)
+_Bool	backtrack(t_dance *spacer, int *counter)
 {
 	open_row_opt(spacer);
 	/*printf("\tAfter open\n");
 	print_sp(spacer->home);*/
-	if (decrement)
-		--(*counter);
+	--(*counter);
 	return (0);
 }
 
-t_dance		*find_next_spacer(t_dance *spacer)
+t_dance	*find_next_spacer(t_dance *spacer)
 {
 	t_dance *nsp;
 
@@ -20,12 +19,12 @@ t_dance		*find_next_spacer(t_dance *spacer)
 	return (nsp);
 }
 
-_Bool		check_recursion(t_dance **spacer, t_dance **nsp, int counter)
+_Bool	check_recur(t_dance **spacer, t_dance **nsp, int *counter)
 {
 	if ((!(*nsp)->down->right &&
 	(*nsp)->right->name - (*spacer)->right->name != 1) || !(*nsp)->right)
 	{
-		if (counter == 1)
+		if (*counter == 1)
 		{
 			open_row_opt(*spacer);
 			if ((*spacer)->down->right &&
@@ -34,11 +33,14 @@ _Bool		check_recursion(t_dance **spacer, t_dance **nsp, int counter)
 				*spacer = (*spacer)->down;
 				hide_row_opt((*spacer)->right);
 				*nsp = find_next_spacer(*spacer);
-				check_recursion(spacer, nsp, counter);
+				if (!check_recur(spacer, nsp, counter))
+					return (backtrack(*spacer, counter));
 			}
+			else
+				return (backtrack(*spacer, counter));
 		}
 		else
-			return (backtrack(*spacer, &counter, 1));
+			return (backtrack(*spacer, counter));
 	}
 	return (1);
 }

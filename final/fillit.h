@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/07 18:52:29 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/13 19:13:13 by ylila            ###   ########.fr       */
+/*   Updated: 2019/08/13 20:13:29 by ylila            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,13 @@ void	drop_mkfigarr(int **figures, int numfig);
 
 char	**create_init_sol_map(t_freem *mem);
 _Bool	knuth_solver(t_dance *spacer, int numfig, char **sol_map);
-_Bool	fill_opt_to_sol_map(t_dance *node, char **sol_map);
+_Bool	fill_opt_to_sol_map(t_dance *node, char **sol_map, int *counter);
 
 _Bool	solver(t_dance *spacer, int numfig, char **sol_map);
-_Bool	backtrack(t_dance *spacer, int *counter, _Bool decrement);
+_Bool	backtrack(t_dance *spacer, int *counter);
 t_dance	*find_next_spacer(t_dance *spacer);
 void	open_row_opt(t_dance *spacer);
 void	hide_row_opt(t_dance *opt);
-_Bool	check_recursion(t_dance **spacer, t_dance **nsp, int counter);
+_Bool	check_recur(t_dance **spacer, t_dance **nsp, int *counter);
 
 #endif
