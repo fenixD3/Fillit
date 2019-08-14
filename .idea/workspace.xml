@@ -20,7 +20,6 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fillit_Clion.dir/final/solver.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fillit_Clion.dir/final/solver.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Fillit_Clion" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Fillit_Clion" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final/fillit" beforeDir="false" afterPath="$PROJECT_DIR$/final/fillit" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/fillit.h" beforeDir="false" afterPath="$PROJECT_DIR$/final/fillit.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final/for_solver.c" beforeDir="false" afterPath="$PROJECT_DIR$/final/for_solver.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final/knuth_solver.c" beforeDir="false" afterPath="$PROJECT_DIR$/final/knuth_solver.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/final/libft/libft.a" afterDir="false" />
@@ -90,6 +89,10 @@
       <workItem from="1565711577313" duration="1344000" />
       <workItem from="1565713421959" duration="1382000" />
       <workItem from="1565715056161" duration="3437000" />
+      <workItem from="1565799430760" duration="481000" />
+      <workItem from="1565800369797" duration="3357000" />
+      <workItem from="1565804409535" duration="2632000" />
+      <workItem from="1565807656653" duration="958000" />
     </task>
     <servers />
   </component>

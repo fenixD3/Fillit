@@ -6,7 +6,7 @@
 /*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/11 03:13:31 by ylila             #+#    #+#             */
-/*   Updated: 2019/08/13 20:47:06 by ylila            ###   ########.fr       */
+/*   Updated: 2019/08/14 20:28:13 by ylila            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,7 @@
 _Bool	fill_opt_to_sol_map(t_dance *node, char **sol_map, int *counter)
 {
 	--(*counter);
-	while (node->name != 's')
-	{
+	while (node->name != 's') {
 		sol_map[node->coord / LEAD_DIGT - 1][node->coord % LEAD_DIGT - 1]
 				= node->name;
 		node = node->right;

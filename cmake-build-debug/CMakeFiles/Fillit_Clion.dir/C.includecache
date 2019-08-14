@@ -32,13 +32,9 @@ stdlib.h
 unistd.h
 -
 
-/Users/ylila/Fillit_hub/final/main.c
+/Users/ylila/Fillit_hub/final/solver.c
 fillit.h
 /Users/ylila/Fillit_hub/final/fillit.h
-dance.h
-/Users/ylila/Fillit_hub/final/dance.h
-time.h
--
 
 /Users/ylila/Fillit_hub/tests/func_for_tests.h
 stdio.h

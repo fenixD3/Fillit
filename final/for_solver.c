@@ -3,9 +3,10 @@
 _Bool	backtrack(t_dance *spacer, int *counter)
 {
 	open_row_opt(spacer);
-	/*printf("\tAfter open\n");
-	print_sp(spacer->home);*/
-	--(*counter);
+	printf("\tAfter open\n");
+	print_sp(spacer->home);
+	if (spacer->right->name == 'A' + *counter - 1)
+		--(*counter);
 	return (0);
 }
 

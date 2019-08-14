@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/13 20:48:51 by ylila            ###   ########.fr       */
+/*   Updated: 2019/08/14 21:48:26 by ylila            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,28 +71,28 @@ int		main(int ac, char **av)
 
 	t_freem	mem;
 
-	if (ac != 2)
+	/*if (ac != 2)
 	{
 		ft_putendl("usage: ./fillit sample.fillit");
 		return (0);
 	}
-	mem.numfig = ft_readfile(av[1], &mem.line, &mem.side);
+	mem.numfig = ft_readfile(av[1], &mem.line, &mem.side);*/
 ///////////////////
-	/*mem.numfig = ft_readfile("/Users/ylila/Fillit_hub/tests/42checker/valid_15", &mem.line, &mem.side);
-	printf("Numfig = %d, side = %d\n", mem.numfig, mem.side);*/
+	mem.numfig = ft_readfile("/Users/ylila/Fillit_hub/tests/42checker/valid_11", &mem.line, &mem.side);
+	printf("Numfig = %d, side = %d\n", mem.numfig, mem.side);
 //////////////////
 	mem.figures = mkfig_arr(mem.line, mem.numfig);
 	mem.sol_map = create_init_sol_map(&mem);
 	filling_list(&mem);
-	//print_list(mem.head);
+	print_list(mem.head);
 	while (!solver(mem.head->down, mem.numfig, mem.sol_map))
 	{
-		//printf("NEW\n");
+		printf("NEW\n");
 		free_manager(&mem, 6); // free sol_map && list
 		mem.side++;
 		mem.sol_map = create_init_sol_map(&mem);
 		filling_list(&mem);
-		//print_list(mem.head);
+		print_list(mem.head);
 	}
 	print_solution(mem.sol_map, mem.side);
 	free_manager(&mem, 15);

@@ -88,25 +88,27 @@ _Bool			solver(t_dance *spacer, int numfig, char **sol_map)
 	static int	counter;
 
 	++counter;
-	/*printf("Enter counter = %d, spacer = %d\n", counter, spacer->coord);
-	print_sp(spacer->home);*/
+	printf("Enter counter = %d, spacer = %d\n", counter, spacer->coord);
+	print_sp(spacer->home);
 	if (counter == numfig)
 		return (fill_opt_to_sol_map(spacer->right, sol_map, &counter));
 	else
 	{
 		hide_row_opt(spacer->right);
-		/*printf("\tAfter hide\n");
-		print_sp(spacer->home);*/
+		printf("\tAfter hide\n");
+		print_sp(spacer->home);
 		nsp = find_next_spacer(spacer);
 		if (!check_recur(&spacer, &nsp, &counter))
-			return (0);
+			return (backtrack(spacer, &counter));
 		while (!solver(nsp, numfig, sol_map))
 		{
 			if (nsp->down->right && nsp->down->right->name == nsp->right->name)
 				nsp = nsp->down;
-			else if (spacer->down->right && spacer->down->right->name == spacer->right->name)
+			else if (spacer->down->right &&
+			spacer->down->right->name == spacer->right->name)
 			{
-				--counter;
+				if (spacer->right->name == 'A' + counter - 1)
+					--counter;
 				open_row_opt(spacer);
 				spacer = spacer->down;
 				nsp = spacer;
