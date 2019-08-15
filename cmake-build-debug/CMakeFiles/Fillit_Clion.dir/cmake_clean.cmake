@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Fillit_Clion.dir/final/free_funcs.c.o"
   "CMakeFiles/Fillit_Clion.dir/final/free_manager.c.o"
   "CMakeFiles/Fillit_Clion.dir/final/knuth_solver.c.o"
+  "CMakeFiles/Fillit_Clion.dir/final/knuth_solver2.c.o"
   "CMakeFiles/Fillit_Clion.dir/final/libft/ft_atoi.c.o"
   "CMakeFiles/Fillit_Clion.dir/final/libft/ft_bzero.c.o"
   "CMakeFiles/Fillit_Clion.dir/final/libft/ft_fib.c.o"
@@ -77,6 +78,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Fillit_Clion.dir/final/move_to_zero.c.o"
   "CMakeFiles/Fillit_Clion.dir/final/solver.c.o"
   "CMakeFiles/Fillit_Clion.dir/final/validation.c.o"
+  "CMakeFiles/Fillit_Clion.dir/tests/funcs_for_tests.c.o"
   "Fillit_Clion.pdb"
   "Fillit_Clion"
 )

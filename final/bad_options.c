@@ -67,6 +67,10 @@ void	bad_options(t_dance *node, void (*f)(t_dance *))
 {
 	t_dance *curr;
 
+//	printf("---------------------------\n");
+//	printf("spacer->coord == %d\nBefore bad options\n", node->spacer->coord);
+//	//print_list_by_sp(node->spacer->home);
+
 	while (node->name != 's')
 	{
 		curr = node->down;
@@ -77,4 +81,8 @@ void	bad_options(t_dance *node, void (*f)(t_dance *))
 		}
 		node = node->right;
 	}
+
+//	printf("After bad options\n");
+//	//print_list_by_sp(node->spacer->home);
+//	printf("---------------------------\n");
 }

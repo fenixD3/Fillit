@@ -6,7 +6,7 @@
 /*   By: ylila <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/11 03:13:31 by ylila             #+#    #+#             */
-/*   Updated: 2019/08/11 03:35:18 by ylila            ###   ########.fr       */
+/*   Updated: 2019/08/13 23:56:56 by yas              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,14 @@ int next_char(t_dance *spacer, t_dance **curr, int *counter, int numfig, char **
 							(*curr)->up->right->name != 1) || !(*curr)->right)
 			return (prepare_backtrack(spacer, counter));
 	}
+	else if (spacer->down->right &&
+						spacer->down->right->name - spacer->right->name == 1)
+		*curr = spacer->down;
 	else if (spacer->down->right && *counter + 1 == numfig &&
 						spacer->right->name + 1 == spacer->down->right->name)
 	{
 		(*counter)++;
+		fill_opt_to_sol_map(spacer->right, sol_map);
 		return (fill_opt_to_sol_map(spacer->down->right, sol_map));
 	}
 	else
@@ -63,31 +67,49 @@ int next_char(t_dance *spacer, t_dance **curr, int *counter, int numfig, char **
 	return (2);
 }
 
-_Bool	knuth_solver(t_dance *spacer, int numfig, char **sol_map)
+_Bool	a_solver(t_dance *spacer, int numfig, char **sol_map)
 {
-	static int	counter;
+	int counter;
+
+	counter = 0;
+	while (1)
+	{
+		if (!knuth_solver(spacer, numfig, sol_map, &counter))
+		{
+			if (spacer->down->right && spacer->down->right->name == spacer->right->name)
+				spacer = spacer->down;
+			else
+				return (0);
+		}
+		if (counter == numfig && spacer->right)
+			return (fill_opt_to_sol_map(spacer->right, sol_map));
+	}
+}
+
+_Bool knuth_solver(t_dance *spacer, int numfig, char **sol_map, int *counter)
+{
 	t_dance		*curr;
 	int 		tmp;
 
-	counter++;
-	if (!(tmp = knuth_check(spacer, numfig, &counter, sol_map)))
+	(*counter)++;
+	if (!(tmp = knuth_check(spacer, numfig, counter, sol_map)))
 		return (0);
 	else if (tmp == 1)
 		return (1);
-	if ((tmp = next_char(spacer, &curr, &counter, numfig, sol_map)) == 1)
+	if ((tmp = next_char(spacer, &curr, counter, numfig, sol_map)) == 1)
 		return (1);
 	if (!tmp)
 		return (0);
 	while (1)
 	{
-		if (!knuth_solver(curr, numfig, sol_map))
+		if (!knuth_solver(curr, numfig, sol_map, counter))
 		{
 			if (curr->down->right && curr->down->right->name == curr->right->name)
 				curr = curr->down;
 			else
-				return (prepare_backtrack(spacer, &counter));
+				return (prepare_backtrack(spacer, counter));
 		}
-		if (counter == numfig && spacer->right)
+		if (*counter == numfig && spacer->right)
 			return (fill_opt_to_sol_map(spacer->right, sol_map));
 	}
 }

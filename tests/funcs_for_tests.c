@@ -161,6 +161,51 @@ void print_list(t_dance *head)
 	}
 }
 
+void print_list_by_sp(t_dance *head)
+{
+	printf("Print list\n");
+	t_dance *printing = head->right;
+	t_dance *head_check = printing;
+	t_dance *spacer;
+
+	printf("%d\t", head->coord);
+	while (printing != head)
+	{
+		printf("%d\t", printing->coord);
+		printing = printing->right;
+	}
+	printf("\n");
+
+	spacer = head->down;
+	printing = spacer->right;
+	while (spacer->right)
+	{
+		ft_putnbr(printing->left->coord);
+		ft_putstr("\t");
+		while (printing->name != 's')
+		{
+			while (head_check->coord != printing->coord)
+			{
+				head_check = head_check->right;
+				ft_putstr("\t");
+			}
+			ft_putchar(printing->name);
+			ft_putstr("\t");
+			printing = printing->right;
+			head_check = head_check->right;
+		}
+		while (head != head_check)
+		{
+			head_check = head_check->right;
+			printf("\t");
+		}
+		printf("\n");
+		spacer = spacer->down;
+		printing = spacer->right;
+		head_check = head->right;
+	}
+}
+
 void recursion_test(t_dance *sp)
 {
 	sp = sp->right;

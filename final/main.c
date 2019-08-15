@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/11 01:47:26 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/13 23:58:17 by yas              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ char **create_init_sol_map(t_freem *mem)
 
 
 _Bool			solver(t_dance *spacer, int numfig, char **sol_map);
-
+_Bool	a_solver(t_dance *spacer, int numfig, char **sol_map);
 
 int		main(int ac, char **av)
 {
@@ -78,13 +78,13 @@ clock_t begin = clock();
 		return (0);
 	}
 	mem.numfig = ft_readfile(av[1], &mem.line, &mem.side);*/
-///////////////////
-	mem.numfig = ft_readfile("/home/yas/Fillit_Clion/tests/test_11", &mem.line, &mem.side);
-//////////////////
+////////////////
+	mem.numfig = ft_readfile("/home/yas/Fillit1/tests/test_8", &mem.line, &mem.side);
+////////////////
 	mem.figures = mkfig_arr(mem.line, mem.numfig);
 	mem.sol_map = create_init_sol_map(&mem);
 	filling_list(&mem);
-	while (!knuth_solver(mem.head->down, mem.numfig, mem.sol_map))
+	while (!a_solver(mem.head->down, mem.numfig, mem.sol_map))
 	{
 		free_manager(&mem, 6); // free sol_map && list
 		mem.side++;

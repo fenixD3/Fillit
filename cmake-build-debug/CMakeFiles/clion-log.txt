@@ -1,4 +1,4 @@
-/home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -G "CodeBlocks - Unix Makefiles" /home/yas/Fillit_Clion
+/home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -G "CodeBlocks - Unix Makefiles" /home/yas/Fillit1
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/yas/Fillit_Clion/cmake-build-debug
+-- Build files have been written to: /home/yas/Fillit1/cmake-build-debug

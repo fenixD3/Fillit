@@ -48,10 +48,10 @@ RM = /home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yas/Fillit_Clion
+CMAKE_SOURCE_DIR = /home/yas/Fillit1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yas/Fillit_Clion/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yas/Fillit1/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yas/Fillit_Clion/cmake-build-debug/CMakeFiles /home/yas/Fillit_Clion/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yas/Fillit1/cmake-build-debug/CMakeFiles /home/yas/Fillit1/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yas/Fillit_Clion/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yas/Fillit1/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -338,6 +338,33 @@ final/knuth_solver.s: final/knuth_solver.c.s
 final/knuth_solver.c.s:
 	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/knuth_solver.c.s
 .PHONY : final/knuth_solver.c.s
+
+final/knuth_solver2.o: final/knuth_solver2.c.o
+
+.PHONY : final/knuth_solver2.o
+
+# target to build an object file
+final/knuth_solver2.c.o:
+	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/knuth_solver2.c.o
+.PHONY : final/knuth_solver2.c.o
+
+final/knuth_solver2.i: final/knuth_solver2.c.i
+
+.PHONY : final/knuth_solver2.i
+
+# target to preprocess a source file
+final/knuth_solver2.c.i:
+	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/knuth_solver2.c.i
+.PHONY : final/knuth_solver2.c.i
+
+final/knuth_solver2.s: final/knuth_solver2.c.s
+
+.PHONY : final/knuth_solver2.s
+
+# target to generate assembly for a file
+final/knuth_solver2.c.s:
+	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/knuth_solver2.c.s
+.PHONY : final/knuth_solver2.c.s
 
 final/libft/ft_atoi.o: final/libft/ft_atoi.c.o
 
@@ -2229,6 +2256,33 @@ final/validation.c.s:
 	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/validation.c.s
 .PHONY : final/validation.c.s
 
+tests/funcs_for_tests.o: tests/funcs_for_tests.c.o
+
+.PHONY : tests/funcs_for_tests.o
+
+# target to build an object file
+tests/funcs_for_tests.c.o:
+	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/tests/funcs_for_tests.c.o
+.PHONY : tests/funcs_for_tests.c.o
+
+tests/funcs_for_tests.i: tests/funcs_for_tests.c.i
+
+.PHONY : tests/funcs_for_tests.i
+
+# target to preprocess a source file
+tests/funcs_for_tests.c.i:
+	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/tests/funcs_for_tests.c.i
+.PHONY : tests/funcs_for_tests.c.i
+
+tests/funcs_for_tests.s: tests/funcs_for_tests.c.s
+
+.PHONY : tests/funcs_for_tests.s
+
+# target to generate assembly for a file
+tests/funcs_for_tests.c.s:
+	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/tests/funcs_for_tests.c.s
+.PHONY : tests/funcs_for_tests.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2262,6 +2316,9 @@ help:
 	@echo "... final/knuth_solver.o"
 	@echo "... final/knuth_solver.i"
 	@echo "... final/knuth_solver.s"
+	@echo "... final/knuth_solver2.o"
+	@echo "... final/knuth_solver2.i"
+	@echo "... final/knuth_solver2.s"
 	@echo "... final/libft/ft_atoi.o"
 	@echo "... final/libft/ft_atoi.i"
 	@echo "... final/libft/ft_atoi.s"
@@ -2472,6 +2529,9 @@ help:
 	@echo "... final/validation.o"
 	@echo "... final/validation.i"
 	@echo "... final/validation.s"
+	@echo "... tests/funcs_for_tests.o"
+	@echo "... tests/funcs_for_tests.i"
+	@echo "... tests/funcs_for_tests.s"
 .PHONY : help
 
 

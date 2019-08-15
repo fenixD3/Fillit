@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/07 18:52:29 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/11 03:34:28 by ylila            ###   ########.fr       */
+/*   Updated: 2019/08/12 21:50:21 by yas              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,9 @@
 # include "libft/libft.h"
 # include "dance.h"
 # include "free_manager.h"
+
+#include "../tests/func_for_tests.h"
+#include <stdio.h>
 
 
 void	ft_mkerr();
@@ -30,7 +33,7 @@ int		give_side(int numfig);
 void	drop_mkfigarr(int **figures, int numfig);
 
 char	**create_init_sol_map(t_freem *mem);
-_Bool	knuth_solver(t_dance *spacer, int numfig, char **sol_map);
+_Bool knuth_solver(t_dance *spacer, int numfig, char **sol_map, int *counter);
 _Bool	fill_opt_to_sol_map(t_dance *node, char **sol_map);
 
 _Bool	solver(t_dance *spacer, int numfig, char **sol_map);
