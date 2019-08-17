@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/14 21:48:26 by ylila            ###   ########.fr       */
+/*   Updated: 2019/08/17 18:56:45 by ylila            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ int		main(int ac, char **av)
 	}
 	mem.numfig = ft_readfile(av[1], &mem.line, &mem.side);*/
 ///////////////////
-	mem.numfig = ft_readfile("/Users/ylila/Fillit_hub/tests/42checker/valid_11", &mem.line, &mem.side);
+	mem.numfig = ft_readfile("/Users/ylila/Fillit_hub/tests/42checker/valid_16", &mem.line, &mem.side);
 	printf("Numfig = %d, side = %d\n", mem.numfig, mem.side);
 //////////////////
 	mem.figures = mkfig_arr(mem.line, mem.numfig);

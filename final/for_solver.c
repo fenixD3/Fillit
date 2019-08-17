@@ -5,7 +5,7 @@ _Bool	backtrack(t_dance *spacer, int *counter)
 	open_row_opt(spacer);
 	printf("\tAfter open\n");
 	print_sp(spacer->home);
-	if (spacer->right->name == 'A' + *counter - 1)
+	if (spacer->right->name == 'A' + *counter - 1 || *counter == 1)
 		--(*counter);
 	return (0);
 }
@@ -17,6 +17,8 @@ t_dance	*find_next_spacer(t_dance *spacer)
 	nsp = spacer;
 	while (nsp->right && nsp->right->name == spacer->right->name)
 		nsp = nsp->down;
+	if (nsp->right && nsp->right->name - spacer->right->name != 1)
+		return(NULL);
 	return (nsp);
 }
 

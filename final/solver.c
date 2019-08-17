@@ -97,18 +97,18 @@ _Bool			solver(t_dance *spacer, int numfig, char **sol_map)
 		hide_row_opt(spacer->right);
 		printf("\tAfter hide\n");
 		print_sp(spacer->home);
-		nsp = find_next_spacer(spacer);
-		if (!check_recur(&spacer, &nsp, &counter))
+		if(!(nsp = find_next_spacer(spacer)))
 			return (backtrack(spacer, &counter));
+		if (!check_recur(&spacer, &nsp, &counter))
+			return (0);
 		while (!solver(nsp, numfig, sol_map))
 		{
 			if (nsp->down->right && nsp->down->right->name == nsp->right->name)
 				nsp = nsp->down;
-			else if (spacer->down->right &&
+			else if (counter == 1 && spacer->down->right &&
 			spacer->down->right->name == spacer->right->name)
 			{
-				if (spacer->right->name == 'A' + counter - 1)
-					--counter;
+				--counter;
 				open_row_opt(spacer);
 				spacer = spacer->down;
 				nsp = spacer;
