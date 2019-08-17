@@ -69,12 +69,15 @@ int		main(int ac, char **av)
 {
 	t_freem	mem;
 
-	if (ac != 2)
+/*	if (ac != 2)
 	{
 		ft_putendl("usage: ./fillit sample.fillit");
 		return (0);
 	}
-	mem.numfig = ft_readfile(av[1], &mem.line, &mem.side);
+	mem.numfig = ft_readfile(av[1], &mem.line, &mem.side);*/
+
+	mem.numfig = ft_readfile("/Users/mdeanne/Fillit/tests/test8", &mem.line, &mem.side);
+
 	mem.figures = mkfig_arr(mem.line, mem.numfig);
 	mem.sol_map = create_init_sol_map(&mem);
 	filling_list(&mem);

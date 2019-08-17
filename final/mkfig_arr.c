@@ -62,7 +62,7 @@ int		**mkfig_arr(const char *line, int numfig)
 	{
 		if (!((figures[i]) = mkfig(line)))
 		{
-			free_arrfig(&figures, i);
+			free_arrfig(NULL);
 			ft_mkerr();
 		}
 		move_to_zero(figures[i]);
