@@ -14,7 +14,9 @@
 
 void	drop_mkfigarr(int **figures, int numfig)
 {
-	int i = 0;
+	int i;
+
+	i = 0;
 	while (i < numfig)
 	{
 		move_to_zero(figures[i]);
@@ -45,7 +47,6 @@ int		*mkfig(const char *line)
 		}
 		j++;
 	}
-	//move_to_zero(figure - 4); /// зачем это здесь?
 	return (figure - 4);
 }
 

@@ -13,12 +13,12 @@
 #include "fillit.h"
 #include "dance.h"
 
-int fill_row(int *figure, int step, const char n_name, t_freem *mem)
+int		fill_row(int *figure, int step, const char n_name, t_freem *mem)
 {
-	int i;
-	t_dance *curr;
-	t_dance *prev;
-	t_dance *new;
+	int		i;
+	t_dance	*curr;
+	t_dance	*prev;
+	t_dance	*new;
 
 	i = 0;
 	curr = mem->head;
@@ -67,13 +67,11 @@ void	increase_figure_on_lead_digit(int *figure, int *highdn, int *step)
 	*step = 0;
 }
 
-
-
-void filling_list(t_freem *mem)
+void	filling_list(t_freem *mem)
 {
 	int i;
-	int lowdn; //max low digit number
-	int highdn; //max high digit number
+	int lowdn;
+	int highdn;
 	int step;
 
 	if (!(mem->head = make_cage(mem->side)))
@@ -87,7 +85,7 @@ void filling_list(t_freem *mem)
 		while (highdn <= mem->side)
 		{
 			if (lowdn + step <= mem->side)
-				fill_row(mem->figures[i], step++, ((char) i + 'A'), mem);
+				fill_row(mem->figures[i], step++, ((char)i + 'A'), mem);
 			else if (highdn < mem->side)
 				increase_figure_on_lead_digit(mem->figures[i], &highdn, &step);
 			else if (highdn == mem->side)

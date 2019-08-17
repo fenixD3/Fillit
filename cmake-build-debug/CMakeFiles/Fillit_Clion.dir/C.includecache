@@ -6,25 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/yas/Fillit1/final/dance.h
+/Users/mdeanne/Fillit/final/dance.h
 
-/home/yas/Fillit1/final/fillit.h
+/Users/mdeanne/Fillit/final/fillit.h
 libft/libft.h
-/home/yas/Fillit1/final/libft/libft.h
+/Users/mdeanne/Fillit/final/libft/libft.h
 dance.h
-/home/yas/Fillit1/final/dance.h
+/Users/mdeanne/Fillit/final/dance.h
 free_manager.h
-/home/yas/Fillit1/final/free_manager.h
-../tests/func_for_tests.h
-/home/yas/Fillit1/tests/func_for_tests.h
-stdio.h
--
+/Users/mdeanne/Fillit/final/free_manager.h
 
-/home/yas/Fillit1/final/free_manager.h
+/Users/mdeanne/Fillit/final/free_manager.h
 dance.h
-/home/yas/Fillit1/final/dance.h
+/Users/mdeanne/Fillit/final/dance.h
 
-/home/yas/Fillit1/final/libft/libft.h
+/Users/mdeanne/Fillit/final/libft/libft.h
 string.h
 -
 stdlib.h
@@ -32,23 +28,7 @@ stdlib.h
 unistd.h
 -
 
-/home/yas/Fillit1/final/main.c
+/Users/mdeanne/Fillit/final/main.c
 fillit.h
-/home/yas/Fillit1/final/fillit.h
-dance.h
-/home/yas/Fillit1/final/dance.h
-time.h
--
-../tests/func_for_tests.h
-/home/yas/Fillit1/tests/func_for_tests.h
-
-/home/yas/Fillit1/tests/func_for_tests.h
-stdio.h
--
-../final/dance.h
-/home/yas/Fillit1/final/dance.h
-../final/fillit.h
-/home/yas/Fillit1/final/fillit.h
-../final/libft/libft.h
-/home/yas/Fillit1/final/libft/libft.h
+/Users/mdeanne/Fillit/final/fillit.h
 

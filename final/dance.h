@@ -36,8 +36,6 @@ t_dance				*create_connct(t_dance *left, t_dance *right, t_dance *up,
 																t_dance *down);
 void				node_set_params(t_dance *curr, char n_name, int n_coord,
 															t_dance *spacer);
-
-
 void				hide_option(t_dance *node);
 void				open_option(t_dance *node);
 void				bad_options(t_dance *node, void (*f)(t_dance *));

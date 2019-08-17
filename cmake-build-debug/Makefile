@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -E remove -f
+RM = /Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yas/Fillit1
+CMAKE_SOURCE_DIR = /Users/mdeanne/Fillit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yas/Fillit1/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/mdeanne/Fillit/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/yas/Fillit1/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/yas/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Users/mdeanne/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yas/Fillit1/cmake-build-debug/CMakeFiles /home/yas/Fillit1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/Fillit/cmake-build-debug/CMakeFiles /Users/mdeanne/Fillit/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yas/Fillit1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mdeanne/Fillit/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -231,33 +231,6 @@ final/filling_list.c.s:
 	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/filling_list.c.s
 .PHONY : final/filling_list.c.s
 
-final/for_solver.o: final/for_solver.c.o
-
-.PHONY : final/for_solver.o
-
-# target to build an object file
-final/for_solver.c.o:
-	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/for_solver.c.o
-.PHONY : final/for_solver.c.o
-
-final/for_solver.i: final/for_solver.c.i
-
-.PHONY : final/for_solver.i
-
-# target to preprocess a source file
-final/for_solver.c.i:
-	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/for_solver.c.i
-.PHONY : final/for_solver.c.i
-
-final/for_solver.s: final/for_solver.c.s
-
-.PHONY : final/for_solver.s
-
-# target to generate assembly for a file
-final/for_solver.c.s:
-	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/for_solver.c.s
-.PHONY : final/for_solver.c.s
-
 final/free_funcs.o: final/free_funcs.c.o
 
 .PHONY : final/free_funcs.o
@@ -338,33 +311,6 @@ final/knuth_solver.s: final/knuth_solver.c.s
 final/knuth_solver.c.s:
 	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/knuth_solver.c.s
 .PHONY : final/knuth_solver.c.s
-
-final/knuth_solver2.o: final/knuth_solver2.c.o
-
-.PHONY : final/knuth_solver2.o
-
-# target to build an object file
-final/knuth_solver2.c.o:
-	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/knuth_solver2.c.o
-.PHONY : final/knuth_solver2.c.o
-
-final/knuth_solver2.i: final/knuth_solver2.c.i
-
-.PHONY : final/knuth_solver2.i
-
-# target to preprocess a source file
-final/knuth_solver2.c.i:
-	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/knuth_solver2.c.i
-.PHONY : final/knuth_solver2.c.i
-
-final/knuth_solver2.s: final/knuth_solver2.c.s
-
-.PHONY : final/knuth_solver2.s
-
-# target to generate assembly for a file
-final/knuth_solver2.c.s:
-	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/knuth_solver2.c.s
-.PHONY : final/knuth_solver2.c.s
 
 final/libft/ft_atoi.o: final/libft/ft_atoi.c.o
 
@@ -2202,33 +2148,6 @@ final/move_to_zero.c.s:
 	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/move_to_zero.c.s
 .PHONY : final/move_to_zero.c.s
 
-final/solver.o: final/solver.c.o
-
-.PHONY : final/solver.o
-
-# target to build an object file
-final/solver.c.o:
-	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/solver.c.o
-.PHONY : final/solver.c.o
-
-final/solver.i: final/solver.c.i
-
-.PHONY : final/solver.i
-
-# target to preprocess a source file
-final/solver.c.i:
-	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/solver.c.i
-.PHONY : final/solver.c.i
-
-final/solver.s: final/solver.c.s
-
-.PHONY : final/solver.s
-
-# target to generate assembly for a file
-final/solver.c.s:
-	$(MAKE) -f CMakeFiles/Fillit_Clion.dir/build.make CMakeFiles/Fillit_Clion.dir/final/solver.c.s
-.PHONY : final/solver.c.s
-
 final/validation.o: final/validation.c.o
 
 .PHONY : final/validation.o
@@ -2290,8 +2209,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... Fillit_Clion"
 	@echo "... edit_cache"
+	@echo "... Fillit_Clion"
 	@echo "... final/bad_options.o"
 	@echo "... final/bad_options.i"
 	@echo "... final/bad_options.s"
@@ -2304,9 +2223,6 @@ help:
 	@echo "... final/filling_list.o"
 	@echo "... final/filling_list.i"
 	@echo "... final/filling_list.s"
-	@echo "... final/for_solver.o"
-	@echo "... final/for_solver.i"
-	@echo "... final/for_solver.s"
 	@echo "... final/free_funcs.o"
 	@echo "... final/free_funcs.i"
 	@echo "... final/free_funcs.s"
@@ -2316,9 +2232,6 @@ help:
 	@echo "... final/knuth_solver.o"
 	@echo "... final/knuth_solver.i"
 	@echo "... final/knuth_solver.s"
-	@echo "... final/knuth_solver2.o"
-	@echo "... final/knuth_solver2.i"
-	@echo "... final/knuth_solver2.s"
 	@echo "... final/libft/ft_atoi.o"
 	@echo "... final/libft/ft_atoi.i"
 	@echo "... final/libft/ft_atoi.s"
@@ -2523,9 +2436,6 @@ help:
 	@echo "... final/move_to_zero.o"
 	@echo "... final/move_to_zero.i"
 	@echo "... final/move_to_zero.s"
-	@echo "... final/solver.o"
-	@echo "... final/solver.i"
-	@echo "... final/solver.s"
 	@echo "... final/validation.o"
 	@echo "... final/validation.i"
 	@echo "... final/validation.s"

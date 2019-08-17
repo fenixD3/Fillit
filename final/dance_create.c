@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
 #include "dance.h"
 #include <stdlib.h>
 
@@ -64,25 +63,3 @@ void		node_set_params(t_dance *curr, char n_name,
 	curr->coord = n_coord;
 	curr->spacer = spacer;
 }
-
-/*
-void		free_list(t_dance **head)
-{
-	t_dance *curr;
-
-	curr = (*head)->down;
-	while (curr->right)
-	{
-		curr = curr->right;
-		free(curr->left);
-	}
-	free(curr);
-	curr = (*head)->right;
-	while (curr != *head)
-	{
-		curr = curr->right;
-		free(curr->left);
-	}
-	free(*head);
-	head = NULL;
-}*/

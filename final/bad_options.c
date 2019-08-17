@@ -1,10 +1,17 @@
-//
-// Created by Mort Deanne on 2019-08-07.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   bad_options.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/17 20:59:28 by mdeanne           #+#    #+#             */
+/*   Updated: 2019/08/17 20:59:35 by mdeanne          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "fillit.h"
 
-/* Hides all nodes of option and left spacer node without "*node"*/
 void	hide_option(t_dance *node)
 {
 	t_dance *curr;
@@ -61,15 +68,9 @@ void	open_option(t_dance *node)
 	}
 }
 
-/* finc takes pointer to first node of option that, we guess, is "good" opt */
-/* fakes pointer to open_option() or hide_option()*/
 void	bad_options(t_dance *node, void (*f)(t_dance *))
 {
 	t_dance *curr;
-
-//	printf("---------------------------\n");
-//	printf("spacer->coord == %d\nBefore bad options\n", node->spacer->coord);
-//	//print_list_by_sp(node->spacer->home);
 
 	while (node->name != 's')
 	{
@@ -81,8 +82,4 @@ void	bad_options(t_dance *node, void (*f)(t_dance *))
 		}
 		node = node->right;
 	}
-
-//	printf("After bad options\n");
-//	//print_list_by_sp(node->spacer->home);
-//	printf("---------------------------\n");
 }

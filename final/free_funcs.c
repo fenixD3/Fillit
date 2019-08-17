@@ -1,6 +1,14 @@
-//
-// Created by Mort Deanne on 2019-08-07.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   free_funcs.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/17 20:59:41 by mdeanne           #+#    #+#             */
+/*   Updated: 2019/08/17 20:59:44 by mdeanne          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "fillit.h"
 
@@ -34,7 +42,7 @@ void	free_sol_map(char ***sol_map, int n)
 	*sol_map = NULL;
 }
 
-void		free_list(t_dance **head)
+void	free_list(t_dance **head)
 {
 	t_dance *curr;
 

@@ -1,6 +1,14 @@
-//
-// Created by Mort Deanne on 2019-08-11.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   move_to_zero.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/08/17 21:00:02 by mdeanne           #+#    #+#             */
+/*   Updated: 2019/08/17 21:00:04 by mdeanne          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "fillit.h"
 
@@ -30,8 +38,8 @@ void	increase_arrfig(int *figure)
 	int i;
 
 	i = 0;
-		while (i != 4)
-			figure[i++] += LEAD_DIGT;
+	while (i != 4)
+		figure[i++] += LEAD_DIGT;
 }
 
 void	move_to_zero(int *figure)

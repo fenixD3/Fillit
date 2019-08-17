@@ -6,7 +6,7 @@
 #    By: ylila <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/08/11 03:21:36 by ylila             #+#    #+#              #
-#    Updated: 2019/08/11 03:31:19 by ylila            ###   ########.fr        #
+#    Updated: 2019/08/17 21:15:43 by mdeanne          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,8 @@ HEAD_PATH = ./
 LIB_PATH = ./libft/
 
 SRC_FILES = bad_options.c dance_cage.c dance_create.c filling_list.c \
-	for_solver.c free_funcs.c free_manager.c knuth_solver.c main.c \
-	mkfig_arr.c move_to_zero.c solver.c validation.c
+	free_funcs.c free_manager.c knuth_solver.c main.c \
+	mkfig_arr.c move_to_zero.c validation.c
 
 SRCS = $(addprefix $(SRC_PATH),$(SRC_FILES))
 

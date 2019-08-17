@@ -8,323 +8,316 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/yas/Fillit1/cmake-build-debug"/>
+				<Option working_dir="/Users/mdeanne/Fillit/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/yas/Fillit1/cmake-build-debug"/>
+				<Option working_dir="/Users/mdeanne/Fillit/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Fillit_Clion">
-				<Option output="/home/yas/Fillit1/cmake-build-debug/Fillit_Clion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/yas/Fillit1/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Fillit_Clion"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Fillit_Clion/fast">
-				<Option output="/home/yas/Fillit1/cmake-build-debug/Fillit_Clion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/yas/Fillit1/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Fillit_Clion/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/yas/Fillit1/cmake-build-debug"/>
+				<Option working_dir="/Users/mdeanne/Fillit/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yas/Fillit1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Fillit_Clion">
+				<Option output="/Users/mdeanne/Fillit/cmake-build-debug/Fillit_Clion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mdeanne/Fillit/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 Fillit_Clion"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Fillit_Clion/fast">
+				<Option output="/Users/mdeanne/Fillit/cmake-build-debug/Fillit_Clion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mdeanne/Fillit/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 Fillit_Clion/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mdeanne/Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/yas/Fillit1/final/bad_options.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/bad_options.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/dance_cage.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/dance_cage.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/dance_create.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/dance_create.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/filling_list.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/filling_list.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/for_solver.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/free_funcs.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/free_funcs.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/free_manager.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/free_manager.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/free_manager.h">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/free_manager.h">
+		<Unit filename="/Users/mdeanne/Fillit/final/knuth_solver.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/knuth_solver.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_atoi.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/knuth_solver2.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_bzero.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_atoi.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_fib.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_bzero.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_isalnum.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_fib.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_isalpha.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_isalnum.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_isascii.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_isalpha.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_isdigit.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_isascii.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_islower.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_isdigit.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_isprint.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_islower.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_isupper.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_isprint.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_itoa.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_isupper.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_lstadd.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_itoa.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_lstdel.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_lstadd.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_lstdelone.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_lstdel.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_lstiter.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_lstdelone.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_lstmap.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_lstiter.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_lstnew.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_lstmap.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_lstpush.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_lstnew.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_memalloc.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_lstpush.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_memccpy.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_memalloc.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_memchr.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_memccpy.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_memcmp.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_memchr.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_memcpy.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_memcmp.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_memdel.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_memcpy.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_memmove.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_memdel.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_memset.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_memmove.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_pow.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_memset.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_putchar.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_pow.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_putchar_fd.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_putchar.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_putendl.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_putchar_fd.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_putendl_fd.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_putendl.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_putnbr.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_putendl_fd.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_putnbr_fd.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_putnbr.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_putstr.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_putnbr_fd.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_putstr_fd.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_putstr.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_sqrt.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_putstr_fd.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strcat.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_sqrt.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strchr.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strcat.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strclr.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strchr.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strcmp.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strclr.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strcpy.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strcmp.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strdel.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strcpy.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strdup.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strdel.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strequ.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strdup.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_striter.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strequ.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_striteri.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_striter.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strjoin.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_striteri.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strlcat.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strjoin.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strlen.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strlcat.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strmap.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strlen.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strmapi.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strmap.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strncat.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strmapi.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strncmp.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strncat.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strncpy.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strncmp.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strnequ.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strncpy.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strnew.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strnequ.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strnstr.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strnew.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strrchr.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strnstr.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strsplit.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strrchr.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strstr.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strsplit.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strsub.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strstr.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_strtrim.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strsub.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_tolower.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_strtrim.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/ft_toupper.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_tolower.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/get_next_line.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/ft_toupper.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/libft/get_next_line.h">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/get_next_line.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/main.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/libft/get_next_line.h">
+		<Unit filename="/Users/mdeanne/Fillit/final/mkfig_arr.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/main.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/move_to_zero.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/mkfig_arr.c">
+		<Unit filename="/Users/mdeanne/Fillit/final/validation.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/move_to_zero.c">
+		<Unit filename="/Users/mdeanne/Fillit/tests/funcs_for_tests.c">
 			<Option target="Fillit_Clion"/>
 		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/solver.c">
-			<Option target="Fillit_Clion"/>
-		</Unit>
-		<Unit filename="/home/yas/Fillit1/final/validation.c">
-			<Option target="Fillit_Clion"/>
-		</Unit>
-		<Unit filename="/home/yas/Fillit1/tests/funcs_for_tests.c">
-			<Option target="Fillit_Clion"/>
-		</Unit>
-		<Unit filename="/home/yas/Fillit1/CMakeLists.txt">
+		<Unit filename="/Users/mdeanne/Fillit/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -53,12 +53,12 @@ void	ft_check(char line[BUFF_SIZE])
 		if (connections != 6 && connections != 8)
 			ft_mkerr();
 		if (*line == '\0')
-			break;
+			break ;
 		(*line == '\n') ? line++ : ft_mkerr();
 	}
 }
 
-int ft_readfile(char *filename, char **line, int *side)
+int		ft_readfile(char *filename, char **line, int *side)
 {
 	int		fd;
 	int		ret;

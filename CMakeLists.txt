@@ -5,4 +5,4 @@ file (GLOB SRC final/libft/*.c final/*.c)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Fillit_Clion ${SRC} tests/funcs_for_tests.c final/knuth_solver2.c)
+add_executable(Fillit_Clion ${SRC} tests/funcs_for_tests.c)
