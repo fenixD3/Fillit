@@ -20,6 +20,10 @@ stdio.h
 ../tests/func_for_tests.h
 /Users/ylila/Fillit_hub/tests/func_for_tests.h
 
+/Users/ylila/Fillit_hub/final/for_solver.c
+fillit.h
+/Users/ylila/Fillit_hub/final/fillit.h
+
 /Users/ylila/Fillit_hub/final/free_manager.h
 dance.h
 /Users/ylila/Fillit_hub/final/dance.h
@@ -31,10 +35,6 @@ stdlib.h
 -
 unistd.h
 -
-
-/Users/ylila/Fillit_hub/final/solver.c
-fillit.h
-/Users/ylila/Fillit_hub/final/fillit.h
 
 /Users/ylila/Fillit_hub/tests/func_for_tests.h
 stdio.h
