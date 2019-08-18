@@ -33,7 +33,10 @@ void	free_manager(t_freem *mem, unsigned char flag)
 	if (flag & 4)
 		free_list(&(mem->head));
 	if (flag & 8)
+	{
 		free(mem->line);
+		mem->line = NULL;
+	}
 	if (flag & 16)
 		ft_mkerr();
 }

@@ -27,6 +27,7 @@ CMakeFiles/Fillit_Clion.dir/final/free_funcs.c.o: ../final/fillit.h
 CMakeFiles/Fillit_Clion.dir/final/free_funcs.c.o: ../final/free_funcs.c
 CMakeFiles/Fillit_Clion.dir/final/free_funcs.c.o: ../final/free_manager.h
 CMakeFiles/Fillit_Clion.dir/final/free_funcs.c.o: ../final/libft/libft.h
+CMakeFiles/Fillit_Clion.dir/final/free_funcs.c.o: ../tests/func_for_tests.h
 
 CMakeFiles/Fillit_Clion.dir/final/free_manager.c.o: ../final/dance.h
 CMakeFiles/Fillit_Clion.dir/final/free_manager.c.o: ../final/fillit.h

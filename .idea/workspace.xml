@@ -13,15 +13,16 @@
   <component name="ChangeListManager">
     <list default="true" id="18b2a736-9abd-44ee-b62b-a2e0ecaef20b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fillit_Clion.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fillit_Clion.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fillit_Clion.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fillit_Clion.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fillit_Clion.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fillit_Clion.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fillit_Clion.dir/final/free_funcs.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fillit_Clion.dir/final/free_funcs.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fillit_Clion.dir/final/free_manager.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fillit_Clion.dir/final/free_manager.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fillit_Clion.dir/final/mkfig_arr.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fillit_Clion.dir/final/mkfig_arr.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fillit_Clion.dir/final/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fillit_Clion.dir/final/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Fillit_Clion" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Fillit_Clion" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/fillit.h" beforeDir="false" afterPath="$PROJECT_DIR$/final/fillit.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final/free_funcs.c" beforeDir="false" afterPath="$PROJECT_DIR$/final/free_funcs.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final/free_manager.c" beforeDir="false" afterPath="$PROJECT_DIR$/final/free_manager.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/final/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final/mkfig_arr.c" beforeDir="false" afterPath="$PROJECT_DIR$/final/mkfig_arr.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +52,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="dynamic.analysis.tools.valgrind" />
   </component>
   <component name="RecentsManager">
@@ -102,6 +104,7 @@
       <workItem from="1566064828117" duration="59000" />
       <workItem from="1566064934440" duration="775000" />
       <workItem from="1566066310132" duration="2078000" />
+      <workItem from="1566069492176" duration="1493000" />
     </task>
     <servers />
   </component>
@@ -122,6 +125,20 @@
     </option>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/final/free_manager.c</url>
+          <line>16</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/final/main.c</url>
+          <line>85</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="mem-&gt;sol_map[0]" language="ObjectiveC" />
@@ -132,6 +149,9 @@
         <watch expression="*sol_map[1]" language="ObjectiveC" />
         <watch expression="*sol_map[2]" language="ObjectiveC" />
         <watch expression="*sol_map[3]" language="ObjectiveC" />
+        <watch expression="curr-&gt;name" language="ObjectiveC" />
+        <watch expression="curr-&gt;coord" language="ObjectiveC" />
+        <watch expression="curr-&gt;spacer-&gt;coord" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>

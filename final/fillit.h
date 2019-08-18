@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/07 18:52:29 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/17 22:01:44 by mdeanne          ###   ########.fr       */
+/*   Updated: 2019/08/18 16:16:20 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define FILLIT_H
 # define BUFF_SIZE 550
 # define LEAD_DIGT 100
-# include "libft/libft.h"
+# include "libft.h"
 # include "dance.h"
 # include "free_manager.h"
 

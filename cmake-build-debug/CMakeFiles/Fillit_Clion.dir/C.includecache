@@ -16,6 +16,10 @@ dance.h
 free_manager.h
 /Users/mdeanne/Fillit/final/free_manager.h
 
+/Users/mdeanne/Fillit/final/free_manager.c
+fillit.h
+/Users/mdeanne/Fillit/final/fillit.h
+
 /Users/mdeanne/Fillit/final/free_manager.h
 dance.h
 /Users/mdeanne/Fillit/final/dance.h
@@ -27,8 +31,4 @@ stdlib.h
 -
 unistd.h
 -
-
-/Users/mdeanne/Fillit/final/main.c
-fillit.h
-/Users/mdeanne/Fillit/final/fillit.h
 

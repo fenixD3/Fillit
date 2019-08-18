@@ -6,7 +6,7 @@
 /*   By: mdeanne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/17 04:58:46 by mdeanne           #+#    #+#             */
-/*   Updated: 2019/08/17 18:55:17 by yas              ###   ########.fr       */
+/*   Updated: 2019/08/18 16:16:20 by mdeanne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,15 +69,12 @@ int		main(int ac, char **av)
 {
 	t_freem	mem;
 
-/*	if (ac != 2)
+	if (ac != 2)
 	{
 		ft_putendl("usage: ./fillit sample.fillit");
 		return (0);
 	}
-	mem.numfig = ft_readfile(av[1], &mem.line, &mem.side);*/
-
-	mem.numfig = ft_readfile("/Users/mdeanne/Fillit/tests/test8", &mem.line, &mem.side);
-
+	mem.numfig = ft_readfile(av[1], &mem.line, &mem.side);
 	mem.figures = mkfig_arr(mem.line, mem.numfig);
 	mem.sol_map = create_init_sol_map(&mem);
 	filling_list(&mem);
